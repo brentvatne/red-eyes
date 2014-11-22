@@ -126,7 +126,7 @@ NewSleepyAppForm = React.createClass
          <div className="input-group">
            <div className="input-group-addon">http://</div>
            <input className="form-control" ref="url" id="sleepy-app-url" type="text"
-                  placeholder="What Heroku app should we keep awake?" />
+                  placeholder="URL here please" />
            <a onClick={this.handleSubmit}
               className="btn btn-default input-group-addon">
              Add site

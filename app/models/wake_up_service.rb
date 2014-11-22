@@ -1,6 +1,6 @@
 class WakeUpService
   def self.run(async = false)
-    SleepyApp.find_each do |app|
+    SleepyApp.active.find_each do |app|
       if async
         Thread.new { HTTParty.get(app.url) }
       else
