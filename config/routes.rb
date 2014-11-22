@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :sleepy_apps do
     collection do
       post :clear_deactivated
+      get :wake_all
     end
 
     member do

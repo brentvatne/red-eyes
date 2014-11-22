@@ -31,4 +31,9 @@ class SleepyAppsController < ApplicationController
     SleepyApp.deactivated.map(&:destroy)
     index
   end
+
+  def wake_all
+    WakeUpService.run
+    index
+  end
 end

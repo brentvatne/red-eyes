@@ -5,6 +5,10 @@ SleepyAppList = React.createClass
       error((err) -> console.error('/sleepyApps', status, err.toString()))
 
   handleSleepyAppClear: ->
+    $.get('/sleepy_apps/wake_all',
+      ((sleepyApps) => @setState(sleepyApps: sleepyApps)))
+
+  handleSleepyAppClear: ->
     $.post('/sleepy_apps/clear_deactivated',
       ((sleepyApps) => @setState(sleepyApps: sleepyApps)))
 
@@ -50,6 +54,7 @@ SleepyAppList = React.createClass
           {sleepyAppItems}
         </tbody>
       </table>
+      <SleepyAppWakeAllButton onWakeAll={this.handleWakeAll}/>
       <SleepyAppClearButton onSleepyAppClear={this.handleSleepyAppClear}/>
      </div>`
 
@@ -85,6 +90,15 @@ SleepyApp = React.createClass
       </td>
     </tr>`
 
+SleepyAppWakeAllButton = React.createClass
+  handleSubmit: (e) ->
+    e.preventDefault()
+    @props.onWakeAll()
+
+  render: ->
+    `<a onClick={this.handleSubmit} className='btn btn-default'>
+      Wake up all apps now
+     </a>`
 
 SleepyAppClearButton = React.createClass
   handleSubmit: (e) ->
