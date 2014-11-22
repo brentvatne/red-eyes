@@ -20,7 +20,7 @@ class SleepyApp < ActiveRecord::Base
   end
 
   def serialized_attributes
-    { id: id, url: url,
+    { id: id, url: url, active: active?,
       lastWokenUpAt: humanized_last_woken_up_at }
   end
 end
