@@ -1,0 +1,19 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  padding-top: 10px;
+}
+
+#sleepy-app-url {
+  width: 300px;
+}
+
+.sleepy-app-active-col {
+  width: 50px !important;
+  text-align: center;
+}
+
+hr {
+  margin: 10px 0;
+}
