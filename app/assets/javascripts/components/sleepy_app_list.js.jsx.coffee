@@ -34,7 +34,7 @@ SleepyAppList = React.createClass
       `<SleepyApp updateActiveStatus={self.loadSleepyAppsFromServer}
                   url={sleepyApp.url}
                   active={sleepyApp.active}
-                  lastWokenUpAt={sleepyApp.last_woken_up_at}
+                  lastWokenUpAt={sleepyApp.lastWokenUpAt}
                   id={sleepyApp.id}>
        </SleepyApp>`
     )

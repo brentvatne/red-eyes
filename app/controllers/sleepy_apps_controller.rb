@@ -1,7 +1,7 @@
 class SleepyAppsController < ApplicationController
   def index
     @sleepy_apps = SleepyApp.order(:id).all
-    render json: @sleepy_apps.map(&:attributes)
+    render json: @sleepy_apps.map(&:serialized_attributes)
   end
 
   def create
