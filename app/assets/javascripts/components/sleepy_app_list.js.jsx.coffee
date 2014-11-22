@@ -54,6 +54,7 @@ SleepyAppList = React.createClass
           {sleepyAppItems}
         </tbody>
       </table>
+      <hr/>
       <div className='btn-group'>
         <SleepyAppWakeAllButton onWakeAll={this.handleWakeAll}/>
         <SleepyAppClearButton onSleepyAppClear={this.handleSleepyAppClear}/>
