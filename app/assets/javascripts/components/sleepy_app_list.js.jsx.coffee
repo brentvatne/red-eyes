@@ -4,7 +4,7 @@ SleepyAppList = React.createClass
       ((sleepyApps) => @setState(sleepyApps: sleepyApps))).
       error((err) -> console.error('/sleepyApps', status, err.toString()))
 
-  handleSleepyAppClear: ->
+  handleWakeAll: ->
     $.get('/sleepy_apps/wake_all',
       ((sleepyApps) => @setState(sleepyApps: sleepyApps)))
 
@@ -54,8 +54,10 @@ SleepyAppList = React.createClass
           {sleepyAppItems}
         </tbody>
       </table>
-      <SleepyAppWakeAllButton onWakeAll={this.handleWakeAll}/>
-      <SleepyAppClearButton onSleepyAppClear={this.handleSleepyAppClear}/>
+      <div className='btn-group'>
+        <SleepyAppWakeAllButton onWakeAll={this.handleWakeAll}/>
+        <SleepyAppClearButton onSleepyAppClear={this.handleSleepyAppClear}/>
+      </div>
      </div>`
 
 SleepyApp = React.createClass
