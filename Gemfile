@@ -12,9 +12,9 @@ gem 'react-rails', '~> 1.0.0.pre', github: 'reactjs/react-rails'
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 gem 'httparty'
-
 gem 'unicorn'
 gem 'foreman'
+gem 'rack-cors'
 
 group :production do
   gem 'rails_12factor'
