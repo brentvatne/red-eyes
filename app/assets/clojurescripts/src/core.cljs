@@ -3,7 +3,7 @@
     (:use [jayq.core :only [$ css html ajax]]))
 
 (def data (atom []))
-(def base-url "http://red-eyes.dev/sleepy_apps")
+(def base-url "/sleepy_apps")
 (defn css-classes [& classes] (apply str (interpose " " classes)))
 (defn active? [app] (= true (.-active app)))
 

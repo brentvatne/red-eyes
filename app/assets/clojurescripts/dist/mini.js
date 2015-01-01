@@ -20190,7 +20190,7 @@ jayq.core.ajax_m = new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyw
 }, new cljs.core.Keyword(null, "zero", "zero", -858964576), cljs.core.identity], null);
 var redeyes = {core:{}};
 redeyes.core.data = reagent.core.atom.call(null, cljs.core.PersistentVector.EMPTY);
-redeyes.core.base_url = "http://red-eyes.dev/sleepy_apps";
+redeyes.core.base_url = "/sleepy_apps";
 redeyes.core.css_classes = function() {
   var a = function(a) {
     return cljs.core.apply.call(null, cljs.core.str, cljs.core.interpose.call(null, " ", a));
