@@ -20188,9 +20188,37 @@ jayq.core.deferred_m = new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.
 jayq.core.ajax_m = new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "return", "return", -1891502105), cljs.core.identity, new cljs.core.Keyword(null, "bind", "bind", -113428417), function(a, b) {
   return jayq.core.done.call(null, jayq.core.ajax.call(null, a), b);
 }, new cljs.core.Keyword(null, "zero", "zero", -858964576), cljs.core.identity], null);
-var redeyes = {core:{}};
+var redeyes = {api:{}};
+redeyes.api.base_url = "/sleepy_apps";
+redeyes.api.fetch_data = function(a, b) {
+  return jayq.core.ajax.call(null, redeyes.api.base_url, new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "dataType", "dataType", 1069893619), "json", new cljs.core.Keyword(null, "success", "success", 1890645906), function(c) {
+    cljs.core.swap_BANG_.call(null, a, cljs.core.replace, cljs.core.js__GT_clj.call(null, c));
+    return null == b ? null : b.call(null);
+  }], null));
+};
+redeyes.api.persist_active_status = function(a) {
+  return jayq.core.ajax.call(null, [cljs.core.str(redeyes.api.base_url), cljs.core.str("/"), cljs.core.str(cljs.core.get.call(null, a, "id")), cljs.core.str("/activate")].join(""), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "dataType", "dataType", 1069893619), "json", new cljs.core.Keyword(null, "method", "method", 55703592), "post"], null));
+};
+redeyes.api.persist_inactive_status = function(a) {
+  return jayq.core.ajax.call(null, [cljs.core.str(redeyes.api.base_url), cljs.core.str("/"), cljs.core.str(cljs.core.get.call(null, a, "id")), cljs.core.str("/deactivate")].join(""), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "dataType", "dataType", 1069893619), "json", new cljs.core.Keyword(null, "method", "method", 55703592), "post"], null));
+};
+redeyes.api.wake_all = function(a) {
+  return jayq.core.ajax.call(null, [cljs.core.str(redeyes.api.base_url), cljs.core.str("/wake_all")].join(""), new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "dataType", "dataType", 1069893619), "json", new cljs.core.Keyword(null, "method", "method", 55703592), "get", new cljs.core.Keyword(null, "success", "success", 1890645906), function() {
+    return a.call(null);
+  }], null));
+};
+redeyes.api.clear_deactivated = function(a) {
+  return jayq.core.ajax.call(null, [cljs.core.str(redeyes.api.base_url), cljs.core.str("/clear_deactivated")].join(""), new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "dataType", "dataType", 1069893619), "json", new cljs.core.Keyword(null, "method", "method", 55703592), "post", new cljs.core.Keyword(null, "success", "success", 1890645906), function() {
+    return a.call(null);
+  }], null));
+};
+redeyes.api.submit_new_app = function(a, b) {
+  return jayq.core.ajax.call(null, redeyes.api.base_url, new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null, "dataType", "dataType", 1069893619), "json", new cljs.core.Keyword(null, "method", "method", 55703592), "post", new cljs.core.Keyword(null, "data", "data", -232669377), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "url", "url", 276297046), a], null), new cljs.core.Keyword(null, "success", "success", 1890645906), function() {
+    return b.call(null);
+  }], null));
+};
+redeyes.core = {};
 redeyes.core.data = reagent.core.atom.call(null, cljs.core.PersistentVector.EMPTY);
-redeyes.core.base_url = "/sleepy_apps";
 redeyes.core.css_classes = function() {
   var a = function(a) {
     return cljs.core.apply.call(null, cljs.core.str, cljs.core.interpose.call(null, " ", a));
@@ -20208,41 +20236,75 @@ redeyes.core.css_classes = function() {
   return b;
 }();
 redeyes.core.active_QMARK_ = function(a) {
-  return cljs.core._EQ_.call(null, !0, a.active);
-};
-redeyes.core.debugger$ = function() {
-  return eval("debugger");
+  return cljs.core._EQ_.call(null, !0, cljs.core.get.call(null, a, "active"));
 };
 redeyes.core.fetch_data = function(a) {
-  return jayq.core.ajax.call(null, redeyes.core.base_url, new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "dataType", "dataType", 1069893619), "json", new cljs.core.Keyword(null, "success", "success", 1890645906), function(b) {
-    cljs.core.swap_BANG_.call(null, redeyes.core.data, cljs.core.replace, b);
-    console.log(cljs.core.clj__GT_js.call(null, cljs.core.deref.call(null, redeyes.core.data)));
-    return null == a ? null : a.call(null);
-  }], null));
+  return redeyes.api.fetch_data.call(null, redeyes.core.data, a);
 };
-redeyes.core.persist_active_status = function(a, b) {
-  return jayq.core.ajax.call(null, [cljs.core.str(redeyes.core.base_url), cljs.core.str("/"), cljs.core.str(a.id), cljs.core.str("/activate")].join(""), new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "dataType", "dataType", 1069893619), "json", new cljs.core.Keyword(null, "method", "method", 55703592), "post", new cljs.core.Keyword(null, "success", "success", 1890645906), function() {
-    return b.call(null);
-  }], null));
+redeyes.core.update_app = function(a, b) {
+  return cljs.core.swap_BANG_.call(null, redeyes.core.data, cljs.core.replace, cljs.core.map.call(null, function(c) {
+    return cljs.core._EQ_.call(null, c, a) ? cljs.core.merge.call(null, a, b) : cljs.core.identity.call(null, c);
+  }, cljs.core.deref.call(null, redeyes.core.data)));
 };
-redeyes.core.persist_inactive_status = function(a, b) {
-  return jayq.core.ajax.call(null, [cljs.core.str(redeyes.core.base_url), cljs.core.str("/"), cljs.core.str(a.id), cljs.core.str("/deactivate")].join(""), new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "dataType", "dataType", 1069893619), "json", new cljs.core.Keyword(null, "method", "method", 55703592), "post", new cljs.core.Keyword(null, "success", "success", 1890645906), function() {
-    return b.call(null);
-  }], null));
+redeyes.core.activate = function(a) {
+  redeyes.core.update_app.call(null, a, new cljs.core.PersistentArrayMap(null, 1, ["active", !0], null));
+  return redeyes.api.persist_active_status.call(null, a);
 };
-redeyes.core.wake_all = function(a) {
-  return jayq.core.ajax.call(null, [cljs.core.str(redeyes.core.base_url), cljs.core.str("/wake_all")].join(""), new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "dataType", "dataType", 1069893619), "json", new cljs.core.Keyword(null, "method", "method", 55703592), "get", new cljs.core.Keyword(null, "success", "success", 1890645906), function() {
-    return a.call(null);
-  }], null));
-};
-redeyes.core.clear_deactivated = function(a) {
-  return jayq.core.ajax.call(null, [cljs.core.str(redeyes.core.base_url), cljs.core.str("/clear_deactivated")].join(""), new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "dataType", "dataType", 1069893619), "json", new cljs.core.Keyword(null, "method", "method", 55703592), "post", new cljs.core.Keyword(null, "success", "success", 1890645906), function() {
-    return a.call(null);
-  }], null));
+redeyes.core.deactivate = function(a) {
+  redeyes.core.update_app.call(null, a, new cljs.core.PersistentArrayMap(null, 1, ["active", !1], null));
+  return redeyes.api.persist_inactive_status.call(null, a);
 };
 redeyes.core.update_active_status = function(a, b) {
-  cljs.core.truth_(a.target.checked) ? redeyes.core.persist_active_status.call(null, b, redeyes.core.fetch_data) : redeyes.core.persist_inactive_status.call(null, b, redeyes.core.fetch_data);
-  return console.log(b);
+  return cljs.core.truth_(a.target.checked) ? redeyes.core.activate.call(null, b) : redeyes.core.deactivate.call(null, b);
+};
+redeyes.core.sleepy_app_checkbox = function(a) {
+  return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "input", "input", 556931961), new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "type", "type", 1174270348), "checkbox", new cljs.core.Keyword(null, "checked", "checked", -50955819), redeyes.core.active_QMARK_.call(null, a), new cljs.core.Keyword(null, "on-change", "on-change", -732046149), function(b) {
+    return redeyes.core.update_active_status.call(null, b, a);
+  }], null)], null);
+};
+redeyes.core.wake_up_all_button = function() {
+  return function() {
+    return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "a", "a", -2123407586), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "class", "class", -2030961996), "btn btn-default", new cljs.core.Keyword(null, "on-click", "on-click", 1632826543), function(a) {
+      a.preventDefault();
+      return redeyes.api.wake_all.call(null, redeyes.core.fetch_data);
+    }], null), "Wake up all apps now"], null);
+  };
+};
+redeyes.core.clear_deactivated_button = function() {
+  return function() {
+    return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "a", "a", -2123407586), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "class", "class", -2030961996), "btn btn-default", new cljs.core.Keyword(null, "on-click", "on-click", 1632826543), function(a) {
+      a.preventDefault();
+      return redeyes.api.clear_deactivated.call(null, redeyes.core.fetch_data);
+    }], null), "Clear deactivated"], null);
+  };
+};
+redeyes.core.handle_submit_new_app = function(a, b) {
+  a.preventDefault();
+  redeyes.api.submit_new_app.call(null, cljs.core.deref.call(null, b), redeyes.core.fetch_data);
+  return cljs.core.reset_BANG_.call(null, b, "");
+};
+redeyes.core.new_url_input = function(a) {
+  return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "div", "div", 1057191632), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "class", "class", -2030961996), "form-group"], null), new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "div", "div", 1057191632), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "class", "class", -2030961996), 
+  "input-group"], null), new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "div", "div", 1057191632), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "class", "class", -2030961996), "input-group-addon"], null), "http://"], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "input", "input", 556931961), new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword(null, 
+  "type", "type", 1174270348), "text", new cljs.core.Keyword(null, "value", "value", 305978217), cljs.core.deref.call(null, a), new cljs.core.Keyword(null, "placeholder", "placeholder", -104873083), "URL here please!", new cljs.core.Keyword(null, "class", "class", -2030961996), "form-control", new cljs.core.Keyword(null, "id", "id", -1388402092), "sleepy-app-url", new cljs.core.Keyword(null, "on-change", "on-change", -732046149), function(b) {
+    return cljs.core.reset_BANG_.call(null, a, b.target.value);
+  }], null)], null), new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "a", "a", -2123407586), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "class", "class", -2030961996), "btn btn-default input-group-addon", new cljs.core.Keyword(null, "on-click", "on-click", 1632826543), function(b) {
+    return redeyes.core.handle_submit_new_app.call(null, b, a);
+  }], null), "Add site"], null)], null)], null);
+};
+redeyes.core.new_sleepy_app_form = function() {
+  var a = reagent.core.atom.call(null, "");
+  return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "form", "form", -1624062471), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "class", "class", -2030961996), "new-sleepy-app-form form-inline", new cljs.core.Keyword(null, "on-submit", "on-submit", 1227871159), function(a) {
+    return function(c) {
+      return redeyes.core.handle_submit_new_app.call(null, c, a);
+    };
+  }(a)], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [redeyes.core.new_url_input, a], null)], null);
+};
+redeyes.core.sleepy_app = function(a) {
+  var b = cljs.core.get.call(null, a, "url"), c = cljs.core.get.call(null, a, "lastWokenUpAt");
+  return new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "tr", "tr", -1424774646), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "class", "class", -2030961996), redeyes.core.css_classes.call(null, "sleepy-app", redeyes.core.active_QMARK_.call(null, a) ? "active" : null)], null), new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "td", "td", 1479933353), 
+  new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "class", "class", -2030961996), "sleepy-app-active-col"], null), redeyes.core.sleepy_app_checkbox.call(null, a)], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "td", "td", 1479933353), b], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "td", "td", 1479933353), null == c ? "Never by us" : 
+  c], null)], null);
 };
 redeyes.core.sleepy_app_list = function() {
   var a = cljs.core.deref.call(null, redeyes.core.data);
@@ -20284,61 +20346,6 @@ redeyes.core.sleepy_app_list = function() {
       };
     }(a).call(null, a);
   }()], null)], null)], null);
-};
-redeyes.core.sleepy_app = function(a) {
-  var b = a.url, c = a.lastWokenUpAt;
-  return new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "tr", "tr", -1424774646), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "class", "class", -2030961996), redeyes.core.css_classes.call(null, "sleepy-app", redeyes.core.active_QMARK_.call(null, a) ? "active" : null)], null), new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "td", "td", 1479933353), 
-  new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "class", "class", -2030961996), "sleepy-app-active-col"], null), redeyes.core.sleepy_app_checkbox.call(null, a)], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "td", "td", 1479933353), b], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "td", "td", 1479933353), null == c ? "Never by us" : 
-  c], null)], null);
-};
-redeyes.core.sleepy_app_checkbox = function(a) {
-  return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "input", "input", 556931961), new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "type", "type", 1174270348), "checkbox", new cljs.core.Keyword(null, "checked", "checked", -50955819), redeyes.core.active_QMARK_.call(null, a), new cljs.core.Keyword(null, "on-change", "on-change", -732046149), function(b) {
-    return redeyes.core.update_active_status.call(null, b, a);
-  }], null)], null);
-};
-redeyes.core.wake_up_all_button = function() {
-  return function() {
-    return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "a", "a", -2123407586), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "class", "class", -2030961996), "btn btn-default", new cljs.core.Keyword(null, "on-click", "on-click", 1632826543), function(a) {
-      a.preventDefault();
-      return redeyes.core.wake_all.call(null, redeyes.core.fetch_data);
-    }], null), "Wake up all apps now"], null);
-  };
-};
-redeyes.core.clear_deactivated_button = function() {
-  return function() {
-    return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "a", "a", -2123407586), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "class", "class", -2030961996), "btn btn-default", new cljs.core.Keyword(null, "on-click", "on-click", 1632826543), function(a) {
-      a.preventDefault();
-      return redeyes.core.clear_deactivated.call(null, redeyes.core.fetch_data);
-    }], null), "Clear deactivated"], null);
-  };
-};
-redeyes.core.handle_submit_new_app = function(a, b) {
-  a.preventDefault();
-  redeyes.core.submit_new_app.call(null, cljs.core.deref.call(null, b), redeyes.core.fetch_data);
-  return console.log(a);
-};
-redeyes.core.submit_new_app = function(a, b) {
-  return jayq.core.ajax.call(null, redeyes.core.base_url, new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null, "dataType", "dataType", 1069893619), "json", new cljs.core.Keyword(null, "method", "method", 55703592), "post", new cljs.core.Keyword(null, "data", "data", -232669377), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "url", "url", 276297046), a], null), new cljs.core.Keyword(null, "success", "success", 1890645906), function() {
-    return b.call(null);
-  }], null));
-};
-redeyes.core.new_sleepy_app_form = function() {
-  var a = reagent.core.atom.call(null, "");
-  return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "form", "form", -1624062471), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "class", "class", -2030961996), "new-sleepy-app-form form-inline", new cljs.core.Keyword(null, "on-submit", "on-submit", 1227871159), function(a) {
-    return function(c) {
-      return redeyes.core.handle_submit_new_app.call(null, c, a);
-    };
-  }(a)], null), new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "div", "div", 1057191632), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "class", "class", -2030961996), "form-group"], null), new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "div", "div", 1057191632), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "class", "class", 
-  -2030961996), "input-group"], null), new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "div", "div", 1057191632), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "class", "class", -2030961996), "input-group-addon"], null), "http://"], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "input", "input", 556931961), new cljs.core.PersistentArrayMap(null, 
-  5, [new cljs.core.Keyword(null, "class", "class", -2030961996), "form-control", new cljs.core.Keyword(null, "id", "id", -1388402092), "sleepy-app-url", new cljs.core.Keyword(null, "type", "type", 1174270348), "text", new cljs.core.Keyword(null, "on-change", "on-change", -732046149), function(a) {
-    return function(c) {
-      return cljs.core.reset_BANG_.call(null, a, c.target.value);
-    };
-  }(a), new cljs.core.Keyword(null, "placeholder", "placeholder", -104873083), "URL here please"], null)], null), new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "a", "a", -2123407586), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "class", "class", -2030961996), "btn btn-default input-group-addon", new cljs.core.Keyword(null, "on-click", "on-click", 1632826543), function(a) {
-    return function(c) {
-      return redeyes.core.handle_submit_new_app.call(null, c, a);
-    };
-  }(a)], null), "Add site"], null)], null)], null)], null);
 };
 redeyes.core.redeyes = function() {
   return new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "div", "div", 1057191632), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "h1", "h1", -1896887462), "Apps to wake up"], null), new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "hr", "hr", 1377740067)], null), new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, 
