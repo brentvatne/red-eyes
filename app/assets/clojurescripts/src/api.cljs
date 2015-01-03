@@ -1,5 +1,5 @@
 (ns redeyes.api
-  (:use [jayq.core :only [$ css html ajax]]))
+  (:use [jayq.core :only [ajax]]))
 
 (def base-url "/sleepy_apps")
 

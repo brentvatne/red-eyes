@@ -8,19 +8,22 @@
 (defn active? [app] (= true (get app "active")))
 (defn fetch-data [callback] (api/fetch-data data callback))
 
-(defn update-app [app opts]
-  (swap! data replace
-    (map (fn [this-app]
-            (if (= this-app app)
-                (merge app opts)
-                (identity this-app))) @data)))
+(defn update-app [apps app opts]
+  (map
+    #(if (= % app) (merge % opts) (identity %))
+    apps))
+
+(defn remove-apps [apps apps-to-remove]
+  (filter
+    #(not (some #{%} apps-to-remove))
+    apps))
 
 (defn activate [app]
-  (update-app app {"active" true})
+  (swap! data update-app app {"active" true})
   (api/persist-active-status app))
 
 (defn deactivate [app]
-  (update-app app {"active" false})
+  (swap! data update-app app {"active" false})
   (api/persist-inactive-status app))
 
 (defn update-active-status [e app]
@@ -38,11 +41,15 @@
                            (api/wake-all fetch-data))}
      "Wake up all apps now"]))
 
+(defn inactive-apps []
+  (filter (complement active?) @data))
+
 (defn clear-deactivated-button []
   (fn []
     [:a {:class "btn btn-default"
          :on-click (fn [e] (.preventDefault e)
-                           (api/clear-deactivated fetch-data))}
+                            (api/clear-deactivated fetch-data)
+                            (swap! data remove-apps (inactive-apps)))}
      "Clear deactivated"]))
 
 (defn handle-submit-new-app [e new-url]
@@ -91,7 +98,7 @@
            [:th]]]
        [:tbody
          (for [app apps]
-         [sleepy-app app])]]])))
+         ^{:key app} [sleepy-app app])]]])))
 
 (defn redeyes []
   [:div
