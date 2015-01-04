@@ -116,4 +116,5 @@
   (r/render-component [redeyes]
     (.getElementById js/document "app")))
 
-(fetch-data render-app)
+(defn ^:export run []
+  (fetch-data render-app))

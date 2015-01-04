@@ -20365,4 +20365,7 @@ redeyes.core.redeyes = function() {
 redeyes.core.render_app = function() {
   return reagent.core.render_component.call(null, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [redeyes.core.redeyes], null), document.getElementById("app"));
 };
-redeyes.core.fetch_data.call(null, redeyes.core.render_app);
+redeyes.core.run = function() {
+  return redeyes.core.fetch_data.call(null, redeyes.core.render_app);
+};
+goog.exportSymbol("redeyes.core.run", redeyes.core.run);
