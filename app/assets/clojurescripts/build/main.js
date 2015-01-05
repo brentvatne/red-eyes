@@ -16991,7 +16991,2091 @@ cljs.core.test = function(a) {
   a = a.cljs$lang$test;
   return cljs.core.truth_(a) ? (a.call(null), new cljs.core.Keyword(null, "ok", "ok", 967785236)) : new cljs.core.Keyword(null, "no-test", "no-test", -1679482642);
 };
-var redeyes = {old:{}};
+var om = {dom:{}};
+om.dom.a = function() {
+  var a = function(a, b) {
+    return React.DOM.a.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.abbr = function() {
+  var a = function(a, b) {
+    return React.DOM.abbr.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.address = function() {
+  var a = function(a, b) {
+    return React.DOM.address.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.area = function() {
+  var a = function(a, b) {
+    return React.DOM.area.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.article = function() {
+  var a = function(a, b) {
+    return React.DOM.article.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.aside = function() {
+  var a = function(a, b) {
+    return React.DOM.aside.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.audio = function() {
+  var a = function(a, b) {
+    return React.DOM.audio.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.b = function() {
+  var a = function(a, b) {
+    return React.DOM.b.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.base = function() {
+  var a = function(a, b) {
+    return React.DOM.base.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.bdi = function() {
+  var a = function(a, b) {
+    return React.DOM.bdi.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.bdo = function() {
+  var a = function(a, b) {
+    return React.DOM.bdo.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.big = function() {
+  var a = function(a, b) {
+    return React.DOM.big.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.blockquote = function() {
+  var a = function(a, b) {
+    return React.DOM.blockquote.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.body = function() {
+  var a = function(a, b) {
+    return React.DOM.body.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.br = function() {
+  var a = function(a, b) {
+    return React.DOM.br.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.button = function() {
+  var a = function(a, b) {
+    return React.DOM.button.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.canvas = function() {
+  var a = function(a, b) {
+    return React.DOM.canvas.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.caption = function() {
+  var a = function(a, b) {
+    return React.DOM.caption.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.cite = function() {
+  var a = function(a, b) {
+    return React.DOM.cite.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.code = function() {
+  var a = function(a, b) {
+    return React.DOM.code.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.col = function() {
+  var a = function(a, b) {
+    return React.DOM.col.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.colgroup = function() {
+  var a = function(a, b) {
+    return React.DOM.colgroup.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.data = function() {
+  var a = function(a, b) {
+    return React.DOM.data.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.datalist = function() {
+  var a = function(a, b) {
+    return React.DOM.datalist.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.dd = function() {
+  var a = function(a, b) {
+    return React.DOM.dd.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.del = function() {
+  var a = function(a, b) {
+    return React.DOM.del.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.dfn = function() {
+  var a = function(a, b) {
+    return React.DOM.dfn.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.div = function() {
+  var a = function(a, b) {
+    return React.DOM.div.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.dl = function() {
+  var a = function(a, b) {
+    return React.DOM.dl.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.dt = function() {
+  var a = function(a, b) {
+    return React.DOM.dt.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.em = function() {
+  var a = function(a, b) {
+    return React.DOM.em.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.embed = function() {
+  var a = function(a, b) {
+    return React.DOM.embed.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.fieldset = function() {
+  var a = function(a, b) {
+    return React.DOM.fieldset.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.figcaption = function() {
+  var a = function(a, b) {
+    return React.DOM.figcaption.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.figure = function() {
+  var a = function(a, b) {
+    return React.DOM.figure.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.footer = function() {
+  var a = function(a, b) {
+    return React.DOM.footer.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.form = function() {
+  var a = function(a, b) {
+    return React.DOM.form.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.h1 = function() {
+  var a = function(a, b) {
+    return React.DOM.h1.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.h2 = function() {
+  var a = function(a, b) {
+    return React.DOM.h2.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.h3 = function() {
+  var a = function(a, b) {
+    return React.DOM.h3.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.h4 = function() {
+  var a = function(a, b) {
+    return React.DOM.h4.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.h5 = function() {
+  var a = function(a, b) {
+    return React.DOM.h5.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.h6 = function() {
+  var a = function(a, b) {
+    return React.DOM.h6.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.head = function() {
+  var a = function(a, b) {
+    return React.DOM.head.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.header = function() {
+  var a = function(a, b) {
+    return React.DOM.header.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.hr = function() {
+  var a = function(a, b) {
+    return React.DOM.hr.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.html = function() {
+  var a = function(a, b) {
+    return React.DOM.html.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.i = function() {
+  var a = function(a, b) {
+    return React.DOM.i.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.iframe = function() {
+  var a = function(a, b) {
+    return React.DOM.iframe.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.img = function() {
+  var a = function(a, b) {
+    return React.DOM.img.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.ins = function() {
+  var a = function(a, b) {
+    return React.DOM.ins.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.kbd = function() {
+  var a = function(a, b) {
+    return React.DOM.kbd.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.keygen = function() {
+  var a = function(a, b) {
+    return React.DOM.keygen.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.label = function() {
+  var a = function(a, b) {
+    return React.DOM.label.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.legend = function() {
+  var a = function(a, b) {
+    return React.DOM.legend.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.li = function() {
+  var a = function(a, b) {
+    return React.DOM.li.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.link = function() {
+  var a = function(a, b) {
+    return React.DOM.link.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.main = function() {
+  var a = function(a, b) {
+    return React.DOM.main.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.map = function() {
+  var a = function(a, b) {
+    return React.DOM.map.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.mark = function() {
+  var a = function(a, b) {
+    return React.DOM.mark.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.menu = function() {
+  var a = function(a, b) {
+    return React.DOM.menu.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.menuitem = function() {
+  var a = function(a, b) {
+    return React.DOM.menuitem.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.meta = function() {
+  var a = function(a, b) {
+    return React.DOM.meta.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.meter = function() {
+  var a = function(a, b) {
+    return React.DOM.meter.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.nav = function() {
+  var a = function(a, b) {
+    return React.DOM.nav.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.noscript = function() {
+  var a = function(a, b) {
+    return React.DOM.noscript.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.object = function() {
+  var a = function(a, b) {
+    return React.DOM.object.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.ol = function() {
+  var a = function(a, b) {
+    return React.DOM.ol.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.optgroup = function() {
+  var a = function(a, b) {
+    return React.DOM.optgroup.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.output = function() {
+  var a = function(a, b) {
+    return React.DOM.output.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.p = function() {
+  var a = function(a, b) {
+    return React.DOM.p.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.param = function() {
+  var a = function(a, b) {
+    return React.DOM.param.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.pre = function() {
+  var a = function(a, b) {
+    return React.DOM.pre.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.progress = function() {
+  var a = function(a, b) {
+    return React.DOM.progress.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.q = function() {
+  var a = function(a, b) {
+    return React.DOM.q.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.rp = function() {
+  var a = function(a, b) {
+    return React.DOM.rp.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.rt = function() {
+  var a = function(a, b) {
+    return React.DOM.rt.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.ruby = function() {
+  var a = function(a, b) {
+    return React.DOM.ruby.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.s = function() {
+  var a = function(a, b) {
+    return React.DOM.s.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.samp = function() {
+  var a = function(a, b) {
+    return React.DOM.samp.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.script = function() {
+  var a = function(a, b) {
+    return React.DOM.script.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.section = function() {
+  var a = function(a, b) {
+    return React.DOM.section.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.select = function() {
+  var a = function(a, b) {
+    return React.DOM.select.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.small = function() {
+  var a = function(a, b) {
+    return React.DOM.small.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.source = function() {
+  var a = function(a, b) {
+    return React.DOM.source.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.span = function() {
+  var a = function(a, b) {
+    return React.DOM.span.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.strong = function() {
+  var a = function(a, b) {
+    return React.DOM.strong.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.style = function() {
+  var a = function(a, b) {
+    return React.DOM.style.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.sub = function() {
+  var a = function(a, b) {
+    return React.DOM.sub.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.summary = function() {
+  var a = function(a, b) {
+    return React.DOM.summary.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.sup = function() {
+  var a = function(a, b) {
+    return React.DOM.sup.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.table = function() {
+  var a = function(a, b) {
+    return React.DOM.table.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.tbody = function() {
+  var a = function(a, b) {
+    return React.DOM.tbody.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.td = function() {
+  var a = function(a, b) {
+    return React.DOM.td.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.tfoot = function() {
+  var a = function(a, b) {
+    return React.DOM.tfoot.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.th = function() {
+  var a = function(a, b) {
+    return React.DOM.th.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.thead = function() {
+  var a = function(a, b) {
+    return React.DOM.thead.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.time = function() {
+  var a = function(a, b) {
+    return React.DOM.time.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.title = function() {
+  var a = function(a, b) {
+    return React.DOM.title.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.tr = function() {
+  var a = function(a, b) {
+    return React.DOM.tr.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.track = function() {
+  var a = function(a, b) {
+    return React.DOM.track.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.u = function() {
+  var a = function(a, b) {
+    return React.DOM.u.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.ul = function() {
+  var a = function(a, b) {
+    return React.DOM.ul.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.var$ = function() {
+  var a = function(a, b) {
+    return React.DOM.var$.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.video = function() {
+  var a = function(a, b) {
+    return React.DOM.video.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.wbr = function() {
+  var a = function(a, b) {
+    return React.DOM.wbr.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.circle = function() {
+  var a = function(a, b) {
+    return React.DOM.circle.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.ellipse = function() {
+  var a = function(a, b) {
+    return React.DOM.ellipse.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.g = function() {
+  var a = function(a, b) {
+    return React.DOM.g.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.line = function() {
+  var a = function(a, b) {
+    return React.DOM.line.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.path = function() {
+  var a = function(a, b) {
+    return React.DOM.path.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.polyline = function() {
+  var a = function(a, b) {
+    return React.DOM.polyline.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.rect = function() {
+  var a = function(a, b) {
+    return React.DOM.rect.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.svg = function() {
+  var a = function(a, b) {
+    return React.DOM.svg.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.text = function() {
+  var a = function(a, b) {
+    return React.DOM.text.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.defs = function() {
+  var a = function(a, b) {
+    return React.DOM.defs.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.linearGradient = function() {
+  var a = function(a, b) {
+    return React.DOM.linearGradient.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.polygon = function() {
+  var a = function(a, b) {
+    return React.DOM.polygon.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.radialGradient = function() {
+  var a = function(a, b) {
+    return React.DOM.radialGradient.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.stop = function() {
+  var a = function(a, b) {
+    return React.DOM.stop.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.tspan = function() {
+  var a = function(a, b) {
+    return React.DOM.tspan.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e);
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+om.dom.wrap_form_element = function(a, b) {
+  return React.createClass({render:function() {
+    return this.transferPropsTo(a.call(null, {children:this.props.children, onChange:this.onChange, value:this.state.value}));
+  }, componentWillReceiveProps:function(a) {
+    return this.setState({value:a.value});
+  }, onChange:function(a) {
+    var b = this.props.onChange;
+    if (null == b) {
+      return null;
+    }
+    b.call(null, a);
+    return this.setState({value:a.target.value});
+  }, getInitialState:function() {
+    return{value:this.props.value};
+  }, getDisplayName:function() {
+    return b;
+  }});
+};
+om.dom.input = om.dom.wrap_form_element.call(null, React.DOM.input, "input");
+om.dom.textarea = om.dom.wrap_form_element.call(null, React.DOM.textarea, "textarea");
+om.dom.option = om.dom.wrap_form_element.call(null, React.DOM.option, "option");
+om.dom.render = function(a, b) {
+  return React.renderComponent(a, b);
+};
+om.dom.render_to_str = function(a) {
+  return React.renderComponentToString(a);
+};
 var clojure = {string:{}};
 clojure.string.seq_reverse = function(a) {
   return cljs.core.reduce.call(null, cljs.core.conj, cljs.core.List.EMPTY, a);
@@ -17145,6 +19229,4341 @@ clojure.string.escape = function(a, b) {
     cljs.core.truth_(f) ? c.append("" + cljs.core.str(f)) : c.append(g);
     e += 1;
   }
+};
+var om_tools = {dom:{}};
+om_tools.dom.camel_case = function(a) {
+  return clojure.string.replace.call(null, a, /-(\w)/, cljs.core.comp.call(null, clojure.string.upper_case, cljs.core.second));
+};
+om_tools.dom.opt_key_case = function(a) {
+  return cljs.core.truth_(function() {
+    var b = 5 > cljs.core.count.call(null, a);
+    if (b) {
+      return b;
+    }
+    switch(cljs.core.subs.call(null, a, 0, 5)) {
+      case "data-":
+      ;
+      case "aria-":
+        return!0;
+      default:
+        return!1;
+    }
+  }()) ? a : om_tools.dom.camel_case.call(null, a);
+};
+om_tools.dom.opt_key_alias = function(a) {
+  switch(a instanceof cljs.core.Keyword ? a.fqn : null) {
+    case "for":
+      return new cljs.core.Keyword(null, "htmlFor", "htmlFor", -1050291720);
+    case "class":
+      return new cljs.core.Keyword(null, "className", "className", -1983287057);
+    default:
+      return a;
+  }
+};
+om_tools.dom.format_opt_key = function(a) {
+  return cljs.core.keyword.call(null, om_tools.dom.opt_key_case.call(null, cljs.core.name.call(null, om_tools.dom.opt_key_alias.call(null, a))));
+};
+om_tools.dom.format_opt_val = function(a) {
+  return cljs.core.map_QMARK_.call(null, a) ? om_tools.dom.format_opts.call(null, a) : a;
+};
+om_tools.dom.format_opts = function(a) {
+  return cljs.core.map_QMARK_.call(null, a) ? cljs.core.clj__GT_js.call(null, cljs.core.into.call(null, cljs.core.PersistentArrayMap.EMPTY, cljs.core.map.call(null, function(a) {
+    var c = cljs.core.nth.call(null, a, 0, null);
+    a = cljs.core.nth.call(null, a, 1, null);
+    return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [om_tools.dom.format_opt_key.call(null, c), om_tools.dom.format_opt_val.call(null, a)], null);
+  }, a))) : a;
+};
+om_tools.dom.possible_coll_QMARK_ = function(a) {
+  return cljs.core.coll_QMARK_.call(null, a) || a instanceof cljs.core.Symbol || cljs.core.list_QMARK_.call(null, a);
+};
+om_tools.dom.valid_element_QMARK_ = function(a) {
+  var b;
+  b = React.isValidElement;
+  b = cljs.core.truth_(b) ? b : React.isValidComponent;
+  return b.call(null, a);
+};
+om_tools.dom.js_opts_QMARK_ = function(a) {
+  return cljs.core.object_QMARK_.call(null, a) && !om_tools.dom.valid_element_QMARK_.call(null, a);
+};
+om_tools.dom.element_args = function(a, b) {
+  return null == a ? new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [null, b], null) : cljs.core.map_QMARK_.call(null, a) ? new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [om_tools.dom.format_opts.call(null, a), b], null) : om_tools.dom.js_opts_QMARK_.call(null, a) ? new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [a, b], null) : new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, 
+  [null, cljs.core.cons.call(null, a, b)], null);
+};
+om_tools.dom.element = function(a, b, c) {
+  c = om_tools.dom.element_args.call(null, b, c);
+  b = cljs.core.nth.call(null, c, 0, null);
+  c = cljs.core.nth.call(null, c, 1, null);
+  return cljs.core.apply.call(null, a, cljs.core.flatten.call(null, cljs.core.cons.call(null, b, c)));
+};
+om_tools.dom.a = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.a, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.a, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.abbr = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.abbr, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.abbr, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.address = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.address, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.address, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.area = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.area, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.area, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.article = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.article, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.article, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.aside = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.aside, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.aside, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.audio = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.audio, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.audio, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.b = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.b, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.b, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.base = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.base, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.base, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.bdi = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.bdi, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.bdi, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.bdo = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.bdo, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.bdo, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.big = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.big, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.big, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.blockquote = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.blockquote, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.blockquote, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.body = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.body, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.body, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.br = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.br, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.br, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.button = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.button, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.button, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.canvas = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.canvas, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.canvas, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.caption = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.caption, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.caption, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.cite = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.cite, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.cite, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.code = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.code, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.code, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.col = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.col, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.col, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.colgroup = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.colgroup, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.colgroup, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.data = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.data, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.data, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.datalist = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.datalist, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.datalist, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.dd = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.dd, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.dd, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.del = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.del, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.del, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.dfn = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.dfn, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.dfn, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.div = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.div, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.div, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.dl = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.dl, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.dl, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.dt = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.dt, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.dt, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.em = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.em, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.em, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.embed = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.embed, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.embed, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.fieldset = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.fieldset, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.fieldset, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.figcaption = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.figcaption, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.figcaption, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.figure = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.figure, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.figure, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.footer = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.footer, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.footer, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.form = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.form, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.form, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.h1 = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.h1, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.h1, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.h2 = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.h2, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.h2, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.h3 = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.h3, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.h3, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.h4 = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.h4, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.h4, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.h5 = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.h5, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.h5, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.h6 = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.h6, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.h6, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.head = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.head, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.head, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.header = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.header, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.header, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.hr = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.hr, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.hr, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.html = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.html, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.html, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.i = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.i, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.i, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.iframe = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.iframe, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.iframe, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.img = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.img, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.img, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.ins = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.ins, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.ins, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.kbd = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.kbd, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.kbd, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.keygen = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.keygen, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.keygen, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.label = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.label, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.label, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.legend = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.legend, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.legend, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.li = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.li, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.li, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.link = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.link, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.link, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.main = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.main, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.main, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.map = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.map, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.map, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.mark = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.mark, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.mark, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.menu = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.menu, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.menu, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.menuitem = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.menuitem, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.menuitem, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.meta = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.meta, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.meta, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.meter = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.meter, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.meter, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.nav = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.nav, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.nav, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.noscript = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.noscript, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.noscript, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.object = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.object, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.object, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.ol = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.ol, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.ol, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.optgroup = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.optgroup, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.optgroup, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.output = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.output, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.output, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.p = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.p, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.p, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.param = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.param, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.param, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.pre = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.pre, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.pre, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.progress = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.progress, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.progress, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.q = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.q, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.q, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.rp = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.rp, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.rp, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.rt = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.rt, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.rt, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.ruby = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.ruby, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.ruby, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.s = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.s, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.s, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.samp = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.samp, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.samp, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.script = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.script, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.script, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.section = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.section, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.section, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.select = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.select, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.select, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.small = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.small, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.small, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.source = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.source, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.source, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.span = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.span, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.span, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.strong = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.strong, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.strong, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.style = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.style, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.style, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.sub = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.sub, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.sub, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.summary = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.summary, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.summary, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.sup = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.sup, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.sup, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.table = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.table, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.table, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.tbody = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.tbody, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.tbody, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.td = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.td, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.td, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.tfoot = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.tfoot, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.tfoot, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.th = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.th, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.th, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.thead = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.thead, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.thead, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.time = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.time, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.time, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.title = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.title, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.title, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.tr = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.tr, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.tr, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.track = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.track, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.track, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.u = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.u, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.u, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.ul = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.ul, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.ul, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.var$ = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.var$, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.var$, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.video = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.video, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.video, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.wbr = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.wbr, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.wbr, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.circle = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.circle, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.circle, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.ellipse = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.ellipse, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.ellipse, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.g = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.g, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.g, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.line = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.line, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.line, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.path = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.path, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.path, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.polyline = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.polyline, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.polyline, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.rect = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.rect, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.rect, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.svg = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.svg, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.svg, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.text = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.text, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.text, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.defs = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.defs, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.defs, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.linearGradient = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.linearGradient, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.linearGradient, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.polygon = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.polygon, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.polygon, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.radialGradient = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.radialGradient, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.radialGradient, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.stop = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.stop, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.stop, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.tspan = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, React.DOM.tspan, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, React.DOM.tspan, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.input = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, om.dom.input, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, om.dom.input, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.textarea = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, om.dom.textarea, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, om.dom.textarea, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.option = function() {
+  var a = null, b = function() {
+    return om_tools.dom.element.call(null, om.dom.option, null, null);
+  }, c = function() {
+    var a = function(a, b) {
+      return om_tools.dom.element.call(null, om.dom.option, a, b);
+    }, b = function(b, c) {
+      var e = null;
+      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+      return a.call(this, b, e);
+    };
+    b.cljs$lang$maxFixedArity = 1;
+    b.cljs$lang$applyTo = function(b) {
+      var c = cljs.core.first(b);
+      b = cljs.core.rest(b);
+      return a(c, b);
+    };
+    b.cljs$core$IFn$_invoke$arity$variadic = a;
+    return b;
+  }(), a = function(a, e) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 1;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a;
+}();
+om_tools.dom.class_set = function(a) {
+  return(a = cljs.core.seq.call(null, cljs.core.distinct.call(null, cljs.core.map.call(null, cljs.core.name, cljs.core.keys.call(null, cljs.core.filter.call(null, cljs.core.val, a)))))) ? clojure.string.join.call(null, " ", a) : null;
+};
+var redeyes = {helpers:{}};
+redeyes.helpers.input_with_addons = function(a, b) {
+  return cljs.core.apply.call(null, React.DOM.div, {className:"form-group"}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.apply.call(null, React.DOM.div, {className:"input-group"}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.apply.call(null, React.DOM.div, {className:"input-group-addon"}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 
+  1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.get_in.call(null, a, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "before", "before", -1633692388), new cljs.core.Keyword(null, "text", "text", -1790561697)], null))], null))), b, cljs.core.apply.call(null, React.DOM.a, {onClick:om_tools.dom.format_opts.call(null, cljs.core.get_in.call(null, a, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, 
+  [new cljs.core.Keyword(null, "after", "after", 594996914), new cljs.core.Keyword(null, "onClick", "onClick", -1991238530)], null))), className:"btn btn-default input-group-addon"}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.get_in.call(null, a, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "after", "after", 594996914), new cljs.core.Keyword(null, "text", 
+  "text", -1790561697)], null))], null)))], null)))], null)));
+};
+redeyes.helpers.button = function(a, b) {
+  return cljs.core.apply.call(null, React.DOM.a, {onClick:om_tools.dom.format_opts.call(null, (new cljs.core.Keyword(null, "onClick", "onClick", -1991238530)).cljs$core$IFn$_invoke$arity$1(a)), className:"btn btn-default"}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [b], null)));
+};
+redeyes.helpers.button_group = function() {
+  var a = function(a) {
+    return cljs.core.apply.call(null, React.DOM.div, {className:"btn-group"}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [a], null)));
+  }, b = function(b) {
+    var d = null;
+    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
+    return a.call(this, d);
+  };
+  b.cljs$lang$maxFixedArity = 0;
+  b.cljs$lang$applyTo = function(b) {
+    b = cljs.core.seq(b);
+    return a(b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+redeyes.helpers.css_classes = function() {
+  var a = function(a) {
+    return cljs.core.apply.call(null, cljs.core.str, cljs.core.interpose.call(null, " ", a));
+  }, b = function(b) {
+    var d = null;
+    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
+    return a.call(this, d);
+  };
+  b.cljs$lang$maxFixedArity = 0;
+  b.cljs$lang$applyTo = function(b) {
+    b = cljs.core.seq(b);
+    return a(b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+redeyes.helpers.active_QMARK_ = function(a) {
+  return cljs.core._EQ_.call(null, !0, cljs.core.get.call(null, a, "active"));
+};
+redeyes.helpers.log = function(a) {
+  return console.log(a);
+};
+redeyes.helpers.log_clj = function(a) {
+  return redeyes.helpers.log.call(null, cljs.core.clj__GT_js.call(null, a));
 };
 goog.string.format = function(a, b) {
   var c = Array.prototype.slice.call(arguments), d = c.shift();
@@ -21473,2091 +27892,6 @@ cljs.core.async.impl.buffers.__GT_SlidingBuffer = function(a, b) {
 cljs.core.async.impl.buffers.sliding_buffer = function(a) {
   return new cljs.core.async.impl.buffers.SlidingBuffer(cljs.core.async.impl.buffers.ring_buffer.call(null, a), a);
 };
-var om = {dom:{}};
-om.dom.a = function() {
-  var a = function(a, b) {
-    return React.DOM.a.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.abbr = function() {
-  var a = function(a, b) {
-    return React.DOM.abbr.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.address = function() {
-  var a = function(a, b) {
-    return React.DOM.address.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.area = function() {
-  var a = function(a, b) {
-    return React.DOM.area.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.article = function() {
-  var a = function(a, b) {
-    return React.DOM.article.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.aside = function() {
-  var a = function(a, b) {
-    return React.DOM.aside.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.audio = function() {
-  var a = function(a, b) {
-    return React.DOM.audio.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.b = function() {
-  var a = function(a, b) {
-    return React.DOM.b.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.base = function() {
-  var a = function(a, b) {
-    return React.DOM.base.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.bdi = function() {
-  var a = function(a, b) {
-    return React.DOM.bdi.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.bdo = function() {
-  var a = function(a, b) {
-    return React.DOM.bdo.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.big = function() {
-  var a = function(a, b) {
-    return React.DOM.big.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.blockquote = function() {
-  var a = function(a, b) {
-    return React.DOM.blockquote.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.body = function() {
-  var a = function(a, b) {
-    return React.DOM.body.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.br = function() {
-  var a = function(a, b) {
-    return React.DOM.br.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.button = function() {
-  var a = function(a, b) {
-    return React.DOM.button.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.canvas = function() {
-  var a = function(a, b) {
-    return React.DOM.canvas.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.caption = function() {
-  var a = function(a, b) {
-    return React.DOM.caption.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.cite = function() {
-  var a = function(a, b) {
-    return React.DOM.cite.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.code = function() {
-  var a = function(a, b) {
-    return React.DOM.code.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.col = function() {
-  var a = function(a, b) {
-    return React.DOM.col.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.colgroup = function() {
-  var a = function(a, b) {
-    return React.DOM.colgroup.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.data = function() {
-  var a = function(a, b) {
-    return React.DOM.data.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.datalist = function() {
-  var a = function(a, b) {
-    return React.DOM.datalist.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.dd = function() {
-  var a = function(a, b) {
-    return React.DOM.dd.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.del = function() {
-  var a = function(a, b) {
-    return React.DOM.del.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.dfn = function() {
-  var a = function(a, b) {
-    return React.DOM.dfn.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.div = function() {
-  var a = function(a, b) {
-    return React.DOM.div.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.dl = function() {
-  var a = function(a, b) {
-    return React.DOM.dl.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.dt = function() {
-  var a = function(a, b) {
-    return React.DOM.dt.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.em = function() {
-  var a = function(a, b) {
-    return React.DOM.em.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.embed = function() {
-  var a = function(a, b) {
-    return React.DOM.embed.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.fieldset = function() {
-  var a = function(a, b) {
-    return React.DOM.fieldset.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.figcaption = function() {
-  var a = function(a, b) {
-    return React.DOM.figcaption.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.figure = function() {
-  var a = function(a, b) {
-    return React.DOM.figure.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.footer = function() {
-  var a = function(a, b) {
-    return React.DOM.footer.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.form = function() {
-  var a = function(a, b) {
-    return React.DOM.form.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.h1 = function() {
-  var a = function(a, b) {
-    return React.DOM.h1.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.h2 = function() {
-  var a = function(a, b) {
-    return React.DOM.h2.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.h3 = function() {
-  var a = function(a, b) {
-    return React.DOM.h3.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.h4 = function() {
-  var a = function(a, b) {
-    return React.DOM.h4.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.h5 = function() {
-  var a = function(a, b) {
-    return React.DOM.h5.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.h6 = function() {
-  var a = function(a, b) {
-    return React.DOM.h6.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.head = function() {
-  var a = function(a, b) {
-    return React.DOM.head.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.header = function() {
-  var a = function(a, b) {
-    return React.DOM.header.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.hr = function() {
-  var a = function(a, b) {
-    return React.DOM.hr.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.html = function() {
-  var a = function(a, b) {
-    return React.DOM.html.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.i = function() {
-  var a = function(a, b) {
-    return React.DOM.i.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.iframe = function() {
-  var a = function(a, b) {
-    return React.DOM.iframe.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.img = function() {
-  var a = function(a, b) {
-    return React.DOM.img.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.ins = function() {
-  var a = function(a, b) {
-    return React.DOM.ins.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.kbd = function() {
-  var a = function(a, b) {
-    return React.DOM.kbd.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.keygen = function() {
-  var a = function(a, b) {
-    return React.DOM.keygen.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.label = function() {
-  var a = function(a, b) {
-    return React.DOM.label.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.legend = function() {
-  var a = function(a, b) {
-    return React.DOM.legend.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.li = function() {
-  var a = function(a, b) {
-    return React.DOM.li.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.link = function() {
-  var a = function(a, b) {
-    return React.DOM.link.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.main = function() {
-  var a = function(a, b) {
-    return React.DOM.main.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.map = function() {
-  var a = function(a, b) {
-    return React.DOM.map.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.mark = function() {
-  var a = function(a, b) {
-    return React.DOM.mark.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.menu = function() {
-  var a = function(a, b) {
-    return React.DOM.menu.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.menuitem = function() {
-  var a = function(a, b) {
-    return React.DOM.menuitem.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.meta = function() {
-  var a = function(a, b) {
-    return React.DOM.meta.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.meter = function() {
-  var a = function(a, b) {
-    return React.DOM.meter.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.nav = function() {
-  var a = function(a, b) {
-    return React.DOM.nav.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.noscript = function() {
-  var a = function(a, b) {
-    return React.DOM.noscript.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.object = function() {
-  var a = function(a, b) {
-    return React.DOM.object.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.ol = function() {
-  var a = function(a, b) {
-    return React.DOM.ol.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.optgroup = function() {
-  var a = function(a, b) {
-    return React.DOM.optgroup.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.output = function() {
-  var a = function(a, b) {
-    return React.DOM.output.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.p = function() {
-  var a = function(a, b) {
-    return React.DOM.p.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.param = function() {
-  var a = function(a, b) {
-    return React.DOM.param.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.pre = function() {
-  var a = function(a, b) {
-    return React.DOM.pre.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.progress = function() {
-  var a = function(a, b) {
-    return React.DOM.progress.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.q = function() {
-  var a = function(a, b) {
-    return React.DOM.q.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.rp = function() {
-  var a = function(a, b) {
-    return React.DOM.rp.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.rt = function() {
-  var a = function(a, b) {
-    return React.DOM.rt.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.ruby = function() {
-  var a = function(a, b) {
-    return React.DOM.ruby.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.s = function() {
-  var a = function(a, b) {
-    return React.DOM.s.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.samp = function() {
-  var a = function(a, b) {
-    return React.DOM.samp.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.script = function() {
-  var a = function(a, b) {
-    return React.DOM.script.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.section = function() {
-  var a = function(a, b) {
-    return React.DOM.section.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.select = function() {
-  var a = function(a, b) {
-    return React.DOM.select.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.small = function() {
-  var a = function(a, b) {
-    return React.DOM.small.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.source = function() {
-  var a = function(a, b) {
-    return React.DOM.source.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.span = function() {
-  var a = function(a, b) {
-    return React.DOM.span.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.strong = function() {
-  var a = function(a, b) {
-    return React.DOM.strong.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.style = function() {
-  var a = function(a, b) {
-    return React.DOM.style.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.sub = function() {
-  var a = function(a, b) {
-    return React.DOM.sub.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.summary = function() {
-  var a = function(a, b) {
-    return React.DOM.summary.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.sup = function() {
-  var a = function(a, b) {
-    return React.DOM.sup.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.table = function() {
-  var a = function(a, b) {
-    return React.DOM.table.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.tbody = function() {
-  var a = function(a, b) {
-    return React.DOM.tbody.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.td = function() {
-  var a = function(a, b) {
-    return React.DOM.td.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.tfoot = function() {
-  var a = function(a, b) {
-    return React.DOM.tfoot.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.th = function() {
-  var a = function(a, b) {
-    return React.DOM.th.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.thead = function() {
-  var a = function(a, b) {
-    return React.DOM.thead.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.time = function() {
-  var a = function(a, b) {
-    return React.DOM.time.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.title = function() {
-  var a = function(a, b) {
-    return React.DOM.title.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.tr = function() {
-  var a = function(a, b) {
-    return React.DOM.tr.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.track = function() {
-  var a = function(a, b) {
-    return React.DOM.track.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.u = function() {
-  var a = function(a, b) {
-    return React.DOM.u.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.ul = function() {
-  var a = function(a, b) {
-    return React.DOM.ul.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.var$ = function() {
-  var a = function(a, b) {
-    return React.DOM.var$.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.video = function() {
-  var a = function(a, b) {
-    return React.DOM.video.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.wbr = function() {
-  var a = function(a, b) {
-    return React.DOM.wbr.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.circle = function() {
-  var a = function(a, b) {
-    return React.DOM.circle.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.ellipse = function() {
-  var a = function(a, b) {
-    return React.DOM.ellipse.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.g = function() {
-  var a = function(a, b) {
-    return React.DOM.g.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.line = function() {
-  var a = function(a, b) {
-    return React.DOM.line.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.path = function() {
-  var a = function(a, b) {
-    return React.DOM.path.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.polyline = function() {
-  var a = function(a, b) {
-    return React.DOM.polyline.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.rect = function() {
-  var a = function(a, b) {
-    return React.DOM.rect.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.svg = function() {
-  var a = function(a, b) {
-    return React.DOM.svg.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.text = function() {
-  var a = function(a, b) {
-    return React.DOM.text.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.defs = function() {
-  var a = function(a, b) {
-    return React.DOM.defs.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.linearGradient = function() {
-  var a = function(a, b) {
-    return React.DOM.linearGradient.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.polygon = function() {
-  var a = function(a, b) {
-    return React.DOM.polygon.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.radialGradient = function() {
-  var a = function(a, b) {
-    return React.DOM.radialGradient.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.stop = function() {
-  var a = function(a, b) {
-    return React.DOM.stop.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.tspan = function() {
-  var a = function(a, b) {
-    return React.DOM.tspan.apply(null, cljs.core.into_array.call(null, cljs.core.cons.call(null, a, b)));
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e);
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-om.dom.wrap_form_element = function(a, b) {
-  return React.createClass({render:function() {
-    return this.transferPropsTo(a.call(null, {children:this.props.children, onChange:this.onChange, value:this.state.value}));
-  }, componentWillReceiveProps:function(a) {
-    return this.setState({value:a.value});
-  }, onChange:function(a) {
-    var b = this.props.onChange;
-    if (null == b) {
-      return null;
-    }
-    b.call(null, a);
-    return this.setState({value:a.target.value});
-  }, getInitialState:function() {
-    return{value:this.props.value};
-  }, getDisplayName:function() {
-    return b;
-  }});
-};
-om.dom.input = om.dom.wrap_form_element.call(null, React.DOM.input, "input");
-om.dom.textarea = om.dom.wrap_form_element.call(null, React.DOM.textarea, "textarea");
-om.dom.option = om.dom.wrap_form_element.call(null, React.DOM.option, "option");
-om.dom.render = function(a, b) {
-  return React.renderComponent(a, b);
-};
-om.dom.render_to_str = function(a) {
-  return React.renderComponentToString(a);
-};
 cljs.core.async.impl.dispatch = {};
 cljs.core.async.impl.dispatch.tasks = cljs.core.async.impl.buffers.ring_buffer.call(null, 32);
 cljs.core.async.impl.dispatch.running_QMARK_ = !1;
@@ -23896,4290 +28230,6 @@ cljs.core.async.impl.channels.chan = function() {
   a.cljs$core$IFn$_invoke$arity$3 = d;
   return a;
 }();
-var om_tools = {dom:{}};
-om_tools.dom.camel_case = function(a) {
-  return clojure.string.replace.call(null, a, /-(\w)/, cljs.core.comp.call(null, clojure.string.upper_case, cljs.core.second));
-};
-om_tools.dom.opt_key_case = function(a) {
-  return cljs.core.truth_(function() {
-    var b = 5 > cljs.core.count.call(null, a);
-    if (b) {
-      return b;
-    }
-    switch(cljs.core.subs.call(null, a, 0, 5)) {
-      case "data-":
-      ;
-      case "aria-":
-        return!0;
-      default:
-        return!1;
-    }
-  }()) ? a : om_tools.dom.camel_case.call(null, a);
-};
-om_tools.dom.opt_key_alias = function(a) {
-  switch(a instanceof cljs.core.Keyword ? a.fqn : null) {
-    case "for":
-      return new cljs.core.Keyword(null, "htmlFor", "htmlFor", -1050291720);
-    case "class":
-      return new cljs.core.Keyword(null, "className", "className", -1983287057);
-    default:
-      return a;
-  }
-};
-om_tools.dom.format_opt_key = function(a) {
-  return cljs.core.keyword.call(null, om_tools.dom.opt_key_case.call(null, cljs.core.name.call(null, om_tools.dom.opt_key_alias.call(null, a))));
-};
-om_tools.dom.format_opt_val = function(a) {
-  return cljs.core.map_QMARK_.call(null, a) ? om_tools.dom.format_opts.call(null, a) : a;
-};
-om_tools.dom.format_opts = function(a) {
-  return cljs.core.map_QMARK_.call(null, a) ? cljs.core.clj__GT_js.call(null, cljs.core.into.call(null, cljs.core.PersistentArrayMap.EMPTY, cljs.core.map.call(null, function(a) {
-    var c = cljs.core.nth.call(null, a, 0, null);
-    a = cljs.core.nth.call(null, a, 1, null);
-    return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [om_tools.dom.format_opt_key.call(null, c), om_tools.dom.format_opt_val.call(null, a)], null);
-  }, a))) : a;
-};
-om_tools.dom.possible_coll_QMARK_ = function(a) {
-  return cljs.core.coll_QMARK_.call(null, a) || a instanceof cljs.core.Symbol || cljs.core.list_QMARK_.call(null, a);
-};
-om_tools.dom.valid_element_QMARK_ = function(a) {
-  var b;
-  b = React.isValidElement;
-  b = cljs.core.truth_(b) ? b : React.isValidComponent;
-  return b.call(null, a);
-};
-om_tools.dom.js_opts_QMARK_ = function(a) {
-  return cljs.core.object_QMARK_.call(null, a) && !om_tools.dom.valid_element_QMARK_.call(null, a);
-};
-om_tools.dom.element_args = function(a, b) {
-  return null == a ? new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [null, b], null) : cljs.core.map_QMARK_.call(null, a) ? new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [om_tools.dom.format_opts.call(null, a), b], null) : om_tools.dom.js_opts_QMARK_.call(null, a) ? new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [a, b], null) : new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, 
-  [null, cljs.core.cons.call(null, a, b)], null);
-};
-om_tools.dom.element = function(a, b, c) {
-  c = om_tools.dom.element_args.call(null, b, c);
-  b = cljs.core.nth.call(null, c, 0, null);
-  c = cljs.core.nth.call(null, c, 1, null);
-  return cljs.core.apply.call(null, a, cljs.core.flatten.call(null, cljs.core.cons.call(null, b, c)));
-};
-om_tools.dom.a = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.a, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.a, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.abbr = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.abbr, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.abbr, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.address = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.address, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.address, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.area = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.area, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.area, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.article = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.article, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.article, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.aside = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.aside, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.aside, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.audio = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.audio, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.audio, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.b = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.b, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.b, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.base = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.base, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.base, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.bdi = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.bdi, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.bdi, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.bdo = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.bdo, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.bdo, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.big = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.big, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.big, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.blockquote = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.blockquote, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.blockquote, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.body = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.body, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.body, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.br = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.br, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.br, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.button = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.button, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.button, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.canvas = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.canvas, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.canvas, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.caption = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.caption, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.caption, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.cite = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.cite, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.cite, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.code = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.code, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.code, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.col = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.col, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.col, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.colgroup = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.colgroup, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.colgroup, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.data = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.data, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.data, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.datalist = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.datalist, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.datalist, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.dd = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.dd, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.dd, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.del = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.del, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.del, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.dfn = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.dfn, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.dfn, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.div = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.div, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.div, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.dl = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.dl, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.dl, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.dt = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.dt, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.dt, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.em = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.em, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.em, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.embed = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.embed, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.embed, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.fieldset = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.fieldset, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.fieldset, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.figcaption = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.figcaption, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.figcaption, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.figure = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.figure, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.figure, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.footer = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.footer, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.footer, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.form = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.form, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.form, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.h1 = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.h1, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.h1, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.h2 = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.h2, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.h2, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.h3 = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.h3, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.h3, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.h4 = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.h4, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.h4, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.h5 = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.h5, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.h5, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.h6 = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.h6, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.h6, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.head = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.head, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.head, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.header = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.header, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.header, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.hr = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.hr, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.hr, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.html = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.html, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.html, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.i = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.i, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.i, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.iframe = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.iframe, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.iframe, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.img = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.img, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.img, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.ins = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.ins, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.ins, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.kbd = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.kbd, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.kbd, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.keygen = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.keygen, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.keygen, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.label = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.label, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.label, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.legend = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.legend, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.legend, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.li = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.li, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.li, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.link = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.link, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.link, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.main = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.main, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.main, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.map = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.map, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.map, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.mark = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.mark, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.mark, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.menu = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.menu, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.menu, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.menuitem = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.menuitem, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.menuitem, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.meta = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.meta, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.meta, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.meter = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.meter, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.meter, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.nav = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.nav, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.nav, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.noscript = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.noscript, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.noscript, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.object = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.object, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.object, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.ol = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.ol, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.ol, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.optgroup = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.optgroup, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.optgroup, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.output = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.output, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.output, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.p = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.p, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.p, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.param = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.param, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.param, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.pre = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.pre, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.pre, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.progress = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.progress, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.progress, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.q = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.q, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.q, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.rp = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.rp, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.rp, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.rt = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.rt, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.rt, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.ruby = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.ruby, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.ruby, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.s = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.s, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.s, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.samp = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.samp, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.samp, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.script = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.script, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.script, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.section = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.section, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.section, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.select = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.select, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.select, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.small = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.small, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.small, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.source = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.source, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.source, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.span = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.span, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.span, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.strong = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.strong, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.strong, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.style = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.style, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.style, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.sub = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.sub, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.sub, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.summary = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.summary, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.summary, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.sup = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.sup, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.sup, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.table = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.table, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.table, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.tbody = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.tbody, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.tbody, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.td = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.td, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.td, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.tfoot = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.tfoot, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.tfoot, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.th = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.th, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.th, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.thead = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.thead, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.thead, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.time = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.time, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.time, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.title = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.title, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.title, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.tr = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.tr, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.tr, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.track = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.track, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.track, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.u = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.u, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.u, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.ul = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.ul, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.ul, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.var$ = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.var$, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.var$, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.video = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.video, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.video, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.wbr = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.wbr, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.wbr, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.circle = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.circle, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.circle, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.ellipse = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.ellipse, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.ellipse, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.g = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.g, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.g, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.line = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.line, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.line, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.path = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.path, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.path, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.polyline = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.polyline, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.polyline, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.rect = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.rect, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.rect, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.svg = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.svg, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.svg, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.text = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.text, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.text, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.defs = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.defs, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.defs, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.linearGradient = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.linearGradient, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.linearGradient, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.polygon = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.polygon, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.polygon, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.radialGradient = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.radialGradient, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.radialGradient, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.stop = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.stop, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.stop, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.tspan = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, React.DOM.tspan, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, React.DOM.tspan, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.input = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, om.dom.input, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, om.dom.input, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.textarea = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, om.dom.textarea, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, om.dom.textarea, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.option = function() {
-  var a = null, b = function() {
-    return om_tools.dom.element.call(null, om.dom.option, null, null);
-  }, c = function() {
-    var a = function(a, b) {
-      return om_tools.dom.element.call(null, om.dom.option, a, b);
-    }, b = function(b, c) {
-      var e = null;
-      1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-      return a.call(this, b, e);
-    };
-    b.cljs$lang$maxFixedArity = 1;
-    b.cljs$lang$applyTo = function(b) {
-      var c = cljs.core.first(b);
-      b = cljs.core.rest(b);
-      return a(c, b);
-    };
-    b.cljs$core$IFn$_invoke$arity$variadic = a;
-    return b;
-  }(), a = function(a, e) {
-    switch(arguments.length) {
-      case 0:
-        return b.call(this);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, cljs.core.array_seq(arguments, 1));
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$0 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a;
-}();
-om_tools.dom.class_set = function(a) {
-  return(a = cljs.core.seq.call(null, cljs.core.distinct.call(null, cljs.core.map.call(null, cljs.core.name, cljs.core.keys.call(null, cljs.core.filter.call(null, cljs.core.val, a)))))) ? clojure.string.join.call(null, " ", a) : null;
-};
 cljs.reader = {};
 cljs.reader.PushbackReader = function() {
   return{};
@@ -35139,57 +35189,6 @@ cljs.core.async.partition_by = function() {
   a.cljs$core$IFn$_invoke$arity$3 = c;
   return a;
 }();
-redeyes.helpers = {};
-redeyes.helpers.input_with_addons = function(a, b) {
-  return cljs.core.apply.call(null, React.DOM.div, {className:"form-group"}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.apply.call(null, React.DOM.div, {className:"input-group"}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.apply.call(null, React.DOM.div, {className:"input-group-addon"}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 
-  1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.get_in.call(null, a, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "before", "before", -1633692388), new cljs.core.Keyword(null, "text", "text", -1790561697)], null))], null))), b, cljs.core.apply.call(null, React.DOM.a, {onClick:om_tools.dom.format_opts.call(null, cljs.core.get_in.call(null, a, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, 
-  [new cljs.core.Keyword(null, "after", "after", 594996914), new cljs.core.Keyword(null, "onClick", "onClick", -1991238530)], null))), className:"btn btn-default input-group-addon"}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.get_in.call(null, a, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "after", "after", 594996914), new cljs.core.Keyword(null, "text", 
-  "text", -1790561697)], null))], null)))], null)))], null)));
-};
-redeyes.helpers.button = function(a, b) {
-  return cljs.core.apply.call(null, React.DOM.a, {onClick:om_tools.dom.format_opts.call(null, (new cljs.core.Keyword(null, "onClick", "onClick", -1991238530)).cljs$core$IFn$_invoke$arity$1(a)), className:"btn btn-default"}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [b], null)));
-};
-redeyes.helpers.button_group = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, React.DOM.div, {className:"btn-group"}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [a], null)));
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d);
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-redeyes.helpers.css_classes = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, cljs.core.str, cljs.core.interpose.call(null, " ", a));
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d);
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b);
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-redeyes.helpers.active_QMARK_ = function(a) {
-  return cljs.core._EQ_.call(null, !0, cljs.core.get.call(null, a, "active"));
-};
-redeyes.helpers.log = function(a) {
-  return console.log(a);
-};
-redeyes.helpers.log_clj = function(a) {
-  return redeyes.helpers.log.call(null, cljs.core.clj__GT_js.call(null, a));
-};
 redeyes.core = {};
 redeyes.core.activate = function(a) {
   om.core.update_BANG_.call(null, a, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, ["active"], null), !0);
@@ -35208,7 +35207,11 @@ redeyes.core.dispatch = function(a, b, c) {
     case "update-status":
       return cljs.core.truth_((new cljs.core.Keyword(null, "active", "active", 1895962068)).cljs$core$IFn$_invoke$arity$1(b)) ? redeyes.core.activate.call(null, (new cljs.core.Keyword(null, "app", "app", -560961707)).cljs$core$IFn$_invoke$arity$1(b)) : redeyes.core.deactivate.call(null, (new cljs.core.Keyword(null, "app", "app", -560961707)).cljs$core$IFn$_invoke$arity$1(b));
     case "create":
-      return redeyes.api.submit_new_app.call(null, (new cljs.core.Keyword(null, "url", "url", 276297046)).cljs$core$IFn$_invoke$arity$1(b), function(a) {
+      return om.core.transact_BANG_.call(null, c, new cljs.core.Keyword(null, "apps", "apps", 844744865), function(a) {
+        return function(a) {
+          return cljs.core.conj.call(null, a, b);
+        };
+      }(d)), redeyes.api.submit_new_app.call(null, (new cljs.core.Keyword(null, "url", "url", 276297046)).cljs$core$IFn$_invoke$arity$1(b), function(a) {
         return function() {
           return redeyes.core.fetch_data.call(null, c);
         };
@@ -35220,7 +35223,15 @@ redeyes.core.dispatch = function(a, b, c) {
         };
       }(d));
     case "clear-deactivated":
-      return redeyes.api.clear_deactivated.call(null, function(a) {
+      return om.core.transact_BANG_.call(null, c, new cljs.core.Keyword(null, "apps", "apps", 844744865), function(a) {
+        return function(b) {
+          return cljs.core.filter.call(null, function(a) {
+            return function(a) {
+              return redeyes.helpers.active_QMARK_.call(null, a);
+            };
+          }(a), b);
+        };
+      }(d)), redeyes.api.clear_deactivated.call(null, function(a) {
         return function() {
           return redeyes.core.fetch_data.call(null, c);
         };
@@ -35229,8 +35240,8 @@ redeyes.core.dispatch = function(a, b, c) {
       throw Error([cljs.core.str("No matching clause: "), cljs.core.str(a)].join(""));;
   }
 };
-var ufv___51094 = schema.utils.use_fn_validation, output_schema51082_51095 = schema.core.Any, input_schema51083_51096 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "data", "data", 1407862150, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker51084_51097 = schema.core.checker.call(null, input_schema51083_51096), 
-output_checker51085_51098 = schema.core.checker.call(null, output_schema51082_51095);
+var ufv___56472 = schema.utils.use_fn_validation, output_schema56460_56473 = schema.core.Any, input_schema56461_56474 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "data", "data", 1407862150, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker56462_56475 = schema.core.checker.call(null, input_schema56461_56474), 
+output_checker56463_56476 = schema.core.checker.call(null, output_schema56460_56473);
 redeyes.core.new_sleepy_app_form = function(a, b, c, d, e) {
   return function f(h, k) {
     var l = a.get_cell();
@@ -35243,26 +35254,26 @@ redeyes.core.new_sleepy_app_form = function(a, b, c, d, e) {
     }
     m = function() {
       for (;;) {
-        return "undefined" === typeof redeyes.core.t51091 && (redeyes.core.t51091 = function(a, b, c, d, e, f, h, k, l, m, n, S) {
-          this.new_sleepy_app_form = a;
-          this.owner = b;
-          this.validate__8050__auto__ = c;
-          this.data = d;
-          this.G__51087 = e;
-          this.input_schema51083 = f;
-          this.output_checker51085 = h;
-          this.G__51086 = k;
-          this.output_schema51082 = l;
-          this.input_checker51084 = m;
+        return "undefined" === typeof redeyes.core.t56469 && (redeyes.core.t56469 = function(a, b, c, d, e, f, h, k, l, m, n, S) {
+          this.input_checker56462 = a;
+          this.new_sleepy_app_form = b;
+          this.owner = c;
+          this.validate__8050__auto__ = d;
+          this.data = e;
+          this.G__56464 = f;
+          this.output_schema56460 = h;
+          this.output_checker56463 = k;
+          this.G__56465 = l;
+          this.input_schema56461 = m;
           this.ufv__ = n;
-          this.meta51092 = S;
+          this.meta56470 = S;
           this.cljs$lang$protocol_mask$partition1$ = 0;
           this.cljs$lang$protocol_mask$partition0$ = 393216;
-        }, redeyes.core.t51091.prototype.om$core$IDisplayName$ = !0, redeyes.core.t51091.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
+        }, redeyes.core.t56469.prototype.om$core$IDisplayName$ = !0, redeyes.core.t56469.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
             return "new-sleepy-app-form";
           };
-        }(l, a, b, c, d, e), redeyes.core.t51091.prototype.om$core$IRenderState$ = !0, redeyes.core.t51091.prototype.om$core$IRenderState$render_state$arity$2 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t56469.prototype.om$core$IRenderState$ = !0, redeyes.core.t56469.prototype.om$core$IRenderState$render_state$arity$2 = function(a, b, c, d, e, f) {
           return function(h, k) {
             var l = this, m = (new cljs.core.Keyword(null, "url", "url", 276297046)).cljs$core$IFn$_invoke$arity$1(k), n = (new cljs.core.Keyword(null, "bus", "bus", -1090873603)).cljs$core$IFn$_invoke$arity$1(om.core.get_shared.call(null, l.owner)), S = function(a, b, c, d, e, f, h, k, m) {
               return function(a) {
@@ -35283,27 +35294,27 @@ redeyes.core.new_sleepy_app_form = function(a, b, c, d, e) {
             -1790561697), "http://"], null), new cljs.core.Keyword(null, "after", "after", 594996914), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "text", "text", -1790561697), "Add URL", new cljs.core.Keyword(null, "onClick", "onClick", -1991238530), n], null)], null), om.dom.input.call(null, {placeholder:"URL here please!", onChange:om_tools.dom.format_opts.call(null, x), value:om_tools.dom.format_opts.call(null, m), id:"sleepy-app-url", className:"form-control", ref:"new-url", 
             type:"text"}))], null)));
           };
-        }(l, a, b, c, d, e), redeyes.core.t51091.prototype.om$core$IInitState$ = !0, redeyes.core.t51091.prototype.om$core$IInitState$init_state$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t56469.prototype.om$core$IInitState$ = !0, redeyes.core.t56469.prototype.om$core$IInitState$init_state$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
             return new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "url", "url", 276297046), ""], null);
           };
-        }(l, a, b, c, d, e), redeyes.core.t51091.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t56469.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
-            return this.meta51092;
+            return this.meta56470;
           };
-        }(l, a, b, c, d, e), redeyes.core.t51091.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t56469.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
           return function(a, b) {
-            return new redeyes.core.t51091(this.new_sleepy_app_form, this.owner, this.validate__8050__auto__, this.data, this.G__51087, this.input_schema51083, this.output_checker51085, this.G__51086, this.output_schema51082, this.input_checker51084, this.ufv__, b);
+            return new redeyes.core.t56469(this.input_checker56462, this.new_sleepy_app_form, this.owner, this.validate__8050__auto__, this.data, this.G__56464, this.output_schema56460, this.output_checker56463, this.G__56465, this.input_schema56461, this.ufv__, b);
           };
-        }(l, a, b, c, d, e), redeyes.core.t51091.cljs$lang$type = !0, redeyes.core.t51091.cljs$lang$ctorStr = "redeyes.core/t51091", redeyes.core.t51091.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t56469.cljs$lang$type = !0, redeyes.core.t56469.cljs$lang$ctorStr = "redeyes.core/t56469", redeyes.core.t56469.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
           return function(a, b, c) {
-            return cljs.core._write.call(null, b, "redeyes.core/t51091");
+            return cljs.core._write.call(null, b, "redeyes.core/t56469");
           };
-        }(l, a, b, c, d, e), redeyes.core.__GT_t51091 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.__GT_t56469 = function(a, b, c, d, e, f) {
           return function(a, b, c, d, e, f, h, k, l, m, n, p) {
-            return new redeyes.core.t51091(a, b, c, d, e, f, h, k, l, m, n, p);
+            return new redeyes.core.t56469(a, b, c, d, e, f, h, k, l, m, n, p);
           };
-        }(l, a, b, c, d, e)), new redeyes.core.t51091(f, k, l, h, k, c, e, h, b, d, a, null);
+        }(l, a, b, c, d, e)), new redeyes.core.t56469(d, f, k, l, h, h, b, e, k, c, a, null);
       }
     }();
     if (cljs.core.truth_(l) && (n = e.call(null, m), cljs.core.truth_(n))) {
@@ -35312,8 +35323,8 @@ redeyes.core.new_sleepy_app_form = function(a, b, c, d, e) {
     }
     return m;
   };
-}(ufv___51094, output_schema51082_51095, input_schema51083_51096, input_checker51084_51097, output_checker51085_51098);
-schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, redeyes.core.new_sleepy_app_form), schema.core.make_fn_schema.call(null, output_schema51082_51095, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema51083_51096], null)));
+}(ufv___56472, output_schema56460_56473, input_schema56461_56474, input_checker56462_56475, output_checker56463_56476);
+schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, redeyes.core.new_sleepy_app_form), schema.core.make_fn_schema.call(null, output_schema56460_56473, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema56461_56474], null)));
 redeyes.core.__GT_new_sleepy_app_form = function() {
   var a = null, b = function(a) {
     return om.core.build.call(null, redeyes.core.new_sleepy_app_form, a);
@@ -35332,8 +35343,8 @@ redeyes.core.__GT_new_sleepy_app_form = function() {
   a.cljs$core$IFn$_invoke$arity$2 = c;
   return a;
 }();
-var ufv___51117 = schema.utils.use_fn_validation, output_schema51105_51118 = schema.core.Any, input_schema51106_51119 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "app", "app", 1079569820, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker51107_51120 = schema.core.checker.call(null, input_schema51106_51119), 
-output_checker51108_51121 = schema.core.checker.call(null, output_schema51105_51118);
+var ufv___56495 = schema.utils.use_fn_validation, output_schema56483_56496 = schema.core.Any, input_schema56484_56497 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "app", "app", 1079569820, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker56485_56498 = schema.core.checker.call(null, input_schema56484_56497), 
+output_checker56486_56499 = schema.core.checker.call(null, output_schema56483_56496);
 redeyes.core.sleepy_app_checkbox = function(a, b, c, d, e) {
   return function f(h, k) {
     var l = a.get_cell();
@@ -35346,26 +35357,26 @@ redeyes.core.sleepy_app_checkbox = function(a, b, c, d, e) {
     }
     m = function() {
       for (;;) {
-        return "undefined" === typeof redeyes.core.t51114 && (redeyes.core.t51114 = function(a, b, c, d, e, f, h, k, l, m, n, S) {
-          this.owner = a;
-          this.output_checker51108 = b;
+        return "undefined" === typeof redeyes.core.t56492 && (redeyes.core.t56492 = function(a, b, c, d, e, f, h, k, l, m, n, S) {
+          this.input_checker56485 = a;
+          this.owner = b;
           this.validate__8050__auto__ = c;
-          this.input_schema51106 = d;
-          this.G__51109 = e;
-          this.sleepy_app_checkbox = f;
-          this.output_schema51105 = h;
-          this.app = k;
-          this.ufv__ = l;
-          this.input_checker51107 = m;
-          this.G__51110 = n;
-          this.meta51115 = S;
+          this.output_schema56483 = d;
+          this.sleepy_app_checkbox = e;
+          this.G__56487 = f;
+          this.output_checker56486 = h;
+          this.input_schema56484 = k;
+          this.G__56488 = l;
+          this.app = m;
+          this.ufv__ = n;
+          this.meta56493 = S;
           this.cljs$lang$protocol_mask$partition1$ = 0;
           this.cljs$lang$protocol_mask$partition0$ = 393216;
-        }, redeyes.core.t51114.prototype.om$core$IDisplayName$ = !0, redeyes.core.t51114.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
+        }, redeyes.core.t56492.prototype.om$core$IDisplayName$ = !0, redeyes.core.t56492.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
             return "sleepy-app-checkbox";
           };
-        }(l, a, b, c, d, e), redeyes.core.t51114.prototype.om$core$IRender$ = !0, redeyes.core.t51114.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t56492.prototype.om$core$IRender$ = !0, redeyes.core.t56492.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f) {
           return function(h) {
             var k = this;
             h = function(a, b, c, d, e, f, h, l) {
@@ -35375,23 +35386,23 @@ redeyes.core.sleepy_app_checkbox = function(a, b, c, d, e) {
             }((new cljs.core.Keyword(null, "bus", "bus", -1090873603)).cljs$core$IFn$_invoke$arity$1(om.core.get_shared.call(null, k.owner)), this, a, b, c, d, e, f);
             return om.dom.input.call(null, {checked:om_tools.dom.format_opts.call(null, redeyes.helpers.active_QMARK_.call(null, k.app)), onChange:om_tools.dom.format_opts.call(null, h), type:"checkbox"});
           };
-        }(l, a, b, c, d, e), redeyes.core.t51114.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t56492.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
-            return this.meta51115;
+            return this.meta56493;
           };
-        }(l, a, b, c, d, e), redeyes.core.t51114.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t56492.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
           return function(a, b) {
-            return new redeyes.core.t51114(this.owner, this.output_checker51108, this.validate__8050__auto__, this.input_schema51106, this.G__51109, this.sleepy_app_checkbox, this.output_schema51105, this.app, this.ufv__, this.input_checker51107, this.G__51110, b);
+            return new redeyes.core.t56492(this.input_checker56485, this.owner, this.validate__8050__auto__, this.output_schema56483, this.sleepy_app_checkbox, this.G__56487, this.output_checker56486, this.input_schema56484, this.G__56488, this.app, this.ufv__, b);
           };
-        }(l, a, b, c, d, e), redeyes.core.t51114.cljs$lang$type = !0, redeyes.core.t51114.cljs$lang$ctorStr = "redeyes.core/t51114", redeyes.core.t51114.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t56492.cljs$lang$type = !0, redeyes.core.t56492.cljs$lang$ctorStr = "redeyes.core/t56492", redeyes.core.t56492.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
           return function(a, b, c) {
-            return cljs.core._write.call(null, b, "redeyes.core/t51114");
+            return cljs.core._write.call(null, b, "redeyes.core/t56492");
           };
-        }(l, a, b, c, d, e), redeyes.core.__GT_t51114 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.__GT_t56492 = function(a, b, c, d, e, f) {
           return function(a, b, c, d, e, f, h, k, l, m, n, p) {
-            return new redeyes.core.t51114(a, b, c, d, e, f, h, k, l, m, n, p);
+            return new redeyes.core.t56492(a, b, c, d, e, f, h, k, l, m, n, p);
           };
-        }(l, a, b, c, d, e)), new redeyes.core.t51114(k, e, l, c, h, f, b, h, a, d, k, null);
+        }(l, a, b, c, d, e)), new redeyes.core.t56492(d, k, l, b, f, h, e, c, k, h, a, null);
       }
     }();
     if (cljs.core.truth_(l) && (n = e.call(null, m), cljs.core.truth_(n))) {
@@ -35400,8 +35411,8 @@ redeyes.core.sleepy_app_checkbox = function(a, b, c, d, e) {
     }
     return m;
   };
-}(ufv___51117, output_schema51105_51118, input_schema51106_51119, input_checker51107_51120, output_checker51108_51121);
-schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, redeyes.core.sleepy_app_checkbox), schema.core.make_fn_schema.call(null, output_schema51105_51118, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema51106_51119], null)));
+}(ufv___56495, output_schema56483_56496, input_schema56484_56497, input_checker56485_56498, output_checker56486_56499);
+schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, redeyes.core.sleepy_app_checkbox), schema.core.make_fn_schema.call(null, output_schema56483_56496, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema56484_56497], null)));
 redeyes.core.__GT_sleepy_app_checkbox = function() {
   var a = null, b = function(a) {
     return om.core.build.call(null, redeyes.core.sleepy_app_checkbox, a);
@@ -35420,8 +35431,8 @@ redeyes.core.__GT_sleepy_app_checkbox = function() {
   a.cljs$core$IFn$_invoke$arity$2 = c;
   return a;
 }();
-var ufv___51140 = schema.utils.use_fn_validation, output_schema51128_51141 = schema.core.Any, input_schema51129_51142 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "app", "app", 1079569820, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker51130_51143 = schema.core.checker.call(null, input_schema51129_51142), 
-output_checker51131_51144 = schema.core.checker.call(null, output_schema51128_51141);
+var ufv___56518 = schema.utils.use_fn_validation, output_schema56506_56519 = schema.core.Any, input_schema56507_56520 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "app", "app", 1079569820, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker56508_56521 = schema.core.checker.call(null, input_schema56507_56520), 
+output_checker56509_56522 = schema.core.checker.call(null, output_schema56506_56519);
 redeyes.core.sleepy_app = function(a, b, c, d, e) {
   return function f(h, k) {
     var l = a.get_cell();
@@ -35434,49 +35445,49 @@ redeyes.core.sleepy_app = function(a, b, c, d, e) {
     }
     m = function() {
       for (;;) {
-        return "undefined" === typeof redeyes.core.t51137 && (redeyes.core.t51137 = function(a, b, c, d, e, f, h, k, l, m, n, S) {
-          this.output_checker51131 = a;
-          this.owner = b;
-          this.G__51133 = c;
-          this.input_schema51129 = d;
-          this.validate__8050__auto__ = e;
-          this.output_schema51128 = f;
-          this.sleepy_app = h;
-          this.G__51132 = k;
+        return "undefined" === typeof redeyes.core.t56515 && (redeyes.core.t56515 = function(a, b, c, d, e, f, h, k, l, m, n, S) {
+          this.owner = a;
+          this.validate__8050__auto__ = b;
+          this.input_schema56507 = c;
+          this.output_checker56509 = d;
+          this.G__56511 = e;
+          this.G__56510 = f;
+          this.output_schema56506 = h;
+          this.sleepy_app = k;
           this.app = l;
-          this.input_checker51130 = m;
+          this.input_checker56508 = m;
           this.ufv__ = n;
-          this.meta51138 = S;
+          this.meta56516 = S;
           this.cljs$lang$protocol_mask$partition1$ = 0;
           this.cljs$lang$protocol_mask$partition0$ = 393216;
-        }, redeyes.core.t51137.prototype.om$core$IDisplayName$ = !0, redeyes.core.t51137.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
+        }, redeyes.core.t56515.prototype.om$core$IDisplayName$ = !0, redeyes.core.t56515.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
             return "sleepy-app";
           };
-        }(l, a, b, c, d, e), redeyes.core.t51137.prototype.om$core$IRender$ = !0, redeyes.core.t51137.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t56515.prototype.om$core$IRender$ = !0, redeyes.core.t56515.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
             a = cljs.core.get.call(null, this.app, "url");
             var b = cljs.core.get.call(null, this.app, "lastWokenUpAt"), b = null == b ? "Never" : b;
             return cljs.core.apply.call(null, React.DOM.tr, {className:om_tools.dom.format_opts.call(null, redeyes.helpers.css_classes.call(null, "sleepy-app", redeyes.helpers.active_QMARK_.call(null, this.app) ? "active" : null))}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [om_tools.dom.element.call(null, React.DOM.td, om.core.build.call(null, redeyes.core.sleepy_app_checkbox, this.app), cljs.core.PersistentVector.EMPTY), om_tools.dom.element.call(null, 
             React.DOM.td, a, cljs.core.PersistentVector.EMPTY), om_tools.dom.element.call(null, React.DOM.td, b, cljs.core.PersistentVector.EMPTY)], null)));
           };
-        }(l, a, b, c, d, e), redeyes.core.t51137.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t56515.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
-            return this.meta51138;
+            return this.meta56516;
           };
-        }(l, a, b, c, d, e), redeyes.core.t51137.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t56515.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
           return function(a, b) {
-            return new redeyes.core.t51137(this.output_checker51131, this.owner, this.G__51133, this.input_schema51129, this.validate__8050__auto__, this.output_schema51128, this.sleepy_app, this.G__51132, this.app, this.input_checker51130, this.ufv__, b);
+            return new redeyes.core.t56515(this.owner, this.validate__8050__auto__, this.input_schema56507, this.output_checker56509, this.G__56511, this.G__56510, this.output_schema56506, this.sleepy_app, this.app, this.input_checker56508, this.ufv__, b);
           };
-        }(l, a, b, c, d, e), redeyes.core.t51137.cljs$lang$type = !0, redeyes.core.t51137.cljs$lang$ctorStr = "redeyes.core/t51137", redeyes.core.t51137.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t56515.cljs$lang$type = !0, redeyes.core.t56515.cljs$lang$ctorStr = "redeyes.core/t56515", redeyes.core.t56515.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
           return function(a, b, c) {
-            return cljs.core._write.call(null, b, "redeyes.core/t51137");
+            return cljs.core._write.call(null, b, "redeyes.core/t56515");
           };
-        }(l, a, b, c, d, e), redeyes.core.__GT_t51137 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.__GT_t56515 = function(a, b, c, d, e, f) {
           return function(a, b, c, d, e, f, h, k, l, m, n, p) {
-            return new redeyes.core.t51137(a, b, c, d, e, f, h, k, l, m, n, p);
+            return new redeyes.core.t56515(a, b, c, d, e, f, h, k, l, m, n, p);
           };
-        }(l, a, b, c, d, e)), new redeyes.core.t51137(e, k, k, c, l, b, f, h, h, d, a, null);
+        }(l, a, b, c, d, e)), new redeyes.core.t56515(k, l, c, e, k, h, b, f, h, d, a, null);
       }
     }();
     if (cljs.core.truth_(l) && (n = e.call(null, m), cljs.core.truth_(n))) {
@@ -35485,8 +35496,8 @@ redeyes.core.sleepy_app = function(a, b, c, d, e) {
     }
     return m;
   };
-}(ufv___51140, output_schema51128_51141, input_schema51129_51142, input_checker51130_51143, output_checker51131_51144);
-schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, redeyes.core.sleepy_app), schema.core.make_fn_schema.call(null, output_schema51128_51141, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema51129_51142], null)));
+}(ufv___56518, output_schema56506_56519, input_schema56507_56520, input_checker56508_56521, output_checker56509_56522);
+schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, redeyes.core.sleepy_app), schema.core.make_fn_schema.call(null, output_schema56506_56519, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema56507_56520], null)));
 redeyes.core.__GT_sleepy_app = function() {
   var a = null, b = function(a) {
     return om.core.build.call(null, redeyes.core.sleepy_app, a);
@@ -35505,8 +35516,8 @@ redeyes.core.__GT_sleepy_app = function() {
   a.cljs$core$IFn$_invoke$arity$2 = c;
   return a;
 }();
-var ufv___51163 = schema.utils.use_fn_validation, output_schema51151_51164 = schema.core.Any, input_schema51152_51165 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "apps", "apps", -1809690904, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker51153_51166 = schema.core.checker.call(null, input_schema51152_51165), 
-output_checker51154_51167 = schema.core.checker.call(null, output_schema51151_51164);
+var ufv___56541 = schema.utils.use_fn_validation, output_schema56529_56542 = schema.core.Any, input_schema56530_56543 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "apps", "apps", -1809690904, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker56531_56544 = schema.core.checker.call(null, input_schema56530_56543), 
+output_checker56532_56545 = schema.core.checker.call(null, output_schema56529_56542);
 redeyes.core.sleepy_app_list = function(a, b, c, d, e) {
   return function f(h, k) {
     var l = a.get_cell();
@@ -35519,47 +35530,47 @@ redeyes.core.sleepy_app_list = function(a, b, c, d, e) {
     }
     m = function() {
       for (;;) {
-        return "undefined" === typeof redeyes.core.t51160 && (redeyes.core.t51160 = function(a, b, c, d, e, f, h, k, l, m, n, S) {
+        return "undefined" === typeof redeyes.core.t56538 && (redeyes.core.t56538 = function(a, b, c, d, e, f, h, k, l, m, n, S) {
           this.owner = a;
           this.validate__8050__auto__ = b;
-          this.output_schema51151 = c;
-          this.G__51155 = d;
-          this.apps = e;
-          this.input_schema51152 = f;
-          this.G__51156 = h;
-          this.output_checker51154 = k;
+          this.apps = c;
+          this.output_checker56532 = d;
+          this.output_schema56529 = e;
+          this.G__56533 = f;
+          this.input_schema56530 = h;
+          this.input_checker56531 = k;
           this.sleepy_app_list = l;
-          this.input_checker51153 = m;
+          this.G__56534 = m;
           this.ufv__ = n;
-          this.meta51161 = S;
+          this.meta56539 = S;
           this.cljs$lang$protocol_mask$partition1$ = 0;
           this.cljs$lang$protocol_mask$partition0$ = 393216;
-        }, redeyes.core.t51160.prototype.om$core$IDisplayName$ = !0, redeyes.core.t51160.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
+        }, redeyes.core.t56538.prototype.om$core$IDisplayName$ = !0, redeyes.core.t56538.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
             return "sleepy-app-list";
           };
-        }(l, a, b, c, d, e), redeyes.core.t51160.prototype.om$core$IRender$ = !0, redeyes.core.t51160.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t56538.prototype.om$core$IRender$ = !0, redeyes.core.t56538.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
             return cljs.core.empty_QMARK_.call(null, this.apps) ? React.DOM.div(null, "No apps") : om_tools.dom.element.call(null, React.DOM.div, cljs.core.apply.call(null, React.DOM.table, {className:"table"}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [om_tools.dom.element.call(null, React.DOM.thead, om_tools.dom.element.call(null, React.DOM.tr, React.DOM.th({className:"sleepy-app-active-col"}, ""), new cljs.core.PersistentVector(null, 
             2, 5, cljs.core.PersistentVector.EMPTY_NODE, [React.DOM.th(null), React.DOM.th(null)], null)), cljs.core.PersistentVector.EMPTY), cljs.core.apply.call(null, om_tools.dom.tbody, cljs.core.PersistentArrayMap.EMPTY, om.core.build_all.call(null, redeyes.core.sleepy_app, this.apps))], null))), cljs.core.PersistentVector.EMPTY);
           };
-        }(l, a, b, c, d, e), redeyes.core.t51160.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t56538.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
-            return this.meta51161;
+            return this.meta56539;
           };
-        }(l, a, b, c, d, e), redeyes.core.t51160.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t56538.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
           return function(a, b) {
-            return new redeyes.core.t51160(this.owner, this.validate__8050__auto__, this.output_schema51151, this.G__51155, this.apps, this.input_schema51152, this.G__51156, this.output_checker51154, this.sleepy_app_list, this.input_checker51153, this.ufv__, b);
+            return new redeyes.core.t56538(this.owner, this.validate__8050__auto__, this.apps, this.output_checker56532, this.output_schema56529, this.G__56533, this.input_schema56530, this.input_checker56531, this.sleepy_app_list, this.G__56534, this.ufv__, b);
           };
-        }(l, a, b, c, d, e), redeyes.core.t51160.cljs$lang$type = !0, redeyes.core.t51160.cljs$lang$ctorStr = "redeyes.core/t51160", redeyes.core.t51160.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t56538.cljs$lang$type = !0, redeyes.core.t56538.cljs$lang$ctorStr = "redeyes.core/t56538", redeyes.core.t56538.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
           return function(a, b, c) {
-            return cljs.core._write.call(null, b, "redeyes.core/t51160");
+            return cljs.core._write.call(null, b, "redeyes.core/t56538");
           };
-        }(l, a, b, c, d, e), redeyes.core.__GT_t51160 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.__GT_t56538 = function(a, b, c, d, e, f) {
           return function(a, b, c, d, e, f, h, k, l, m, n, p) {
-            return new redeyes.core.t51160(a, b, c, d, e, f, h, k, l, m, n, p);
+            return new redeyes.core.t56538(a, b, c, d, e, f, h, k, l, m, n, p);
           };
-        }(l, a, b, c, d, e)), new redeyes.core.t51160(k, l, b, h, h, c, k, e, f, d, a, null);
+        }(l, a, b, c, d, e)), new redeyes.core.t56538(k, l, h, e, b, h, c, d, f, k, a, null);
       }
     }();
     if (cljs.core.truth_(l) && (n = e.call(null, m), cljs.core.truth_(n))) {
@@ -35568,8 +35579,8 @@ redeyes.core.sleepy_app_list = function(a, b, c, d, e) {
     }
     return m;
   };
-}(ufv___51163, output_schema51151_51164, input_schema51152_51165, input_checker51153_51166, output_checker51154_51167);
-schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, redeyes.core.sleepy_app_list), schema.core.make_fn_schema.call(null, output_schema51151_51164, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema51152_51165], null)));
+}(ufv___56541, output_schema56529_56542, input_schema56530_56543, input_checker56531_56544, output_checker56532_56545);
+schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, redeyes.core.sleepy_app_list), schema.core.make_fn_schema.call(null, output_schema56529_56542, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema56530_56543], null)));
 redeyes.core.__GT_sleepy_app_list = function() {
   var a = null, b = function(a) {
     return om.core.build.call(null, redeyes.core.sleepy_app_list, a);
@@ -35588,8 +35599,8 @@ redeyes.core.__GT_sleepy_app_list = function() {
   a.cljs$core$IFn$_invoke$arity$2 = c;
   return a;
 }();
-var ufv___51186 = schema.utils.use_fn_validation, output_schema51174_51187 = schema.core.Any, input_schema51175_51188 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "app-state", "app-state", 130568249, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker51176_51189 = schema.core.checker.call(null, input_schema51175_51188), 
-output_checker51177_51190 = schema.core.checker.call(null, output_schema51174_51187);
+var ufv___56564 = schema.utils.use_fn_validation, output_schema56552_56565 = schema.core.Any, input_schema56553_56566 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "app-state", "app-state", 130568249, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker56554_56567 = schema.core.checker.call(null, input_schema56553_56566), 
+output_checker56555_56568 = schema.core.checker.call(null, output_schema56552_56565);
 redeyes.core.wake_up_now_button = function(a, b, c, d, e) {
   return function f(h, k) {
     var l = a.get_cell();
@@ -35602,26 +35613,26 @@ redeyes.core.wake_up_now_button = function(a, b, c, d, e) {
     }
     m = function() {
       for (;;) {
-        return "undefined" === typeof redeyes.core.t51183 && (redeyes.core.t51183 = function(a, b, c, d, e, f, h, k, l, m, n, S) {
-          this.output_checker51177 = a;
-          this.input_schema51175 = b;
-          this.owner = c;
-          this.validate__8050__auto__ = d;
-          this.G__51179 = e;
-          this.G__51178 = f;
-          this.wake_up_now_button = h;
-          this.input_checker51176 = k;
-          this.output_schema51174 = l;
+        return "undefined" === typeof redeyes.core.t56561 && (redeyes.core.t56561 = function(a, b, c, d, e, f, h, k, l, m, n, S) {
+          this.output_schema56552 = a;
+          this.owner = b;
+          this.validate__8050__auto__ = c;
+          this.input_checker56554 = d;
+          this.output_checker56555 = e;
+          this.input_schema56553 = f;
+          this.G__56556 = h;
+          this.wake_up_now_button = k;
+          this.G__56557 = l;
           this.app_state = m;
           this.ufv__ = n;
-          this.meta51184 = S;
+          this.meta56562 = S;
           this.cljs$lang$protocol_mask$partition1$ = 0;
           this.cljs$lang$protocol_mask$partition0$ = 393216;
-        }, redeyes.core.t51183.prototype.om$core$IDisplayName$ = !0, redeyes.core.t51183.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
+        }, redeyes.core.t56561.prototype.om$core$IDisplayName$ = !0, redeyes.core.t56561.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
             return "wake-up-now-button";
           };
-        }(l, a, b, c, d, e), redeyes.core.t51183.prototype.om$core$IRender$ = !0, redeyes.core.t51183.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t56561.prototype.om$core$IRender$ = !0, redeyes.core.t56561.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f) {
           return function(h) {
             var k = this;
             h = function(a, b, c, d, e, f, h) {
@@ -35631,23 +35642,23 @@ redeyes.core.wake_up_now_button = function(a, b, c, d, e) {
             }(this, a, b, c, d, e, f);
             return redeyes.helpers.button.call(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "onClick", "onClick", -1991238530), h], null), "Wake up all apps now!");
           };
-        }(l, a, b, c, d, e), redeyes.core.t51183.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t56561.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
-            return this.meta51184;
+            return this.meta56562;
           };
-        }(l, a, b, c, d, e), redeyes.core.t51183.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t56561.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
           return function(a, b) {
-            return new redeyes.core.t51183(this.output_checker51177, this.input_schema51175, this.owner, this.validate__8050__auto__, this.G__51179, this.G__51178, this.wake_up_now_button, this.input_checker51176, this.output_schema51174, this.app_state, this.ufv__, b);
+            return new redeyes.core.t56561(this.output_schema56552, this.owner, this.validate__8050__auto__, this.input_checker56554, this.output_checker56555, this.input_schema56553, this.G__56556, this.wake_up_now_button, this.G__56557, this.app_state, this.ufv__, b);
           };
-        }(l, a, b, c, d, e), redeyes.core.t51183.cljs$lang$type = !0, redeyes.core.t51183.cljs$lang$ctorStr = "redeyes.core/t51183", redeyes.core.t51183.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t56561.cljs$lang$type = !0, redeyes.core.t56561.cljs$lang$ctorStr = "redeyes.core/t56561", redeyes.core.t56561.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
           return function(a, b, c) {
-            return cljs.core._write.call(null, b, "redeyes.core/t51183");
+            return cljs.core._write.call(null, b, "redeyes.core/t56561");
           };
-        }(l, a, b, c, d, e), redeyes.core.__GT_t51183 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.__GT_t56561 = function(a, b, c, d, e, f) {
           return function(a, b, c, d, e, f, h, k, l, m, n, p) {
-            return new redeyes.core.t51183(a, b, c, d, e, f, h, k, l, m, n, p);
+            return new redeyes.core.t56561(a, b, c, d, e, f, h, k, l, m, n, p);
           };
-        }(l, a, b, c, d, e)), new redeyes.core.t51183(e, c, k, l, k, h, f, d, b, h, a, null);
+        }(l, a, b, c, d, e)), new redeyes.core.t56561(b, k, l, d, e, c, h, f, k, h, a, null);
       }
     }();
     if (cljs.core.truth_(l) && (n = e.call(null, m), cljs.core.truth_(n))) {
@@ -35656,8 +35667,8 @@ redeyes.core.wake_up_now_button = function(a, b, c, d, e) {
     }
     return m;
   };
-}(ufv___51186, output_schema51174_51187, input_schema51175_51188, input_checker51176_51189, output_checker51177_51190);
-schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, redeyes.core.wake_up_now_button), schema.core.make_fn_schema.call(null, output_schema51174_51187, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema51175_51188], null)));
+}(ufv___56564, output_schema56552_56565, input_schema56553_56566, input_checker56554_56567, output_checker56555_56568);
+schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, redeyes.core.wake_up_now_button), schema.core.make_fn_schema.call(null, output_schema56552_56565, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema56553_56566], null)));
 redeyes.core.__GT_wake_up_now_button = function() {
   var a = null, b = function(a) {
     return om.core.build.call(null, redeyes.core.wake_up_now_button, a);
@@ -35676,8 +35687,8 @@ redeyes.core.__GT_wake_up_now_button = function() {
   a.cljs$core$IFn$_invoke$arity$2 = c;
   return a;
 }();
-var ufv___51209 = schema.utils.use_fn_validation, output_schema51197_51210 = schema.core.Any, input_schema51198_51211 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "app-state", "app-state", 130568249, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker51199_51212 = schema.core.checker.call(null, input_schema51198_51211), 
-output_checker51200_51213 = schema.core.checker.call(null, output_schema51197_51210);
+var ufv___56587 = schema.utils.use_fn_validation, output_schema56575_56588 = schema.core.Any, input_schema56576_56589 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "app-state", "app-state", 130568249, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker56577_56590 = schema.core.checker.call(null, input_schema56576_56589), 
+output_checker56578_56591 = schema.core.checker.call(null, output_schema56575_56588);
 redeyes.core.clear_deactivated_button = function(a, b, c, d, e) {
   return function f(h, k) {
     var l = a.get_cell();
@@ -35690,26 +35701,26 @@ redeyes.core.clear_deactivated_button = function(a, b, c, d, e) {
     }
     m = function() {
       for (;;) {
-        return "undefined" === typeof redeyes.core.t51206 && (redeyes.core.t51206 = function(a, b, c, d, e, f, h, k, l, m, n, S) {
-          this.input_schema51198 = a;
-          this.owner = b;
-          this.validate__8050__auto__ = c;
-          this.G__51202 = d;
-          this.G__51201 = e;
-          this.input_checker51199 = f;
-          this.clear_deactivated_button = h;
-          this.output_schema51197 = k;
-          this.output_checker51200 = l;
-          this.app_state = m;
-          this.ufv__ = n;
-          this.meta51207 = S;
+        return "undefined" === typeof redeyes.core.t56584 && (redeyes.core.t56584 = function(a, b, c, d, e, f, h, k, l, m, n, S) {
+          this.owner = a;
+          this.validate__8050__auto__ = b;
+          this.input_schema56576 = c;
+          this.input_checker56577 = d;
+          this.G__56579 = e;
+          this.clear_deactivated_button = f;
+          this.G__56580 = h;
+          this.app_state = k;
+          this.output_checker56578 = l;
+          this.ufv__ = m;
+          this.output_schema56575 = n;
+          this.meta56585 = S;
           this.cljs$lang$protocol_mask$partition1$ = 0;
           this.cljs$lang$protocol_mask$partition0$ = 393216;
-        }, redeyes.core.t51206.prototype.om$core$IDisplayName$ = !0, redeyes.core.t51206.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
+        }, redeyes.core.t56584.prototype.om$core$IDisplayName$ = !0, redeyes.core.t56584.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
             return "clear-deactivated-button";
           };
-        }(l, a, b, c, d, e), redeyes.core.t51206.prototype.om$core$IRender$ = !0, redeyes.core.t51206.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t56584.prototype.om$core$IRender$ = !0, redeyes.core.t56584.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f) {
           return function(h) {
             var k = this;
             h = function(a, b, c, d, e, f, h) {
@@ -35719,23 +35730,23 @@ redeyes.core.clear_deactivated_button = function(a, b, c, d, e) {
             }(this, a, b, c, d, e, f);
             return redeyes.helpers.button.call(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "onClick", "onClick", -1991238530), h], null), "Clear deactivated apps");
           };
-        }(l, a, b, c, d, e), redeyes.core.t51206.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t56584.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
-            return this.meta51207;
+            return this.meta56585;
           };
-        }(l, a, b, c, d, e), redeyes.core.t51206.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t56584.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
           return function(a, b) {
-            return new redeyes.core.t51206(this.input_schema51198, this.owner, this.validate__8050__auto__, this.G__51202, this.G__51201, this.input_checker51199, this.clear_deactivated_button, this.output_schema51197, this.output_checker51200, this.app_state, this.ufv__, b);
+            return new redeyes.core.t56584(this.owner, this.validate__8050__auto__, this.input_schema56576, this.input_checker56577, this.G__56579, this.clear_deactivated_button, this.G__56580, this.app_state, this.output_checker56578, this.ufv__, this.output_schema56575, b);
           };
-        }(l, a, b, c, d, e), redeyes.core.t51206.cljs$lang$type = !0, redeyes.core.t51206.cljs$lang$ctorStr = "redeyes.core/t51206", redeyes.core.t51206.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t56584.cljs$lang$type = !0, redeyes.core.t56584.cljs$lang$ctorStr = "redeyes.core/t56584", redeyes.core.t56584.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
           return function(a, b, c) {
-            return cljs.core._write.call(null, b, "redeyes.core/t51206");
+            return cljs.core._write.call(null, b, "redeyes.core/t56584");
           };
-        }(l, a, b, c, d, e), redeyes.core.__GT_t51206 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.__GT_t56584 = function(a, b, c, d, e, f) {
           return function(a, b, c, d, e, f, h, k, l, m, n, p) {
-            return new redeyes.core.t51206(a, b, c, d, e, f, h, k, l, m, n, p);
+            return new redeyes.core.t56584(a, b, c, d, e, f, h, k, l, m, n, p);
           };
-        }(l, a, b, c, d, e)), new redeyes.core.t51206(c, k, l, k, h, d, f, b, e, h, a, null);
+        }(l, a, b, c, d, e)), new redeyes.core.t56584(k, l, c, d, h, f, k, h, e, a, b, null);
       }
     }();
     if (cljs.core.truth_(l) && (n = e.call(null, m), cljs.core.truth_(n))) {
@@ -35744,8 +35755,8 @@ redeyes.core.clear_deactivated_button = function(a, b, c, d, e) {
     }
     return m;
   };
-}(ufv___51209, output_schema51197_51210, input_schema51198_51211, input_checker51199_51212, output_checker51200_51213);
-schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, redeyes.core.clear_deactivated_button), schema.core.make_fn_schema.call(null, output_schema51197_51210, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema51198_51211], null)));
+}(ufv___56587, output_schema56575_56588, input_schema56576_56589, input_checker56577_56590, output_checker56578_56591);
+schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, redeyes.core.clear_deactivated_button), schema.core.make_fn_schema.call(null, output_schema56575_56588, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema56576_56589], null)));
 redeyes.core.__GT_clear_deactivated_button = function() {
   var a = null, b = function(a) {
     return om.core.build.call(null, redeyes.core.clear_deactivated_button, a);
@@ -35764,8 +35775,8 @@ redeyes.core.__GT_clear_deactivated_button = function() {
   a.cljs$core$IFn$_invoke$arity$2 = c;
   return a;
 }();
-var ufv___51278 = schema.utils.use_fn_validation, output_schema51220_51279 = schema.core.Any, input_schema51221_51280 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "app-state", "app-state", 130568249, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker51222_51281 = schema.core.checker.call(null, input_schema51221_51280), 
-output_checker51223_51282 = schema.core.checker.call(null, output_schema51220_51279);
+var ufv___56656 = schema.utils.use_fn_validation, output_schema56598_56657 = schema.core.Any, input_schema56599_56658 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "app-state", "app-state", 130568249, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker56600_56659 = schema.core.checker.call(null, input_schema56599_56658), 
+output_checker56601_56660 = schema.core.checker.call(null, output_schema56598_56657);
 redeyes.core.redeyes_app = function(a, b, c, d, e) {
   return function f(h, k) {
     var l = a.get_cell();
@@ -35778,31 +35789,31 @@ redeyes.core.redeyes_app = function(a, b, c, d, e) {
     }
     m = function() {
       for (;;) {
-        return "undefined" === typeof redeyes.core.t51252 && (redeyes.core.t51252 = function(a, b, c, d, e, f, h, k, l, m, n, S) {
-          this.input_checker51222 = a;
-          this.owner = b;
-          this.validate__8050__auto__ = c;
-          this.redeyes_app = d;
-          this.output_schema51220 = e;
-          this.G__51224 = f;
-          this.output_checker51223 = h;
-          this.G__51225 = k;
+        return "undefined" === typeof redeyes.core.t56630 && (redeyes.core.t56630 = function(a, b, c, d, e, f, h, k, l, m, n, S) {
+          this.G__56603 = a;
+          this.input_checker56600 = b;
+          this.owner = c;
+          this.validate__8050__auto__ = d;
+          this.redeyes_app = e;
+          this.output_schema56598 = f;
+          this.output_checker56601 = h;
+          this.G__56602 = k;
           this.app_state = l;
-          this.ufv__ = m;
-          this.input_schema51221 = n;
-          this.meta51253 = S;
+          this.input_schema56599 = m;
+          this.ufv__ = n;
+          this.meta56631 = S;
           this.cljs$lang$protocol_mask$partition1$ = 0;
           this.cljs$lang$protocol_mask$partition0$ = 393216;
-        }, redeyes.core.t51252.prototype.om$core$IDisplayName$ = !0, redeyes.core.t51252.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
+        }, redeyes.core.t56630.prototype.om$core$IDisplayName$ = !0, redeyes.core.t56630.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
             return "redeyes-app";
           };
-        }(l, a, b, c, d, e), redeyes.core.t51252.prototype.om$core$IRender$ = !0, redeyes.core.t51252.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t56630.prototype.om$core$IRender$ = !0, redeyes.core.t56630.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
             return om_tools.dom.element.call(null, React.DOM.div, React.DOM.h1(null, "Apps to wake up"), new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [React.DOM.hr(null), om.core.build.call(null, redeyes.core.new_sleepy_app_form, cljs.core.PersistentArrayMap.EMPTY), cljs.core.apply.call(null, React.DOM.div, {className:"sleepy-app-list"}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [om.core.build.call(null, 
             redeyes.core.sleepy_app_list, (new cljs.core.Keyword(null, "apps", "apps", 844744865)).cljs$core$IFn$_invoke$arity$1(this.app_state))], null))), redeyes.helpers.button_group.call(null, om.core.build.call(null, redeyes.core.wake_up_now_button, this.app_state), om.core.build.call(null, redeyes.core.clear_deactivated_button, this.app_state))], null));
           };
-        }(l, a, b, c, d, e), redeyes.core.t51252.prototype.om$core$IWillMount$ = !0, redeyes.core.t51252.prototype.om$core$IWillMount$will_mount$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t56630.prototype.om$core$IWillMount$ = !0, redeyes.core.t56630.prototype.om$core$IWillMount$will_mount$arity$1 = function(a, b, c, d, e, f) {
           return function(h) {
             var k = this;
             h = (new cljs.core.Keyword(null, "bus", "bus", -1090873603)).cljs$core$IFn$_invoke$arity$1(om.core.get_shared.call(null, k.owner));
@@ -35882,23 +35893,23 @@ redeyes.core.redeyes_app = function(a, b, c, d, e) {
             }(l, h, this, a, b, c, d, e, f));
             return l;
           };
-        }(l, a, b, c, d, e), redeyes.core.t51252.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t56630.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
-            return this.meta51253;
+            return this.meta56631;
           };
-        }(l, a, b, c, d, e), redeyes.core.t51252.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t56630.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
           return function(a, b) {
-            return new redeyes.core.t51252(this.input_checker51222, this.owner, this.validate__8050__auto__, this.redeyes_app, this.output_schema51220, this.G__51224, this.output_checker51223, this.G__51225, this.app_state, this.ufv__, this.input_schema51221, b);
+            return new redeyes.core.t56630(this.G__56603, this.input_checker56600, this.owner, this.validate__8050__auto__, this.redeyes_app, this.output_schema56598, this.output_checker56601, this.G__56602, this.app_state, this.input_schema56599, this.ufv__, b);
           };
-        }(l, a, b, c, d, e), redeyes.core.t51252.cljs$lang$type = !0, redeyes.core.t51252.cljs$lang$ctorStr = "redeyes.core/t51252", redeyes.core.t51252.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t56630.cljs$lang$type = !0, redeyes.core.t56630.cljs$lang$ctorStr = "redeyes.core/t56630", redeyes.core.t56630.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
           return function(a, b, c) {
-            return cljs.core._write.call(null, b, "redeyes.core/t51252");
+            return cljs.core._write.call(null, b, "redeyes.core/t56630");
           };
-        }(l, a, b, c, d, e), redeyes.core.__GT_t51252 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.__GT_t56630 = function(a, b, c, d, e, f) {
           return function(a, b, c, d, e, f, h, k, l, m, n, p) {
-            return new redeyes.core.t51252(a, b, c, d, e, f, h, k, l, m, n, p);
+            return new redeyes.core.t56630(a, b, c, d, e, f, h, k, l, m, n, p);
           };
-        }(l, a, b, c, d, e)), new redeyes.core.t51252(d, k, l, f, b, h, e, k, h, a, c, null);
+        }(l, a, b, c, d, e)), new redeyes.core.t56630(k, d, k, l, f, b, e, h, h, c, a, null);
       }
     }();
     if (cljs.core.truth_(l) && (n = e.call(null, m), cljs.core.truth_(n))) {
@@ -35907,8 +35918,8 @@ redeyes.core.redeyes_app = function(a, b, c, d, e) {
     }
     return m;
   };
-}(ufv___51278, output_schema51220_51279, input_schema51221_51280, input_checker51222_51281, output_checker51223_51282);
-schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, redeyes.core.redeyes_app), schema.core.make_fn_schema.call(null, output_schema51220_51279, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema51221_51280], null)));
+}(ufv___56656, output_schema56598_56657, input_schema56599_56658, input_checker56600_56659, output_checker56601_56660);
+schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, redeyes.core.redeyes_app), schema.core.make_fn_schema.call(null, output_schema56598_56657, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema56599_56658], null)));
 redeyes.core.__GT_redeyes_app = function() {
   var a = null, b = function(a) {
     return om.core.build.call(null, redeyes.core.redeyes_app, a);

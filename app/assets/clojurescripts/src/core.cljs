@@ -30,11 +30,13 @@
   [command params app-state]
   (case command
     :clear-deactivated
-      (api/clear-deactivated #(fetch-data app-state))
+      (do (om/transact! app-state :apps (fn [apps] (filter #(active? %) apps)))
+          (api/clear-deactivated #(fetch-data app-state)))
     :wake-up-now
       (api/wake-all #(fetch-data app-state))
     :create
-      (api/submit-new-app (:url params) #(fetch-data app-state))
+      (do (om/transact! app-state :apps (fn [apps] (conj apps params)))
+          (api/submit-new-app (:url params) #(fetch-data app-state)))
     :update-status
       (if (:active params) (activate (:app params)) (deactivate (:app params)))))
 
