@@ -2,6 +2,7 @@
   (:require-macros [cljs.core.async.macros :refer [go-loop]])
   (:require [om.core :as om]
             [redeyes.api :as api]
+            [redeyes.undo :refer [add-undo]]
             [redeyes.helpers :as helpers :refer [css-classes active? log log-clj input-with-addons button button-group]]
             [cljs.core.async :refer [chan put! <!]]
             [om-tools.core :refer-macros [defcomponent defcomponentk]]
@@ -145,8 +146,10 @@
 
 ;; Main entry point into the app - creates an event bus to dispatch commands
 ;; from actions performed in the app, and renders it
-
 (def app-state (atom {:apps []}))
+
+;; Undo on the front-end, just for fun, doesn't sync
+(add-undo app-state)
 
 (defn ^:export run []
   "Render the app out into the #app div"
@@ -154,6 +157,7 @@
     (om/root redeyes-app
              app-state
              {:shared {:bus bus}
+              :tx-listen (fn [data root-cursor] (log data))
               :target (.getElementById js/document "app")})))
 
 ;; Hey look you can access the app-state from outside of Om component -
