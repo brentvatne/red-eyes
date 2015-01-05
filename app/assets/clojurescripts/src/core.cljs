@@ -5,8 +5,7 @@
             [redeyes.helpers :as helpers :refer [css-classes active? log log-clj input-with-addons button button-group]]
             [cljs.core.async :refer [chan put! <!]]
             [om-tools.core :refer-macros [defcomponent defcomponentk]]
-            [om-tools.dom :as dom :include-macros true])
-  (:use [jayq.core :only [$ css html ajax]]))
+            [om-tools.dom :as dom :include-macros true]))
 
 ;; Handling events through core.async channels and a dispatcher
 
@@ -35,8 +34,9 @@
     :wake-up-now
       (api/wake-all #(fetch-data app-state))
     :create
-      (do (om/transact! app-state :apps (fn [apps] (conj apps {"url" (:url params)})))
-          (api/submit-new-app (:url params) #(fetch-data app-state)))
+      (do (om/transact! app-state :apps (fn [apps] (conj apps {"url" (:url params) "active" true})))
+          (api/submit-new-app (:url params) #(fetch-data app-state))
+          (+ 1 1))
     :update-status
       (if (:active params) (activate (:app params)) (deactivate (:app params)))))
 
@@ -155,6 +155,9 @@
              app-state
              {:shared {:bus bus}
               :target (.getElementById js/document "app")})))
+
+;; Hey look you can access the app-state from outside of Om component -
+;; this could be useful for predicate methods that operate on state
 
 ; (.setTimeout js/window #(.log js/console app-state) 5000)
 ; (.setTimeout js/window #(.log js/console (clj->js app-state)) 5000)
