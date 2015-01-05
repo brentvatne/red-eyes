@@ -36,8 +36,7 @@
       (api/wake-all #(fetch-data app-state))
     :create
       (do (om/transact! app-state :apps (fn [apps] (conj apps {"url" (:url params) "active" true})))
-          (api/submit-new-app (:url params) #(fetch-data app-state))
-          (+ 1 1))
+          (api/submit-new-app (:url params) #(fetch-data app-state)))
     :update-status
       (if (:active params) (activate (:app params)) (deactivate (:app params)))))
 
