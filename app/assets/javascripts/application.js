@@ -1,3 +1,3 @@
 //= require jquery
 //= require bootstrap-sprockets
-//= require ../clojurescripts/dist/mini.js
+//= require ../clojurescripts/build/main.js

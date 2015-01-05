@@ -1,13 +1,13 @@
 (ns redeyes.api
-  (:use [jayq.core :only [ajax]]))
+  (:use [jayq.core :only [ajax]])
+  (:require [om.core :as om]))
 
 (def base-url "/sleepy_apps")
 
-(defn fetch-data [data callback]
+(defn fetch-data [data]
   (ajax base-url
       {:dataType "json"
-       :success (fn [new-data] (swap! data replace (js->clj new-data))
-                       (if (nil? callback) nil (callback)))}))
+       :success (fn [new-data] (om/update! data [:apps] (js->clj new-data)))}))
 
 (defn persist-active-status [app]
   (ajax (str base-url "/" (get app "id") "/activate")

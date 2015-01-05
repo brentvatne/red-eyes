@@ -1,120 +1,153 @@
 (ns redeyes.core
-    (:require [reagent.core :as r :refer [atom]]
-              [redeyes.api :as api])
-    (:use [jayq.core :only [$ css html ajax]]))
+  (:require-macros [cljs.core.async.macros :refer [go-loop]])
+  (:require [om.core :as om]
+            [redeyes.api :as api]
+            [redeyes.helpers :as helpers :refer [css-classes active? log log-clj input-with-addons button button-group]]
+            [cljs.core.async :refer [chan put! <!]]
+            [om-tools.core :refer-macros [defcomponent defcomponentk]]
+            [om-tools.dom :as dom :include-macros true])
+  (:use [jayq.core :only [$ css html ajax]]))
 
-(def data (r/atom []))
-(defn css-classes [& classes] (apply str (interpose " " classes)))
-(defn active? [app] (= true (get app "active")))
-(defn fetch-data [callback] (api/fetch-data data callback))
-
-(defn update-app [apps app opts]
-  (map
-    #(if (= % app) (merge % opts) (identity %))
-    apps))
-
-(defn remove-apps [apps apps-to-remove]
-  (filter
-    #(not (some #{%} apps-to-remove))
-    apps))
+;; Handling events through core.async channels and a dispatcher
 
 (defn activate [app]
-  (swap! data update-app app {"active" true})
-  (api/persist-active-status app))
+  (om/update! app ["active"] true)
+  (api/persist-active-status @app))
 
 (defn deactivate [app]
-  (swap! data update-app app {"active" false})
-  (api/persist-inactive-status app))
+  (om/update! app ["active"] false)
+  (api/persist-inactive-status @app))
 
-(defn update-active-status [e app]
-  (if (.-checked (.-target e)) (activate app) (deactivate app)))
+(defn fetch-data
+  "Gets the list of apps already saved to the server, then fires the
+  callback. Used to load the initial state before rendering the app."
+  [state]
+  (api/fetch-data state))
 
-(defn sleepy-app-checkbox [app]
-    [:input {:type "checkbox"
-             :checked (active? app)
-             :on-change (fn [e] (update-active-status e app))}])
+;; Our app dispatcher function
 
-(defn wake-up-all-button []
-  (fn []
-    [:a {:class "btn btn-default"
-         :on-click (fn [e] (.preventDefault e)
-                           (api/wake-all fetch-data))}
-     "Wake up all apps now"]))
+(defn dispatch
+  [command params app-state]
+  (case command
+    :clear-deactivated
+      (api/clear-deactivated #(fetch-data app-state))
+    :wake-up-now
+      (api/wake-all #(fetch-data app-state))
+    :create
+      (api/submit-new-app (:url params) #(fetch-data app-state))
+    :update-status
+      (if (:active params) (activate (:app params)) (deactivate (:app params)))))
 
-(defn inactive-apps []
-  (filter (complement active?) @data))
+(defcomponent new-sleepy-app-form
+  "A form where the user can enter a new url to watch"
+  [data owner]
+  (init-state [_]
+    {:url ""})
+  (render-state [_ state]
+    (let [url (:url state)
+          bus (:bus (om/get-shared owner))
+          update-url-state! (fn [new-val]
+            (om/set-state! owner :url new-val))
+          handle-change-input (fn [e]
+            (update-url-state! (.. e -target -value)))
+          handle-submit-url (fn [e]
+            (.preventDefault e)
+            (put! bus [:create {:url url}])
+            (update-url-state! ""))]
 
-(defn clear-deactivated-button []
-  (fn []
-    [:a {:class "btn btn-default"
-         :on-click (fn [e] (.preventDefault e)
-                            (api/clear-deactivated fetch-data)
-                            (swap! data remove-apps (inactive-apps)))}
-     "Clear deactivated"]))
+      (dom/form {:className "new-sleepy-app-form form-inline"
+                 :onSubmit handle-submit-url}
+         (input-with-addons {:before {:text "http://"}
+                             :after  {:text "Add URL" :onClick handle-submit-url}}
+           (dom/input {:type "text"
+                       :ref "new-url"
+                       :className "form-control"
+                       :id "sleepy-app-url"
+                       :value url
+                       :onChange handle-change-input
+                       :placeholder "URL here please!"}))))))
 
-(defn handle-submit-new-app [e new-url]
-  (.preventDefault e)
-  (api/submit-new-app @new-url fetch-data)
-  (reset! new-url ""))
+(defcomponent sleepy-app-checkbox
+  "Checkbox that indicates whether or not an app is enabled to be woken up"
+  [app owner]
+  (render [_]
+    (let [bus (:bus (om/get-shared owner))
+          handle-change-checked (fn [e]
+            (put! bus [:update-status {:app app :active (.. e -target -checked)}]))]
+      (dom/input {:type "checkbox"
+                  :onChange handle-change-checked
+                  :checked (active? app)}))))
 
-(defn new-url-input [value]
- [:div {:class "form-group"}
-   [:div {:class "input-group"}
-    [:div {:class "input-group-addon"} "http://"]
-    [:input {:type "text"
-             :value @value
-             :placeholder "URL here please!"
-             :class "form-control"
-             :id "sleepy-app-url"
-             :on-change #(reset! value (-> % .-target .-value))}]
-    [:a {:class "btn btn-default input-group-addon"
-         :on-click (fn [e] (handle-submit-new-app e value))}
-     "Add site"]]])
+(defcomponent sleepy-app
+  "A row in the sleepy-app-list table"
+  [app owner]
+  (render [_]
+    (let [url (get app "url")
+          last-wake-up (get app "lastWokenUpAt")
+          last-wake-up-text (if (nil? last-wake-up) "Never" last-wake-up)]
+      (dom/tr {:className (css-classes "sleepy-app" (when (active? app) "active"))}
+        (dom/td (om/build sleepy-app-checkbox app))
+        (dom/td url)
+        (dom/td last-wake-up-text)))))
 
-(defn new-sleepy-app-form []
-  (let [url-input-text (atom "")]
-    [:form {:class "new-sleepy-app-form form-inline"
-            :on-submit (fn [e] (handle-submit-new-app e url-input-text))}
-      [new-url-input url-input-text]]))
+(defcomponent sleepy-app-list
+  "Renders out each of the sleepy-apps"
+  [apps owner]
+  (render [_]
+    (if (empty? apps)
+      (dom/div "No apps")
+      (dom/div
+        (dom/table {:className "table"}
+          (dom/thead
+            (dom/tr
+              (dom/th {:className "sleepy-app-active-col"} "")
+              (dom/th)
+              (dom/th)))
+          (apply dom/tbody {}
+            (om/build-all sleepy-app apps)))))))
 
-(defn sleepy-app [app]
-  (let [url (get app "url")
-        last-wake-up (get app "lastWokenUpAt")]
-  [:tr {:class (css-classes "sleepy-app" (when (active? app) "active"))}
-   [:td {:class "sleepy-app-active-col"} (sleepy-app-checkbox app)]
-   [:td url]
-   [:td (if (nil? last-wake-up) "Never by us" last-wake-up)]]))
+(defcomponent wake-up-now-button
+  [app-state owner]
+  (render [_]
+    (let [handle-button-click
+          #(put! (:bus (om/get-shared owner)) [:wake-up-now {}])]
+      (button {:onClick handle-button-click} "Wake up all apps now!"))))
 
-(defn sleepy-app-list []
- (let [apps @data]
-  (if (empty? apps)
-    [:div "No apps"]
-    [:div
-      [:table {:class "table"}
-       [:thead
-         [:tr
-           [:th {:class "sleepy-app-active-col"}]
-           [:th]
-           [:th]]]
-       [:tbody
-         (for [app apps]
-         ^{:key app} [sleepy-app app])]]])))
+(defcomponent clear-deactivated-button
+  [app-state owner]
+  (render [_]
+    (let [handle-button-click
+          #(put! (:bus (om/get-shared owner)) [:clear-deactivated {}])]
+      (button {:onClick handle-button-click} "Clear deactivated apps"))))
 
-(defn redeyes []
-  [:div
-   [:h1 "Apps to wake up"]
-   [:hr]
-   [new-sleepy-app-form]
-   [:div {:class "sleepy-app-list"}
-     [sleepy-app-list]
-     [:hr]
-     [:div {:class "btn-group"}
-       [wake-up-all-button]
-       [clear-deactivated-button]]]])
+(defcomponent redeyes-app
+  "Root component for the app"
+  [app-state owner]
+  (will-mount [_]
+    (let [bus (:bus (om/get-shared owner))]
+      (api/fetch-data app-state)
+      (go-loop []
+        (let [[command params] (<! bus)]
+          (dispatch command params app-state))
+          (recur))))
+  (render [_]
+    (dom/div
+      (dom/h1 "Apps to wake up")
+      (dom/hr)
+      (om/build new-sleepy-app-form {})
+      (dom/div {:className "sleepy-app-list"}
+        (om/build sleepy-app-list (:apps app-state)))
+      (button-group
+        (om/build wake-up-now-button app-state)
+        (om/build clear-deactivated-button app-state)))))
 
-(defn render-app []
-  (r/render-component [redeyes]
-    (.getElementById js/document "app")))
+;; Main entry point into the app - creates an event bus to dispatch commands
+;; from actions performed in the app, and renders it
 
 (defn ^:export run []
-  (fetch-data render-app))
+  "Render the app out into the #app div"
+  (let [bus (chan)]
+    (om/root redeyes-app
+             (atom {:apps []})
+             {:shared {:bus bus}
+              :target (.getElementById js/document "app")})))
