@@ -35,7 +35,7 @@
     :wake-up-now
       (api/wake-all #(fetch-data app-state))
     :create
-      (do (om/transact! app-state :apps (fn [apps] (conj apps params)))
+      (do (om/transact! app-state :apps (fn [apps] (conj apps {"url" (:url params)})))
           (api/submit-new-app (:url params) #(fetch-data app-state)))
     :update-status
       (if (:active params) (activate (:app params)) (deactivate (:app params)))))
@@ -146,10 +146,17 @@
 ;; Main entry point into the app - creates an event bus to dispatch commands
 ;; from actions performed in the app, and renders it
 
+(def app-state (atom {:apps []}))
+
 (defn ^:export run []
   "Render the app out into the #app div"
   (let [bus (chan)]
     (om/root redeyes-app
-             (atom {:apps []})
+             app-state
              {:shared {:bus bus}
               :target (.getElementById js/document "app")})))
+
+; (.setTimeout js/window #(.log js/console app-state) 5000)
+; (.setTimeout js/window #(.log js/console (clj->js app-state)) 5000)
+; (.setTimeout js/window #(.log js/console (clj->js (:apps @app-state))) 5000)
+; (.setTimeout js/window #(reset! app-state {:apps [{"url" "ha!"}]}) 5000)
