@@ -19,6 +19,8 @@
 
   :cljsbuild {:builds {:app {:source-paths ["src"]
                              :compiler {:output-to     "build/main.js"
+                                        :source-map    "build/main.js.map"
+                                        :output-dir    "build/out"
                                         :externs       ["react/externs/react.js"]
                                         :optimizations :simple
                                         :pretty-print  true}}
