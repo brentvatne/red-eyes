@@ -3,7 +3,7 @@ goog.provide('cljs.core.async.impl.dispatch');
 goog.require('cljs.core');
 goog.require('goog.async.nextTick');
 goog.require('cljs.core.async.impl.buffers');
-cljs.core.async.impl.dispatch.tasks = cljs.core.async.impl.buffers.ring_buffer.call(null,(32));
+cljs.core.async.impl.dispatch.tasks = cljs.core.async.impl.buffers.ring_buffer((32));
 cljs.core.async.impl.dispatch.running_QMARK_ = false;
 cljs.core.async.impl.dispatch.queued_QMARK_ = false;
 cljs.core.async.impl.dispatch.TASK_BATCH_SIZE = (1024);
@@ -12,16 +12,16 @@ cljs.core.async.impl.dispatch.running_QMARK_ = true;
 
 cljs.core.async.impl.dispatch.queued_QMARK_ = false;
 
-var count_20740 = (0);
+var count_32300 = (0);
 while(true){
-var m_20741 = cljs.core.async.impl.dispatch.tasks.pop();
-if((m_20741 == null)){
+var m_32301 = cljs.core.async.impl.dispatch.tasks.pop();
+if((m_32301 == null)){
 } else {
-m_20741.call(null);
+(m_32301.cljs$core$IFn$_invoke$arity$0 ? m_32301.cljs$core$IFn$_invoke$arity$0() : m_32301.call(null));
 
-if((count_20740 < cljs.core.async.impl.dispatch.TASK_BATCH_SIZE)){
-var G__20742 = (count_20740 + (1));
-count_20740 = G__20742;
+if((count_32300 < cljs.core.async.impl.dispatch.TASK_BATCH_SIZE)){
+var G__32302 = (count_32300 + (1));
+count_32300 = G__32302;
 continue;
 } else {
 }
@@ -32,7 +32,7 @@ break;
 cljs.core.async.impl.dispatch.running_QMARK_ = false;
 
 if((cljs.core.async.impl.dispatch.tasks.length > (0))){
-return cljs.core.async.impl.dispatch.queue_dispatcher.call(null);
+return (cljs.core.async.impl.dispatch.queue_dispatcher.cljs$core$IFn$_invoke$arity$0 ? cljs.core.async.impl.dispatch.queue_dispatcher.cljs$core$IFn$_invoke$arity$0() : cljs.core.async.impl.dispatch.queue_dispatcher.call(null));
 } else {
 return null;
 }
@@ -49,14 +49,17 @@ return null;
 } else {
 cljs.core.async.impl.dispatch.queued_QMARK_ = true;
 
-return goog.async.nextTick(cljs.core.async.impl.dispatch.process_messages);
+var G__32304 = cljs.core.async.impl.dispatch.process_messages;
+return goog.async.nextTick(G__32304);
 }
 });
 cljs.core.async.impl.dispatch.run = (function run(f){
 cljs.core.async.impl.dispatch.tasks.unbounded_unshift(f);
 
-return cljs.core.async.impl.dispatch.queue_dispatcher.call(null);
+return cljs.core.async.impl.dispatch.queue_dispatcher();
 });
 cljs.core.async.impl.dispatch.queue_delay = (function queue_delay(f,delay){
-return setTimeout(f,delay);
+var G__32307 = f;
+var G__32308 = delay;
+return setTimeout(G__32307,G__32308);
 });

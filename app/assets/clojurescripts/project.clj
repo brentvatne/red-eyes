@@ -21,8 +21,8 @@
                              :compiler {:output-to     "build/main.js"
                                         :source-map    "build/main.js.map"
                                         :output-dir    "build/out"
-                                        :externs       ["react/externs/react.js"]
-                                        :optimizations :simple
+                                        :externs       ["externs/react.js" "externs/jquery.js" "externs/redeyes.js"]
+                                        :optimizations :advanced
                                         :pretty-print  true}}
                        :test {:source-paths ["src" "test"]
                               :compiler {:output-to     "build/test.js"
