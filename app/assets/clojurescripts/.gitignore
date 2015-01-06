@@ -1,3 +1,4 @@
 src/.nrepl-port
 .nrepl-port
 src/target/**/*
+build/main.js.map
