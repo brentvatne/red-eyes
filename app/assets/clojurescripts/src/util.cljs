@@ -1,4 +1,4 @@
-(ns redeyes.helpers
+(ns redeyes.util
   (:require [om-tools.dom :as dom :include-macros true]))
 
 (defn input-with-addons

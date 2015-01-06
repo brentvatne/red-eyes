@@ -3,58 +3,66 @@
   (:require [om.core :as om]
             [redeyes.api :as api]
             [redeyes.undo :refer [add-undo]]
-            [redeyes.helpers :as helpers :refer [css-classes active? log log-clj input-with-addons button button-group]]
+            [redeyes.dispatcher :as dispatcher :refer [dispatch!]]
+            [redeyes.util :refer [css-classes active? log log-clj input-with-addons button button-group]]
             [cljs.core.async :refer [chan put! <!]]
             [om-tools.core :refer-macros [defcomponent defcomponentk]]
             [om-tools.dom :as dom :include-macros true]))
 
-;; Handling events through core.async channels and a dispatcher
+;; Holds the state for the entire app
+;; Wrapped in Cursors when handed to Om, need to use swap! or reset! to update
+;; app-state directly, or om/transact! or om/update! to update the cursor
 
-(defn activate [app]
-  (om/update! app ["active"] true)
-  (api/persist-active-status @app))
+(def app-state (atom {:apps []}))
 
-(defn deactivate [app]
-  (om/update! app ["active"] false)
-  (api/persist-inactive-status @app))
+(defn fetch-data []
+  "Fetch the app state data from the server (just a list of apps) and update
+  it, forcing a re-render. Used to init the app and update everything at
+  various points."
+  (api/fetch-data app-state))
 
-(defn fetch-data
-  "Gets the list of apps already saved to the server, then fires the
-  callback. Used to load the initial state before rendering the app."
-  [state]
-  (api/fetch-data state))
+;; Undo on the front-end, just for fun, doesn't sync
+;; To access it, open the browser console and type undo()
 
-;; Our app dispatcher function
+(add-undo app-state)
 
-(defn dispatch
-  [command params app-state]
-  (case command
-    :clear-deactivated
-      (do (om/transact! app-state :apps (fn [apps] (filter #(active? %) apps)))
-          (api/clear-deactivated #(fetch-data app-state)))
-    :wake-up-now
-      (api/wake-all #(fetch-data app-state))
-    :create
-      (do (om/transact! app-state :apps (fn [apps] (conj apps {"url" (:url params) "active" true})))
-          (api/submit-new-app (:url params) #(fetch-data app-state)))
-    :update-status
-      (if (:active params) (activate (:app params)) (deactivate (:app params)))))
+;; Dispatcher handlers
+;; Handle UI events as they come in - update the UI and sync to the server
+
+(dispatcher/stream :clear-deactivated (fn [{:keys [apps]}]
+  (om/update! apps (filter active? @apps))
+  (api/clear-deactivated fetch-data)))
+
+(dispatcher/stream :create (fn [{:keys [url apps]}]
+  (om/update! apps (conj @apps {"url" url "active" true}))
+  (api/submit-new-app url fetch-data)))
+
+(dispatcher/stream :wake-up-now (fn [{:keys [apps]}]
+  (api/wake-all #(fetch-data))))
+
+(dispatcher/stream :update-status (fn [{:keys [active app]}]
+  (om/update! app ["active"] active)
+  (if active
+    (api/persist-active-status @app)
+    (api/persist-inactive-status @app))))
+
+;; UI Components
 
 (defcomponent new-sleepy-app-form
   "A form where the user can enter a new url to watch"
-  [data owner]
+  [apps owner]
   (init-state [_]
-    {:url ""})
+    {:url "" :apps apps})
   (render-state [_ state]
     (let [url (:url state)
-          bus (:bus (om/get-shared owner))
+          apps (:apps state)
           update-url-state! (fn [new-val]
             (om/set-state! owner :url new-val))
           handle-change-input (fn [e]
             (update-url-state! (.. e -target -value)))
           handle-submit-url (fn [e]
             (.preventDefault e)
-            (put! bus [:create {:url url}])
+            (dispatch! :create {:url url :apps apps})
             (update-url-state! ""))]
 
       (dom/form {:className "new-sleepy-app-form form-inline"
@@ -73,9 +81,9 @@
   "Checkbox that indicates whether or not an app is enabled to be woken up"
   [app owner]
   (render [_]
-    (let [bus (:bus (om/get-shared owner))
-          handle-change-checked (fn [e]
-            (put! bus [:update-status {:app app :active (.. e -target -checked)}]))]
+    (let [handle-change-checked (fn [e]
+            (dispatch! :update-status
+                         {:app app :active (.. e -target -checked)}))]
       (dom/input {:type "checkbox"
                   :onChange handle-change-checked
                   :checked (active? app)}))))
@@ -109,46 +117,35 @@
             (om/build-all sleepy-app apps)))))))
 
 (defcomponent wake-up-now-button
-  [app-state owner]
+  [apps owner]
   (render [_]
-    (let [handle-button-click
-          #(put! (:bus (om/get-shared owner)) [:wake-up-now {}])]
+    (let [handle-button-click #(dispatch! :wake-up-now {:apps apps})]
       (button {:onClick handle-button-click} "Wake up all apps now!"))))
 
 (defcomponent clear-deactivated-button
-  [app-state owner]
+  [apps owner]
   (render [_]
-    (let [handle-button-click
-          #(put! (:bus (om/get-shared owner)) [:clear-deactivated {}])]
+    (let [handle-button-click #(dispatch! :clear-deactivated {:apps apps})]
       (button {:onClick handle-button-click} "Clear deactivated apps"))))
 
 (defcomponent redeyes-app
   "Root component for the app"
   [app-state owner]
   (will-mount [_]
-    (let [bus (:bus (om/get-shared owner))]
-      (api/fetch-data app-state)
-      (go-loop []
-        (let [[command params] (<! bus)]
-          (dispatch command params app-state))
-          (recur))))
+    (fetch-data))
   (render [_]
     (dom/div
       (dom/h1 "Apps to wake up")
       (dom/hr)
-      (om/build new-sleepy-app-form {})
+      (om/build new-sleepy-app-form (:apps app-state))
       (dom/div {:className "sleepy-app-list"}
         (om/build sleepy-app-list (:apps app-state)))
       (button-group
-        (om/build wake-up-now-button app-state)
-        (om/build clear-deactivated-button app-state)))))
+        (om/build wake-up-now-button (:apps app-state))
+        (om/build clear-deactivated-button (:apps app-state))))))
 
 ;; Main entry point into the app - creates an event bus to dispatch commands
 ;; from actions performed in the app, and renders it
-(def app-state (atom {:apps []}))
-
-;; Undo on the front-end, just for fun, doesn't sync
-(add-undo app-state)
 
 (defn ^:export run []
   "Render the app out into the #app div"
@@ -158,11 +155,3 @@
              {:shared {:bus bus}
               :tx-listen (fn [data root-cursor] (log data))
               :target (.getElementById js/document "app")})))
-
-;; Hey look you can access the app-state from outside of Om component -
-;; this could be useful for predicate methods that operate on state
-
-; (.setTimeout js/window #(.log js/console app-state) 5000)
-; (.setTimeout js/window #(.log js/console (clj->js app-state)) 5000)
-; (.setTimeout js/window #(.log js/console (clj->js (:apps @app-state))) 5000)
-; (.setTimeout js/window #(reset! app-state {:apps [{"url" "ha!"}]}) 5000)

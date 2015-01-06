@@ -31485,7 +31485,7 @@ redeyes.api = {};
 redeyes.api.base_url = "/sleepy_apps";
 redeyes.api.fetch_data = function(a) {
   return jayq.core.ajax.call(null, redeyes.api.base_url, new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "dataType", "dataType", 1069893619), "json", new cljs.core.Keyword(null, "success", "success", 1890645906), function(b) {
-    return om.core.update_BANG_.call(null, a, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "apps", "apps", 844744865)], null), cljs.core.js__GT_clj.call(null, b));
+    return cljs.core.swap_BANG_.call(null, a, cljs.core.assoc, new cljs.core.Keyword(null, "apps", "apps", 844744865), cljs.core.js__GT_clj.call(null, b));
   }], null));
 };
 redeyes.api.persist_active_status = function(a) {
@@ -31586,6 +31586,57 @@ om_tools.core.set_state_QMARK__BANG_ = function() {
   a.cljs$core$IFn$_invoke$arity$3 = c;
   return a;
 }();
+redeyes.util = {};
+redeyes.util.input_with_addons = function(a, b) {
+  return cljs.core.apply.call(null, React.DOM.div, {className:"form-group"}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.apply.call(null, React.DOM.div, {className:"input-group"}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.apply.call(null, React.DOM.div, {className:"input-group-addon"}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 
+  1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.get_in.call(null, a, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "before", "before", -1633692388), new cljs.core.Keyword(null, "text", "text", -1790561697)], null))], null))), b, cljs.core.apply.call(null, React.DOM.a, {onClick:om_tools.dom.format_opts.call(null, cljs.core.get_in.call(null, a, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, 
+  [new cljs.core.Keyword(null, "after", "after", 594996914), new cljs.core.Keyword(null, "onClick", "onClick", -1991238530)], null))), className:"btn btn-default input-group-addon"}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.get_in.call(null, a, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "after", "after", 594996914), new cljs.core.Keyword(null, "text", 
+  "text", -1790561697)], null))], null)))], null)))], null)));
+};
+redeyes.util.button = function(a, b) {
+  return cljs.core.apply.call(null, React.DOM.a, {onClick:om_tools.dom.format_opts.call(null, (new cljs.core.Keyword(null, "onClick", "onClick", -1991238530)).cljs$core$IFn$_invoke$arity$1(a)), className:"btn btn-default"}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [b], null)));
+};
+redeyes.util.button_group = function() {
+  var a = function(a) {
+    return cljs.core.apply.call(null, React.DOM.div, {className:"btn-group"}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [a], null)));
+  }, b = function(b) {
+    var d = null;
+    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
+    return a.call(this, d);
+  };
+  b.cljs$lang$maxFixedArity = 0;
+  b.cljs$lang$applyTo = function(b) {
+    b = cljs.core.seq(b);
+    return a(b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+redeyes.util.css_classes = function() {
+  var a = function(a) {
+    return cljs.core.apply.call(null, cljs.core.str, cljs.core.interpose.call(null, " ", a));
+  }, b = function(b) {
+    var d = null;
+    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
+    return a.call(this, d);
+  };
+  b.cljs$lang$maxFixedArity = 0;
+  b.cljs$lang$applyTo = function(b) {
+    b = cljs.core.seq(b);
+    return a(b);
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b;
+}();
+redeyes.util.active_QMARK_ = function(a) {
+  return cljs.core._EQ_.call(null, !0, cljs.core.get.call(null, a, "active"));
+};
+redeyes.util.log = function(a) {
+  return console.log(a);
+};
+redeyes.util.log_clj = function(a) {
+  return redeyes.util.log.call(null, cljs.core.clj__GT_js.call(null, a));
+};
 redeyes.undo = {};
 redeyes.undo.add_undo = function(a) {
   redeyes.undo.app_history = cljs.core.atom.call(null, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.deref.call(null, a)], null));
@@ -35153,110 +35204,134 @@ cljs.core.async.partition_by = function() {
   a.cljs$core$IFn$_invoke$arity$3 = c;
   return a;
 }();
-redeyes.helpers = {};
-redeyes.helpers.input_with_addons = function(a, b) {
-  return cljs.core.apply.call(null, React.DOM.div, {className:"form-group"}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.apply.call(null, React.DOM.div, {className:"input-group"}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.apply.call(null, React.DOM.div, {className:"input-group-addon"}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 
-  1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.get_in.call(null, a, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "before", "before", -1633692388), new cljs.core.Keyword(null, "text", "text", -1790561697)], null))], null))), b, cljs.core.apply.call(null, React.DOM.a, {onClick:om_tools.dom.format_opts.call(null, cljs.core.get_in.call(null, a, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, 
-  [new cljs.core.Keyword(null, "after", "after", 594996914), new cljs.core.Keyword(null, "onClick", "onClick", -1991238530)], null))), className:"btn btn-default input-group-addon"}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.get_in.call(null, a, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "after", "after", 594996914), new cljs.core.Keyword(null, "text", 
-  "text", -1790561697)], null))], null)))], null)))], null)));
-};
-redeyes.helpers.button = function(a, b) {
-  return cljs.core.apply.call(null, React.DOM.a, {onClick:om_tools.dom.format_opts.call(null, (new cljs.core.Keyword(null, "onClick", "onClick", -1991238530)).cljs$core$IFn$_invoke$arity$1(a)), className:"btn btn-default"}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [b], null)));
-};
-redeyes.helpers.button_group = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, React.DOM.div, {className:"btn-group"}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [a], null)));
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d);
+redeyes.dispatcher = {};
+var dispatch_chan_49826 = cljs.core.async.chan.call(null), dispatch_pub_49827 = cljs.core.async.pub.call(null, dispatch_chan_49826, function(a) {
+  return function(a) {
+    return cljs.core.first.call(null, a);
   };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b);
+}(dispatch_chan_49826));
+redeyes.dispatcher.register = function(a, b) {
+  return function(a) {
+    return cljs.core.async.sub.call(null, b, a, cljs.core.async.chan.call(null));
   };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-redeyes.helpers.css_classes = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, cljs.core.str, cljs.core.interpose.call(null, " ", a));
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d);
+}(dispatch_chan_49826, dispatch_pub_49827);
+redeyes.dispatcher.unregister = function(a, b) {
+  return function(a, d) {
+    return cljs.core.async.unsub.call(null, b, a, d);
   };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b);
+}(dispatch_chan_49826, dispatch_pub_49827);
+redeyes.dispatcher.dispatch_BANG_ = function(a, b) {
+  return function(b, d) {
+    return cljs.core.async.put_BANG_.call(null, a, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [b, d], null));
   };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b;
-}();
-redeyes.helpers.active_QMARK_ = function(a) {
-  return cljs.core._EQ_.call(null, !0, cljs.core.get.call(null, a, "active"));
-};
-redeyes.helpers.log = function(a) {
-  return console.log(a);
-};
-redeyes.helpers.log_clj = function(a) {
-  return redeyes.helpers.log.call(null, cljs.core.clj__GT_js.call(null, a));
-};
-redeyes.core = {};
-redeyes.core.activate = function(a) {
-  om.core.update_BANG_.call(null, a, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, ["active"], null), !0);
-  return redeyes.api.persist_active_status.call(null, cljs.core.deref.call(null, a));
-};
-redeyes.core.deactivate = function(a) {
-  om.core.update_BANG_.call(null, a, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, ["active"], null), !1);
-  return redeyes.api.persist_inactive_status.call(null, cljs.core.deref.call(null, a));
-};
-redeyes.core.fetch_data = function(a) {
-  return redeyes.api.fetch_data.call(null, a);
-};
-redeyes.core.dispatch = function(a, b, c) {
-  var d = a instanceof cljs.core.Keyword ? a.fqn : null;
-  switch(d) {
-    case "update-status":
-      return cljs.core.truth_((new cljs.core.Keyword(null, "active", "active", 1895962068)).cljs$core$IFn$_invoke$arity$1(b)) ? redeyes.core.activate.call(null, (new cljs.core.Keyword(null, "app", "app", -560961707)).cljs$core$IFn$_invoke$arity$1(b)) : redeyes.core.deactivate.call(null, (new cljs.core.Keyword(null, "app", "app", -560961707)).cljs$core$IFn$_invoke$arity$1(b));
-    case "create":
-      return om.core.transact_BANG_.call(null, c, new cljs.core.Keyword(null, "apps", "apps", 844744865), function(a) {
-        return function(a) {
-          return cljs.core.conj.call(null, a, new cljs.core.PersistentArrayMap(null, 2, ["url", (new cljs.core.Keyword(null, "url", "url", 276297046)).cljs$core$IFn$_invoke$arity$1(b), "active", !0], null));
-        };
-      }(d)), redeyes.api.submit_new_app.call(null, (new cljs.core.Keyword(null, "url", "url", 276297046)).cljs$core$IFn$_invoke$arity$1(b), function(a) {
-        return function() {
-          return redeyes.core.fetch_data.call(null, c);
-        };
-      }(d)), 2;
-    case "wake-up-now":
-      return redeyes.api.wake_all.call(null, function(a) {
-        return function() {
-          return redeyes.core.fetch_data.call(null, c);
-        };
-      }(d));
-    case "clear-deactivated":
-      return om.core.transact_BANG_.call(null, c, new cljs.core.Keyword(null, "apps", "apps", 844744865), function(a) {
-        return function(b) {
-          return cljs.core.filter.call(null, function(a) {
+}(dispatch_chan_49826, dispatch_pub_49827);
+redeyes.dispatcher.stream = function(a, b) {
+  return function(c, d) {
+    var e = redeyes.dispatcher.register.call(null, c), g = cljs.core.async.chan.call(null, 1);
+    cljs.core.async.impl.dispatch.run.call(null, function(a, b, c, e) {
+      return function() {
+        var g = function() {
+          return function(a, b, c, d, e) {
+            return function() {
+              var b = null, c = function() {
+                var a = [null, null, null, null, null, null, null, null];
+                a[0] = b;
+                a[1] = 1;
+                return a;
+              }, d = function(b) {
+                for (;;) {
+                  var c;
+                  a: {
+                    try {
+                      for (;;) {
+                        var d = a.call(null, b);
+                        if (!cljs.core.keyword_identical_QMARK_.call(null, d, new cljs.core.Keyword(null, "recur", "recur", -437573268))) {
+                          c = d;
+                          break a;
+                        }
+                      }
+                    } catch (e) {
+                      if (e instanceof Object) {
+                        b[5] = e;
+                        cljs.core.async.impl.ioc_helpers.process_exception.call(null, b);
+                        c = new cljs.core.Keyword(null, "recur", "recur", -437573268);
+                        break a;
+                      } else {
+                        throw e;
+                      }
+                    }
+                    c = void 0;
+                  }
+                  if (!cljs.core.keyword_identical_QMARK_.call(null, c, new cljs.core.Keyword(null, "recur", "recur", -437573268))) {
+                    return c;
+                  }
+                }
+              }, b = function(a) {
+                switch(arguments.length) {
+                  case 0:
+                    return c.call(this);
+                  case 1:
+                    return d.call(this, a);
+                }
+                throw Error("Invalid arity: " + arguments.length);
+              };
+              b.cljs$core$IFn$_invoke$arity$0 = c;
+              b.cljs$core$IFn$_invoke$arity$1 = d;
+              return b;
+            }();
+          }(function(a, b, c, e) {
             return function(a) {
-              return redeyes.helpers.active_QMARK_.call(null, a);
+              var c = a[1];
+              return 4 === c ? (c = cljs.core.last.call(null, a[2]), c = d.call(null, c), a[7] = c, a[2] = null, a[1] = 2, new cljs.core.Keyword(null, "recur", "recur", -437573268)) : 3 === c ? (c = a[2], cljs.core.async.impl.ioc_helpers.return_chan.call(null, a, c)) : 2 === c ? cljs.core.async.impl.ioc_helpers.take_BANG_.call(null, a, 4, b) : 1 === c ? (a[2] = null, a[1] = 2, new cljs.core.Keyword(null, "recur", "recur", -437573268)) : null;
             };
-          }(a), b);
-        };
-      }(d)), redeyes.api.clear_deactivated.call(null, function(a) {
-        return function() {
-          return redeyes.core.fetch_data.call(null, c);
-        };
-      }(d));
-    default:
-      throw Error([cljs.core.str("No matching clause: "), cljs.core.str(a)].join(""));;
-  }
+          }(a, b, c, e), a, b, c, e);
+        }(), n = function() {
+          var b = g.call(null);
+          b[cljs.core.async.impl.ioc_helpers.USER_START_IDX] = a;
+          return b;
+        }();
+        return cljs.core.async.impl.ioc_helpers.run_state_machine_wrapped.call(null, n);
+      };
+    }(g, e, a, b));
+    return g;
+  };
+}(dispatch_chan_49826, dispatch_pub_49827);
+redeyes.core = {};
+redeyes.core.app_state = cljs.core.atom.call(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "apps", "apps", 844744865), cljs.core.PersistentVector.EMPTY], null));
+redeyes.core.fetch_data = function() {
+  return redeyes.api.fetch_data.call(null, redeyes.core.app_state);
 };
-var ufv___26566 = schema.utils.use_fn_validation, output_schema26554_26567 = schema.core.Any, input_schema26555_26568 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "data", "data", 1407862150, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker26556_26569 = schema.core.checker.call(null, input_schema26555_26568), 
-output_checker26557_26570 = schema.core.checker.call(null, output_schema26554_26567);
+redeyes.undo.add_undo.call(null, redeyes.core.app_state);
+redeyes.dispatcher.stream.call(null, new cljs.core.Keyword(null, "clear-deactivated", "clear-deactivated", 484214381), function(a) {
+  a = cljs.core.seq_QMARK_.call(null, a) ? cljs.core.apply.call(null, cljs.core.hash_map, a) : a;
+  a = cljs.core.get.call(null, a, new cljs.core.Keyword(null, "apps", "apps", 844744865));
+  om.core.update_BANG_.call(null, a, cljs.core.filter.call(null, redeyes.util.active_QMARK_, cljs.core.deref.call(null, a)));
+  return redeyes.api.clear_deactivated.call(null, redeyes.core.fetch_data);
+});
+redeyes.dispatcher.stream.call(null, new cljs.core.Keyword(null, "create", "create", -1301499256), function(a) {
+  var b = cljs.core.seq_QMARK_.call(null, a) ? cljs.core.apply.call(null, cljs.core.hash_map, a) : a;
+  a = cljs.core.get.call(null, b, new cljs.core.Keyword(null, "apps", "apps", 844744865));
+  b = cljs.core.get.call(null, b, new cljs.core.Keyword(null, "url", "url", 276297046));
+  om.core.update_BANG_.call(null, a, cljs.core.conj.call(null, cljs.core.deref.call(null, a), new cljs.core.PersistentArrayMap(null, 2, ["url", b, "active", !0], null)));
+  return redeyes.api.submit_new_app.call(null, b, redeyes.core.fetch_data);
+});
+redeyes.dispatcher.stream.call(null, new cljs.core.Keyword(null, "wake-up-now", "wake-up-now", 99841662), function(a) {
+  var b = cljs.core.seq_QMARK_.call(null, a) ? cljs.core.apply.call(null, cljs.core.hash_map, a) : a, c = cljs.core.get.call(null, b, new cljs.core.Keyword(null, "apps", "apps", 844744865));
+  return redeyes.api.wake_all.call(null, function(a, b, c) {
+    return function() {
+      return redeyes.core.fetch_data.call(null);
+    };
+  }(a, b, c));
+});
+redeyes.dispatcher.stream.call(null, new cljs.core.Keyword(null, "update-status", "update-status", 22520609), function(a) {
+  var b = cljs.core.seq_QMARK_.call(null, a) ? cljs.core.apply.call(null, cljs.core.hash_map, a) : a;
+  a = cljs.core.get.call(null, b, new cljs.core.Keyword(null, "app", "app", -560961707));
+  b = cljs.core.get.call(null, b, new cljs.core.Keyword(null, "active", "active", 1895962068));
+  om.core.update_BANG_.call(null, a, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, ["active"], null), b);
+  return cljs.core.truth_(b) ? redeyes.api.persist_active_status.call(null, cljs.core.deref.call(null, a)) : redeyes.api.persist_inactive_status.call(null, cljs.core.deref.call(null, a));
+});
+var ufv___53116 = schema.utils.use_fn_validation, output_schema53104_53117 = schema.core.Any, input_schema53105_53118 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "apps", "apps", -1809690904, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker53106_53119 = schema.core.checker.call(null, input_schema53105_53118), 
+output_checker53107_53120 = schema.core.checker.call(null, output_schema53104_53117);
 redeyes.core.new_sleepy_app_form = function(a, b, c, d, e) {
   return function f(h, k) {
     var l = a.get_cell();
@@ -35269,28 +35344,28 @@ redeyes.core.new_sleepy_app_form = function(a, b, c, d, e) {
     }
     m = function() {
       for (;;) {
-        return "undefined" === typeof redeyes.core.t26563 && (redeyes.core.t26563 = function(a, b, c, d, e, f, h, k, l, m, n, S) {
-          this.output_schema26554 = a;
-          this.new_sleepy_app_form = b;
+        return "undefined" === typeof redeyes.core.t53113 && (redeyes.core.t53113 = function(a, b, c, d, e, f, h, k, l, m, n, S) {
+          this.new_sleepy_app_form = a;
+          this.G__53109 = b;
           this.owner = c;
-          this.validate__8050__auto__ = d;
-          this.data = e;
-          this.G__26559 = f;
-          this.input_schema26555 = h;
-          this.output_checker26557 = k;
-          this.G__26558 = l;
-          this.ufv__ = m;
-          this.input_checker26556 = n;
-          this.meta26564 = S;
+          this.validate__8048__auto__ = d;
+          this.apps = e;
+          this.output_schema53104 = f;
+          this.G__53108 = h;
+          this.input_schema53105 = k;
+          this.output_checker53107 = l;
+          this.input_checker53106 = m;
+          this.ufv__ = n;
+          this.meta53114 = S;
           this.cljs$lang$protocol_mask$partition1$ = 0;
           this.cljs$lang$protocol_mask$partition0$ = 393216;
-        }, redeyes.core.t26563.prototype.om$core$IDisplayName$ = !0, redeyes.core.t26563.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
+        }, redeyes.core.t53113.prototype.om$core$IDisplayName$ = !0, redeyes.core.t53113.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
             return "new-sleepy-app-form";
           };
-        }(l, a, b, c, d, e), redeyes.core.t26563.prototype.om$core$IRenderState$ = !0, redeyes.core.t26563.prototype.om$core$IRenderState$render_state$arity$2 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t53113.prototype.om$core$IRenderState$ = !0, redeyes.core.t53113.prototype.om$core$IRenderState$render_state$arity$2 = function(a, b, c, d, e, f) {
           return function(h, k) {
-            var l = this, m = (new cljs.core.Keyword(null, "url", "url", 276297046)).cljs$core$IFn$_invoke$arity$1(k), n = (new cljs.core.Keyword(null, "bus", "bus", -1090873603)).cljs$core$IFn$_invoke$arity$1(om.core.get_shared.call(null, l.owner)), S = function(a, b, c, d, e, f, h, k, m) {
+            var l = this, m = (new cljs.core.Keyword(null, "url", "url", 276297046)).cljs$core$IFn$_invoke$arity$1(k), n = (new cljs.core.Keyword(null, "apps", "apps", 844744865)).cljs$core$IFn$_invoke$arity$1(k), S = function(a, b, c, d, e, f, h, k, m) {
               return function(a) {
                 return om.core.set_state_BANG_.call(null, l.owner, new cljs.core.Keyword(null, "url", "url", 276297046), a);
               };
@@ -35301,35 +35376,35 @@ redeyes.core.new_sleepy_app_form = function(a, b, c, d, e) {
             }(m, n, S, this, a, b, c, d, e, f), n = function(a, b, c, d, e, f, h, k, l, m, n) {
               return function(d) {
                 d.preventDefault();
-                cljs.core.async.put_BANG_.call(null, b, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "create", "create", -1301499256), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "url", "url", 276297046), a], null)], null));
+                redeyes.dispatcher.dispatch_BANG_.call(null, new cljs.core.Keyword(null, "create", "create", -1301499256), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "url", "url", 276297046), a, new cljs.core.Keyword(null, "apps", "apps", 844744865), b], null));
                 return c.call(null, "");
               };
             }(m, n, S, x, this, a, b, c, d, e, f);
-            return cljs.core.apply.call(null, React.DOM.form, {onSubmit:om_tools.dom.format_opts.call(null, n), className:"new-sleepy-app-form form-inline"}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [redeyes.helpers.input_with_addons.call(null, new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "before", "before", -1633692388), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "text", "text", 
+            return cljs.core.apply.call(null, React.DOM.form, {onSubmit:om_tools.dom.format_opts.call(null, n), className:"new-sleepy-app-form form-inline"}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [redeyes.util.input_with_addons.call(null, new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "before", "before", -1633692388), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "text", "text", 
             -1790561697), "http://"], null), new cljs.core.Keyword(null, "after", "after", 594996914), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "text", "text", -1790561697), "Add URL", new cljs.core.Keyword(null, "onClick", "onClick", -1991238530), n], null)], null), om.dom.input.call(null, {placeholder:"URL here please!", onChange:om_tools.dom.format_opts.call(null, x), value:om_tools.dom.format_opts.call(null, m), id:"sleepy-app-url", className:"form-control", ref:"new-url", 
             type:"text"}))], null)));
           };
-        }(l, a, b, c, d, e), redeyes.core.t26563.prototype.om$core$IInitState$ = !0, redeyes.core.t26563.prototype.om$core$IInitState$init_state$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t53113.prototype.om$core$IInitState$ = !0, redeyes.core.t53113.prototype.om$core$IInitState$init_state$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
-            return new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "url", "url", 276297046), ""], null);
+            return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "url", "url", 276297046), "", new cljs.core.Keyword(null, "apps", "apps", 844744865), this.apps], null);
           };
-        }(l, a, b, c, d, e), redeyes.core.t26563.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t53113.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
-            return this.meta26564;
+            return this.meta53114;
           };
-        }(l, a, b, c, d, e), redeyes.core.t26563.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t53113.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
           return function(a, b) {
-            return new redeyes.core.t26563(this.output_schema26554, this.new_sleepy_app_form, this.owner, this.validate__8050__auto__, this.data, this.G__26559, this.input_schema26555, this.output_checker26557, this.G__26558, this.ufv__, this.input_checker26556, b);
+            return new redeyes.core.t53113(this.new_sleepy_app_form, this.G__53109, this.owner, this.validate__8048__auto__, this.apps, this.output_schema53104, this.G__53108, this.input_schema53105, this.output_checker53107, this.input_checker53106, this.ufv__, b);
           };
-        }(l, a, b, c, d, e), redeyes.core.t26563.cljs$lang$type = !0, redeyes.core.t26563.cljs$lang$ctorStr = "redeyes.core/t26563", redeyes.core.t26563.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t53113.cljs$lang$type = !0, redeyes.core.t53113.cljs$lang$ctorStr = "redeyes.core/t53113", redeyes.core.t53113.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
           return function(a, b, c) {
-            return cljs.core._write.call(null, b, "redeyes.core/t26563");
+            return cljs.core._write.call(null, b, "redeyes.core/t53113");
           };
-        }(l, a, b, c, d, e), redeyes.core.__GT_t26563 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.__GT_t53113 = function(a, b, c, d, e, f) {
           return function(a, b, c, d, e, f, h, k, l, m, n, p) {
-            return new redeyes.core.t26563(a, b, c, d, e, f, h, k, l, m, n, p);
+            return new redeyes.core.t53113(a, b, c, d, e, f, h, k, l, m, n, p);
           };
-        }(l, a, b, c, d, e)), new redeyes.core.t26563(b, f, k, l, h, k, c, e, h, a, d, null);
+        }(l, a, b, c, d, e)), new redeyes.core.t53113(f, k, k, l, h, b, h, c, e, d, a, null);
       }
     }();
     if (cljs.core.truth_(l) && (n = e.call(null, m), cljs.core.truth_(n))) {
@@ -35338,8 +35413,8 @@ redeyes.core.new_sleepy_app_form = function(a, b, c, d, e) {
     }
     return m;
   };
-}(ufv___26566, output_schema26554_26567, input_schema26555_26568, input_checker26556_26569, output_checker26557_26570);
-schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, redeyes.core.new_sleepy_app_form), schema.core.make_fn_schema.call(null, output_schema26554_26567, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema26555_26568], null)));
+}(ufv___53116, output_schema53104_53117, input_schema53105_53118, input_checker53106_53119, output_checker53107_53120);
+schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, redeyes.core.new_sleepy_app_form), schema.core.make_fn_schema.call(null, output_schema53104_53117, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema53105_53118], null)));
 redeyes.core.__GT_new_sleepy_app_form = function() {
   var a = null, b = function(a) {
     return om.core.build.call(null, redeyes.core.new_sleepy_app_form, a);
@@ -35358,8 +35433,8 @@ redeyes.core.__GT_new_sleepy_app_form = function() {
   a.cljs$core$IFn$_invoke$arity$2 = c;
   return a;
 }();
-var ufv___26589 = schema.utils.use_fn_validation, output_schema26577_26590 = schema.core.Any, input_schema26578_26591 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "app", "app", 1079569820, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker26579_26592 = schema.core.checker.call(null, input_schema26578_26591), 
-output_checker26580_26593 = schema.core.checker.call(null, output_schema26577_26590);
+var ufv___53139 = schema.utils.use_fn_validation, output_schema53127_53140 = schema.core.Any, input_schema53128_53141 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "app", "app", 1079569820, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker53129_53142 = schema.core.checker.call(null, input_schema53128_53141), 
+output_checker53130_53143 = schema.core.checker.call(null, output_schema53127_53140);
 redeyes.core.sleepy_app_checkbox = function(a, b, c, d, e) {
   return function f(h, k) {
     var l = a.get_cell();
@@ -35372,52 +35447,52 @@ redeyes.core.sleepy_app_checkbox = function(a, b, c, d, e) {
     }
     m = function() {
       for (;;) {
-        return "undefined" === typeof redeyes.core.t26586 && (redeyes.core.t26586 = function(a, b, c, d, e, f, h, k, l, m, n, S) {
-          this.input_checker26579 = a;
-          this.output_schema26577 = b;
-          this.G__26581 = c;
-          this.owner = d;
-          this.validate__8050__auto__ = e;
+        return "undefined" === typeof redeyes.core.t53136 && (redeyes.core.t53136 = function(a, b, c, d, e, f, h, k, l, m, n, S) {
+          this.owner = a;
+          this.validate__8048__auto__ = b;
+          this.G__53131 = c;
+          this.output_checker53130 = d;
+          this.G__53132 = e;
           this.sleepy_app_checkbox = f;
-          this.input_schema26578 = h;
-          this.G__26582 = k;
-          this.app = l;
-          this.ufv__ = m;
-          this.output_checker26580 = n;
-          this.meta26587 = S;
+          this.output_schema53127 = h;
+          this.input_schema53128 = k;
+          this.input_checker53129 = l;
+          this.app = m;
+          this.ufv__ = n;
+          this.meta53137 = S;
           this.cljs$lang$protocol_mask$partition1$ = 0;
           this.cljs$lang$protocol_mask$partition0$ = 393216;
-        }, redeyes.core.t26586.prototype.om$core$IDisplayName$ = !0, redeyes.core.t26586.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
+        }, redeyes.core.t53136.prototype.om$core$IDisplayName$ = !0, redeyes.core.t53136.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
             return "sleepy-app-checkbox";
           };
-        }(l, a, b, c, d, e), redeyes.core.t26586.prototype.om$core$IRender$ = !0, redeyes.core.t26586.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t53136.prototype.om$core$IRender$ = !0, redeyes.core.t53136.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f) {
           return function(h) {
             var k = this;
-            h = function(a, b, c, d, e, f, h, l) {
-              return function(b) {
-                return cljs.core.async.put_BANG_.call(null, a, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "update-status", "update-status", 22520609), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "app", "app", -560961707), k.app, new cljs.core.Keyword(null, "active", "active", 1895962068), b.target.checked], null)], null));
+            h = function(a, b, c, d, e, f, h) {
+              return function(a) {
+                return redeyes.dispatcher.dispatch_BANG_.call(null, new cljs.core.Keyword(null, "update-status", "update-status", 22520609), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "app", "app", -560961707), k.app, new cljs.core.Keyword(null, "active", "active", 1895962068), a.target.checked], null));
               };
-            }((new cljs.core.Keyword(null, "bus", "bus", -1090873603)).cljs$core$IFn$_invoke$arity$1(om.core.get_shared.call(null, k.owner)), this, a, b, c, d, e, f);
-            return om.dom.input.call(null, {checked:om_tools.dom.format_opts.call(null, redeyes.helpers.active_QMARK_.call(null, k.app)), onChange:om_tools.dom.format_opts.call(null, h), type:"checkbox"});
+            }(this, a, b, c, d, e, f);
+            return om.dom.input.call(null, {checked:om_tools.dom.format_opts.call(null, redeyes.util.active_QMARK_.call(null, k.app)), onChange:om_tools.dom.format_opts.call(null, h), type:"checkbox"});
           };
-        }(l, a, b, c, d, e), redeyes.core.t26586.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t53136.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
-            return this.meta26587;
+            return this.meta53137;
           };
-        }(l, a, b, c, d, e), redeyes.core.t26586.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t53136.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
           return function(a, b) {
-            return new redeyes.core.t26586(this.input_checker26579, this.output_schema26577, this.G__26581, this.owner, this.validate__8050__auto__, this.sleepy_app_checkbox, this.input_schema26578, this.G__26582, this.app, this.ufv__, this.output_checker26580, b);
+            return new redeyes.core.t53136(this.owner, this.validate__8048__auto__, this.G__53131, this.output_checker53130, this.G__53132, this.sleepy_app_checkbox, this.output_schema53127, this.input_schema53128, this.input_checker53129, this.app, this.ufv__, b);
           };
-        }(l, a, b, c, d, e), redeyes.core.t26586.cljs$lang$type = !0, redeyes.core.t26586.cljs$lang$ctorStr = "redeyes.core/t26586", redeyes.core.t26586.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t53136.cljs$lang$type = !0, redeyes.core.t53136.cljs$lang$ctorStr = "redeyes.core/t53136", redeyes.core.t53136.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
           return function(a, b, c) {
-            return cljs.core._write.call(null, b, "redeyes.core/t26586");
+            return cljs.core._write.call(null, b, "redeyes.core/t53136");
           };
-        }(l, a, b, c, d, e), redeyes.core.__GT_t26586 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.__GT_t53136 = function(a, b, c, d, e, f) {
           return function(a, b, c, d, e, f, h, k, l, m, n, p) {
-            return new redeyes.core.t26586(a, b, c, d, e, f, h, k, l, m, n, p);
+            return new redeyes.core.t53136(a, b, c, d, e, f, h, k, l, m, n, p);
           };
-        }(l, a, b, c, d, e)), new redeyes.core.t26586(d, b, h, k, l, f, c, k, h, a, e, null);
+        }(l, a, b, c, d, e)), new redeyes.core.t53136(k, l, h, e, k, f, b, c, d, h, a, null);
       }
     }();
     if (cljs.core.truth_(l) && (n = e.call(null, m), cljs.core.truth_(n))) {
@@ -35426,8 +35501,8 @@ redeyes.core.sleepy_app_checkbox = function(a, b, c, d, e) {
     }
     return m;
   };
-}(ufv___26589, output_schema26577_26590, input_schema26578_26591, input_checker26579_26592, output_checker26580_26593);
-schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, redeyes.core.sleepy_app_checkbox), schema.core.make_fn_schema.call(null, output_schema26577_26590, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema26578_26591], null)));
+}(ufv___53139, output_schema53127_53140, input_schema53128_53141, input_checker53129_53142, output_checker53130_53143);
+schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, redeyes.core.sleepy_app_checkbox), schema.core.make_fn_schema.call(null, output_schema53127_53140, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema53128_53141], null)));
 redeyes.core.__GT_sleepy_app_checkbox = function() {
   var a = null, b = function(a) {
     return om.core.build.call(null, redeyes.core.sleepy_app_checkbox, a);
@@ -35446,8 +35521,8 @@ redeyes.core.__GT_sleepy_app_checkbox = function() {
   a.cljs$core$IFn$_invoke$arity$2 = c;
   return a;
 }();
-var ufv___26612 = schema.utils.use_fn_validation, output_schema26600_26613 = schema.core.Any, input_schema26601_26614 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "app", "app", 1079569820, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker26602_26615 = schema.core.checker.call(null, input_schema26601_26614), 
-output_checker26603_26616 = schema.core.checker.call(null, output_schema26600_26613);
+var ufv___53162 = schema.utils.use_fn_validation, output_schema53150_53163 = schema.core.Any, input_schema53151_53164 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "app", "app", 1079569820, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker53152_53165 = schema.core.checker.call(null, input_schema53151_53164), 
+output_checker53153_53166 = schema.core.checker.call(null, output_schema53150_53163);
 redeyes.core.sleepy_app = function(a, b, c, d, e) {
   return function f(h, k) {
     var l = a.get_cell();
@@ -35460,49 +35535,49 @@ redeyes.core.sleepy_app = function(a, b, c, d, e) {
     }
     m = function() {
       for (;;) {
-        return "undefined" === typeof redeyes.core.t26609 && (redeyes.core.t26609 = function(a, b, c, d, e, f, h, k, l, m, n, S) {
-          this.owner = a;
-          this.validate__8050__auto__ = b;
-          this.G__26604 = c;
-          this.sleepy_app = d;
-          this.G__26605 = e;
-          this.input_checker26602 = f;
-          this.output_schema26600 = h;
-          this.output_checker26603 = k;
-          this.app = l;
-          this.ufv__ = m;
-          this.input_schema26601 = n;
-          this.meta26610 = S;
+        return "undefined" === typeof redeyes.core.t53159 && (redeyes.core.t53159 = function(a, b, c, d, e, f, h, k, l, m, n, S) {
+          this.input_schema53151 = a;
+          this.owner = b;
+          this.validate__8048__auto__ = c;
+          this.output_schema53150 = d;
+          this.input_checker53152 = e;
+          this.G__53155 = f;
+          this.sleepy_app = h;
+          this.G__53154 = k;
+          this.output_checker53153 = l;
+          this.app = m;
+          this.ufv__ = n;
+          this.meta53160 = S;
           this.cljs$lang$protocol_mask$partition1$ = 0;
           this.cljs$lang$protocol_mask$partition0$ = 393216;
-        }, redeyes.core.t26609.prototype.om$core$IDisplayName$ = !0, redeyes.core.t26609.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
+        }, redeyes.core.t53159.prototype.om$core$IDisplayName$ = !0, redeyes.core.t53159.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
             return "sleepy-app";
           };
-        }(l, a, b, c, d, e), redeyes.core.t26609.prototype.om$core$IRender$ = !0, redeyes.core.t26609.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t53159.prototype.om$core$IRender$ = !0, redeyes.core.t53159.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
             a = cljs.core.get.call(null, this.app, "url");
             var b = cljs.core.get.call(null, this.app, "lastWokenUpAt"), b = null == b ? "Never" : b;
-            return cljs.core.apply.call(null, React.DOM.tr, {className:om_tools.dom.format_opts.call(null, redeyes.helpers.css_classes.call(null, "sleepy-app", redeyes.helpers.active_QMARK_.call(null, this.app) ? "active" : null))}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [om_tools.dom.element.call(null, React.DOM.td, om.core.build.call(null, redeyes.core.sleepy_app_checkbox, this.app), cljs.core.PersistentVector.EMPTY), om_tools.dom.element.call(null, 
+            return cljs.core.apply.call(null, React.DOM.tr, {className:om_tools.dom.format_opts.call(null, redeyes.util.css_classes.call(null, "sleepy-app", redeyes.util.active_QMARK_.call(null, this.app) ? "active" : null))}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [om_tools.dom.element.call(null, React.DOM.td, om.core.build.call(null, redeyes.core.sleepy_app_checkbox, this.app), cljs.core.PersistentVector.EMPTY), om_tools.dom.element.call(null, 
             React.DOM.td, a, cljs.core.PersistentVector.EMPTY), om_tools.dom.element.call(null, React.DOM.td, b, cljs.core.PersistentVector.EMPTY)], null)));
           };
-        }(l, a, b, c, d, e), redeyes.core.t26609.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t53159.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
-            return this.meta26610;
+            return this.meta53160;
           };
-        }(l, a, b, c, d, e), redeyes.core.t26609.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t53159.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
           return function(a, b) {
-            return new redeyes.core.t26609(this.owner, this.validate__8050__auto__, this.G__26604, this.sleepy_app, this.G__26605, this.input_checker26602, this.output_schema26600, this.output_checker26603, this.app, this.ufv__, this.input_schema26601, b);
+            return new redeyes.core.t53159(this.input_schema53151, this.owner, this.validate__8048__auto__, this.output_schema53150, this.input_checker53152, this.G__53155, this.sleepy_app, this.G__53154, this.output_checker53153, this.app, this.ufv__, b);
           };
-        }(l, a, b, c, d, e), redeyes.core.t26609.cljs$lang$type = !0, redeyes.core.t26609.cljs$lang$ctorStr = "redeyes.core/t26609", redeyes.core.t26609.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t53159.cljs$lang$type = !0, redeyes.core.t53159.cljs$lang$ctorStr = "redeyes.core/t53159", redeyes.core.t53159.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
           return function(a, b, c) {
-            return cljs.core._write.call(null, b, "redeyes.core/t26609");
+            return cljs.core._write.call(null, b, "redeyes.core/t53159");
           };
-        }(l, a, b, c, d, e), redeyes.core.__GT_t26609 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.__GT_t53159 = function(a, b, c, d, e, f) {
           return function(a, b, c, d, e, f, h, k, l, m, n, p) {
-            return new redeyes.core.t26609(a, b, c, d, e, f, h, k, l, m, n, p);
+            return new redeyes.core.t53159(a, b, c, d, e, f, h, k, l, m, n, p);
           };
-        }(l, a, b, c, d, e)), new redeyes.core.t26609(k, l, h, f, k, d, b, e, h, a, c, null);
+        }(l, a, b, c, d, e)), new redeyes.core.t53159(c, k, l, b, d, k, f, h, e, h, a, null);
       }
     }();
     if (cljs.core.truth_(l) && (n = e.call(null, m), cljs.core.truth_(n))) {
@@ -35511,8 +35586,8 @@ redeyes.core.sleepy_app = function(a, b, c, d, e) {
     }
     return m;
   };
-}(ufv___26612, output_schema26600_26613, input_schema26601_26614, input_checker26602_26615, output_checker26603_26616);
-schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, redeyes.core.sleepy_app), schema.core.make_fn_schema.call(null, output_schema26600_26613, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema26601_26614], null)));
+}(ufv___53162, output_schema53150_53163, input_schema53151_53164, input_checker53152_53165, output_checker53153_53166);
+schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, redeyes.core.sleepy_app), schema.core.make_fn_schema.call(null, output_schema53150_53163, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema53151_53164], null)));
 redeyes.core.__GT_sleepy_app = function() {
   var a = null, b = function(a) {
     return om.core.build.call(null, redeyes.core.sleepy_app, a);
@@ -35531,8 +35606,8 @@ redeyes.core.__GT_sleepy_app = function() {
   a.cljs$core$IFn$_invoke$arity$2 = c;
   return a;
 }();
-var ufv___26635 = schema.utils.use_fn_validation, output_schema26623_26636 = schema.core.Any, input_schema26624_26637 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "apps", "apps", -1809690904, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker26625_26638 = schema.core.checker.call(null, input_schema26624_26637), 
-output_checker26626_26639 = schema.core.checker.call(null, output_schema26623_26636);
+var ufv___53185 = schema.utils.use_fn_validation, output_schema53173_53186 = schema.core.Any, input_schema53174_53187 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "apps", "apps", -1809690904, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker53175_53188 = schema.core.checker.call(null, input_schema53174_53187), 
+output_checker53176_53189 = schema.core.checker.call(null, output_schema53173_53186);
 redeyes.core.sleepy_app_list = function(a, b, c, d, e) {
   return function f(h, k) {
     var l = a.get_cell();
@@ -35545,47 +35620,47 @@ redeyes.core.sleepy_app_list = function(a, b, c, d, e) {
     }
     m = function() {
       for (;;) {
-        return "undefined" === typeof redeyes.core.t26632 && (redeyes.core.t26632 = function(a, b, c, d, e, f, h, k, l, m, n, S) {
-          this.output_schema26623 = a;
-          this.owner = b;
-          this.validate__8050__auto__ = c;
-          this.apps = d;
-          this.sleepy_app_list = e;
-          this.G__26628 = f;
-          this.output_checker26626 = h;
-          this.G__26627 = k;
-          this.input_checker26625 = l;
-          this.input_schema26624 = m;
+        return "undefined" === typeof redeyes.core.t53182 && (redeyes.core.t53182 = function(a, b, c, d, e, f, h, k, l, m, n, S) {
+          this.input_schema53174 = a;
+          this.input_checker53175 = b;
+          this.G__53178 = c;
+          this.owner = d;
+          this.output_checker53176 = e;
+          this.validate__8048__auto__ = f;
+          this.apps = h;
+          this.G__53177 = k;
+          this.sleepy_app_list = l;
+          this.output_schema53173 = m;
           this.ufv__ = n;
-          this.meta26633 = S;
+          this.meta53183 = S;
           this.cljs$lang$protocol_mask$partition1$ = 0;
           this.cljs$lang$protocol_mask$partition0$ = 393216;
-        }, redeyes.core.t26632.prototype.om$core$IDisplayName$ = !0, redeyes.core.t26632.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
+        }, redeyes.core.t53182.prototype.om$core$IDisplayName$ = !0, redeyes.core.t53182.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
             return "sleepy-app-list";
           };
-        }(l, a, b, c, d, e), redeyes.core.t26632.prototype.om$core$IRender$ = !0, redeyes.core.t26632.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t53182.prototype.om$core$IRender$ = !0, redeyes.core.t53182.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
             return cljs.core.empty_QMARK_.call(null, this.apps) ? React.DOM.div(null, "No apps") : om_tools.dom.element.call(null, React.DOM.div, cljs.core.apply.call(null, React.DOM.table, {className:"table"}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [om_tools.dom.element.call(null, React.DOM.thead, om_tools.dom.element.call(null, React.DOM.tr, React.DOM.th({className:"sleepy-app-active-col"}, ""), new cljs.core.PersistentVector(null, 
             2, 5, cljs.core.PersistentVector.EMPTY_NODE, [React.DOM.th(null), React.DOM.th(null)], null)), cljs.core.PersistentVector.EMPTY), cljs.core.apply.call(null, om_tools.dom.tbody, cljs.core.PersistentArrayMap.EMPTY, om.core.build_all.call(null, redeyes.core.sleepy_app, this.apps))], null))), cljs.core.PersistentVector.EMPTY);
           };
-        }(l, a, b, c, d, e), redeyes.core.t26632.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t53182.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
-            return this.meta26633;
+            return this.meta53183;
           };
-        }(l, a, b, c, d, e), redeyes.core.t26632.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t53182.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
           return function(a, b) {
-            return new redeyes.core.t26632(this.output_schema26623, this.owner, this.validate__8050__auto__, this.apps, this.sleepy_app_list, this.G__26628, this.output_checker26626, this.G__26627, this.input_checker26625, this.input_schema26624, this.ufv__, b);
+            return new redeyes.core.t53182(this.input_schema53174, this.input_checker53175, this.G__53178, this.owner, this.output_checker53176, this.validate__8048__auto__, this.apps, this.G__53177, this.sleepy_app_list, this.output_schema53173, this.ufv__, b);
           };
-        }(l, a, b, c, d, e), redeyes.core.t26632.cljs$lang$type = !0, redeyes.core.t26632.cljs$lang$ctorStr = "redeyes.core/t26632", redeyes.core.t26632.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t53182.cljs$lang$type = !0, redeyes.core.t53182.cljs$lang$ctorStr = "redeyes.core/t53182", redeyes.core.t53182.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
           return function(a, b, c) {
-            return cljs.core._write.call(null, b, "redeyes.core/t26632");
+            return cljs.core._write.call(null, b, "redeyes.core/t53182");
           };
-        }(l, a, b, c, d, e), redeyes.core.__GT_t26632 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.__GT_t53182 = function(a, b, c, d, e, f) {
           return function(a, b, c, d, e, f, h, k, l, m, n, p) {
-            return new redeyes.core.t26632(a, b, c, d, e, f, h, k, l, m, n, p);
+            return new redeyes.core.t53182(a, b, c, d, e, f, h, k, l, m, n, p);
           };
-        }(l, a, b, c, d, e)), new redeyes.core.t26632(b, k, l, h, f, k, e, h, d, c, a, null);
+        }(l, a, b, c, d, e)), new redeyes.core.t53182(c, d, k, k, e, l, h, h, f, b, a, null);
       }
     }();
     if (cljs.core.truth_(l) && (n = e.call(null, m), cljs.core.truth_(n))) {
@@ -35594,8 +35669,8 @@ redeyes.core.sleepy_app_list = function(a, b, c, d, e) {
     }
     return m;
   };
-}(ufv___26635, output_schema26623_26636, input_schema26624_26637, input_checker26625_26638, output_checker26626_26639);
-schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, redeyes.core.sleepy_app_list), schema.core.make_fn_schema.call(null, output_schema26623_26636, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema26624_26637], null)));
+}(ufv___53185, output_schema53173_53186, input_schema53174_53187, input_checker53175_53188, output_checker53176_53189);
+schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, redeyes.core.sleepy_app_list), schema.core.make_fn_schema.call(null, output_schema53173_53186, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema53174_53187], null)));
 redeyes.core.__GT_sleepy_app_list = function() {
   var a = null, b = function(a) {
     return om.core.build.call(null, redeyes.core.sleepy_app_list, a);
@@ -35614,8 +35689,8 @@ redeyes.core.__GT_sleepy_app_list = function() {
   a.cljs$core$IFn$_invoke$arity$2 = c;
   return a;
 }();
-var ufv___26658 = schema.utils.use_fn_validation, output_schema26646_26659 = schema.core.Any, input_schema26647_26660 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "app-state", "app-state", 130568249, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker26648_26661 = schema.core.checker.call(null, input_schema26647_26660), 
-output_checker26649_26662 = schema.core.checker.call(null, output_schema26646_26659);
+var ufv___53208 = schema.utils.use_fn_validation, output_schema53196_53209 = schema.core.Any, input_schema53197_53210 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "apps", "apps", -1809690904, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker53198_53211 = schema.core.checker.call(null, input_schema53197_53210), 
+output_checker53199_53212 = schema.core.checker.call(null, output_schema53196_53209);
 redeyes.core.wake_up_now_button = function(a, b, c, d, e) {
   return function f(h, k) {
     var l = a.get_cell();
@@ -35628,52 +35703,52 @@ redeyes.core.wake_up_now_button = function(a, b, c, d, e) {
     }
     m = function() {
       for (;;) {
-        return "undefined" === typeof redeyes.core.t26655 && (redeyes.core.t26655 = function(a, b, c, d, e, f, h, k, l, m, n, S) {
-          this.input_schema26647 = a;
-          this.owner = b;
-          this.input_checker26648 = c;
-          this.validate__8050__auto__ = d;
-          this.G__26650 = e;
-          this.G__26651 = f;
-          this.output_checker26649 = h;
-          this.wake_up_now_button = k;
-          this.output_schema26646 = l;
-          this.app_state = m;
+        return "undefined" === typeof redeyes.core.t53205 && (redeyes.core.t53205 = function(a, b, c, d, e, f, h, k, l, m, n, S) {
+          this.owner = a;
+          this.validate__8048__auto__ = b;
+          this.apps = c;
+          this.G__53201 = d;
+          this.input_checker53198 = e;
+          this.G__53200 = f;
+          this.wake_up_now_button = h;
+          this.output_schema53196 = k;
+          this.input_schema53197 = l;
+          this.output_checker53199 = m;
           this.ufv__ = n;
-          this.meta26656 = S;
+          this.meta53206 = S;
           this.cljs$lang$protocol_mask$partition1$ = 0;
           this.cljs$lang$protocol_mask$partition0$ = 393216;
-        }, redeyes.core.t26655.prototype.om$core$IDisplayName$ = !0, redeyes.core.t26655.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
+        }, redeyes.core.t53205.prototype.om$core$IDisplayName$ = !0, redeyes.core.t53205.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
             return "wake-up-now-button";
           };
-        }(l, a, b, c, d, e), redeyes.core.t26655.prototype.om$core$IRender$ = !0, redeyes.core.t26655.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t53205.prototype.om$core$IRender$ = !0, redeyes.core.t53205.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f) {
           return function(h) {
             var k = this;
             h = function(a, b, c, d, e, f, h) {
               return function() {
-                return cljs.core.async.put_BANG_.call(null, (new cljs.core.Keyword(null, "bus", "bus", -1090873603)).cljs$core$IFn$_invoke$arity$1(om.core.get_shared.call(null, k.owner)), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "wake-up-now", "wake-up-now", 99841662), cljs.core.PersistentArrayMap.EMPTY], null));
+                return redeyes.dispatcher.dispatch_BANG_.call(null, new cljs.core.Keyword(null, "wake-up-now", "wake-up-now", 99841662), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "apps", "apps", 844744865), k.apps], null));
               };
             }(this, a, b, c, d, e, f);
-            return redeyes.helpers.button.call(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "onClick", "onClick", -1991238530), h], null), "Wake up all apps now!");
+            return redeyes.util.button.call(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "onClick", "onClick", -1991238530), h], null), "Wake up all apps now!");
           };
-        }(l, a, b, c, d, e), redeyes.core.t26655.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t53205.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
-            return this.meta26656;
+            return this.meta53206;
           };
-        }(l, a, b, c, d, e), redeyes.core.t26655.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t53205.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
           return function(a, b) {
-            return new redeyes.core.t26655(this.input_schema26647, this.owner, this.input_checker26648, this.validate__8050__auto__, this.G__26650, this.G__26651, this.output_checker26649, this.wake_up_now_button, this.output_schema26646, this.app_state, this.ufv__, b);
+            return new redeyes.core.t53205(this.owner, this.validate__8048__auto__, this.apps, this.G__53201, this.input_checker53198, this.G__53200, this.wake_up_now_button, this.output_schema53196, this.input_schema53197, this.output_checker53199, this.ufv__, b);
           };
-        }(l, a, b, c, d, e), redeyes.core.t26655.cljs$lang$type = !0, redeyes.core.t26655.cljs$lang$ctorStr = "redeyes.core/t26655", redeyes.core.t26655.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t53205.cljs$lang$type = !0, redeyes.core.t53205.cljs$lang$ctorStr = "redeyes.core/t53205", redeyes.core.t53205.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
           return function(a, b, c) {
-            return cljs.core._write.call(null, b, "redeyes.core/t26655");
+            return cljs.core._write.call(null, b, "redeyes.core/t53205");
           };
-        }(l, a, b, c, d, e), redeyes.core.__GT_t26655 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.__GT_t53205 = function(a, b, c, d, e, f) {
           return function(a, b, c, d, e, f, h, k, l, m, n, p) {
-            return new redeyes.core.t26655(a, b, c, d, e, f, h, k, l, m, n, p);
+            return new redeyes.core.t53205(a, b, c, d, e, f, h, k, l, m, n, p);
           };
-        }(l, a, b, c, d, e)), new redeyes.core.t26655(c, k, d, l, h, k, e, f, b, h, a, null);
+        }(l, a, b, c, d, e)), new redeyes.core.t53205(k, l, h, k, d, h, f, b, c, e, a, null);
       }
     }();
     if (cljs.core.truth_(l) && (n = e.call(null, m), cljs.core.truth_(n))) {
@@ -35682,8 +35757,8 @@ redeyes.core.wake_up_now_button = function(a, b, c, d, e) {
     }
     return m;
   };
-}(ufv___26658, output_schema26646_26659, input_schema26647_26660, input_checker26648_26661, output_checker26649_26662);
-schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, redeyes.core.wake_up_now_button), schema.core.make_fn_schema.call(null, output_schema26646_26659, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema26647_26660], null)));
+}(ufv___53208, output_schema53196_53209, input_schema53197_53210, input_checker53198_53211, output_checker53199_53212);
+schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, redeyes.core.wake_up_now_button), schema.core.make_fn_schema.call(null, output_schema53196_53209, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema53197_53210], null)));
 redeyes.core.__GT_wake_up_now_button = function() {
   var a = null, b = function(a) {
     return om.core.build.call(null, redeyes.core.wake_up_now_button, a);
@@ -35702,8 +35777,8 @@ redeyes.core.__GT_wake_up_now_button = function() {
   a.cljs$core$IFn$_invoke$arity$2 = c;
   return a;
 }();
-var ufv___26681 = schema.utils.use_fn_validation, output_schema26669_26682 = schema.core.Any, input_schema26670_26683 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "app-state", "app-state", 130568249, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker26671_26684 = schema.core.checker.call(null, input_schema26670_26683), 
-output_checker26672_26685 = schema.core.checker.call(null, output_schema26669_26682);
+var ufv___53231 = schema.utils.use_fn_validation, output_schema53219_53232 = schema.core.Any, input_schema53220_53233 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "apps", "apps", -1809690904, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker53221_53234 = schema.core.checker.call(null, input_schema53220_53233), 
+output_checker53222_53235 = schema.core.checker.call(null, output_schema53219_53232);
 redeyes.core.clear_deactivated_button = function(a, b, c, d, e) {
   return function f(h, k) {
     var l = a.get_cell();
@@ -35716,52 +35791,52 @@ redeyes.core.clear_deactivated_button = function(a, b, c, d, e) {
     }
     m = function() {
       for (;;) {
-        return "undefined" === typeof redeyes.core.t26678 && (redeyes.core.t26678 = function(a, b, c, d, e, f, h, k, l, m, n, S) {
-          this.input_checker26671 = a;
+        return "undefined" === typeof redeyes.core.t53228 && (redeyes.core.t53228 = function(a, b, c, d, e, f, h, k, l, m, n, S) {
+          this.input_checker53221 = a;
           this.owner = b;
-          this.validate__8050__auto__ = c;
-          this.G__26673 = d;
-          this.G__26674 = e;
+          this.validate__8048__auto__ = c;
+          this.apps = d;
+          this.output_checker53222 = e;
           this.clear_deactivated_button = f;
-          this.output_checker26672 = h;
-          this.input_schema26670 = k;
-          this.app_state = l;
-          this.ufv__ = m;
-          this.output_schema26669 = n;
-          this.meta26679 = S;
+          this.output_schema53219 = h;
+          this.G__53223 = k;
+          this.input_schema53220 = l;
+          this.G__53224 = m;
+          this.ufv__ = n;
+          this.meta53229 = S;
           this.cljs$lang$protocol_mask$partition1$ = 0;
           this.cljs$lang$protocol_mask$partition0$ = 393216;
-        }, redeyes.core.t26678.prototype.om$core$IDisplayName$ = !0, redeyes.core.t26678.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
+        }, redeyes.core.t53228.prototype.om$core$IDisplayName$ = !0, redeyes.core.t53228.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
             return "clear-deactivated-button";
           };
-        }(l, a, b, c, d, e), redeyes.core.t26678.prototype.om$core$IRender$ = !0, redeyes.core.t26678.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t53228.prototype.om$core$IRender$ = !0, redeyes.core.t53228.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f) {
           return function(h) {
             var k = this;
             h = function(a, b, c, d, e, f, h) {
               return function() {
-                return cljs.core.async.put_BANG_.call(null, (new cljs.core.Keyword(null, "bus", "bus", -1090873603)).cljs$core$IFn$_invoke$arity$1(om.core.get_shared.call(null, k.owner)), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "clear-deactivated", "clear-deactivated", 484214381), cljs.core.PersistentArrayMap.EMPTY], null));
+                return redeyes.dispatcher.dispatch_BANG_.call(null, new cljs.core.Keyword(null, "clear-deactivated", "clear-deactivated", 484214381), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "apps", "apps", 844744865), k.apps], null));
               };
             }(this, a, b, c, d, e, f);
-            return redeyes.helpers.button.call(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "onClick", "onClick", -1991238530), h], null), "Clear deactivated apps");
+            return redeyes.util.button.call(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "onClick", "onClick", -1991238530), h], null), "Clear deactivated apps");
           };
-        }(l, a, b, c, d, e), redeyes.core.t26678.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t53228.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
-            return this.meta26679;
+            return this.meta53229;
           };
-        }(l, a, b, c, d, e), redeyes.core.t26678.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t53228.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
           return function(a, b) {
-            return new redeyes.core.t26678(this.input_checker26671, this.owner, this.validate__8050__auto__, this.G__26673, this.G__26674, this.clear_deactivated_button, this.output_checker26672, this.input_schema26670, this.app_state, this.ufv__, this.output_schema26669, b);
+            return new redeyes.core.t53228(this.input_checker53221, this.owner, this.validate__8048__auto__, this.apps, this.output_checker53222, this.clear_deactivated_button, this.output_schema53219, this.G__53223, this.input_schema53220, this.G__53224, this.ufv__, b);
           };
-        }(l, a, b, c, d, e), redeyes.core.t26678.cljs$lang$type = !0, redeyes.core.t26678.cljs$lang$ctorStr = "redeyes.core/t26678", redeyes.core.t26678.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t53228.cljs$lang$type = !0, redeyes.core.t53228.cljs$lang$ctorStr = "redeyes.core/t53228", redeyes.core.t53228.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
           return function(a, b, c) {
-            return cljs.core._write.call(null, b, "redeyes.core/t26678");
+            return cljs.core._write.call(null, b, "redeyes.core/t53228");
           };
-        }(l, a, b, c, d, e), redeyes.core.__GT_t26678 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.__GT_t53228 = function(a, b, c, d, e, f) {
           return function(a, b, c, d, e, f, h, k, l, m, n, p) {
-            return new redeyes.core.t26678(a, b, c, d, e, f, h, k, l, m, n, p);
+            return new redeyes.core.t53228(a, b, c, d, e, f, h, k, l, m, n, p);
           };
-        }(l, a, b, c, d, e)), new redeyes.core.t26678(d, k, l, h, k, f, e, c, h, a, b, null);
+        }(l, a, b, c, d, e)), new redeyes.core.t53228(d, k, l, h, e, f, b, h, c, k, a, null);
       }
     }();
     if (cljs.core.truth_(l) && (n = e.call(null, m), cljs.core.truth_(n))) {
@@ -35770,8 +35845,8 @@ redeyes.core.clear_deactivated_button = function(a, b, c, d, e) {
     }
     return m;
   };
-}(ufv___26681, output_schema26669_26682, input_schema26670_26683, input_checker26671_26684, output_checker26672_26685);
-schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, redeyes.core.clear_deactivated_button), schema.core.make_fn_schema.call(null, output_schema26669_26682, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema26670_26683], null)));
+}(ufv___53231, output_schema53219_53232, input_schema53220_53233, input_checker53221_53234, output_checker53222_53235);
+schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, redeyes.core.clear_deactivated_button), schema.core.make_fn_schema.call(null, output_schema53219_53232, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema53220_53233], null)));
 redeyes.core.__GT_clear_deactivated_button = function() {
   var a = null, b = function(a) {
     return om.core.build.call(null, redeyes.core.clear_deactivated_button, a);
@@ -35790,8 +35865,8 @@ redeyes.core.__GT_clear_deactivated_button = function() {
   a.cljs$core$IFn$_invoke$arity$2 = c;
   return a;
 }();
-var ufv___26750 = schema.utils.use_fn_validation, output_schema26692_26751 = schema.core.Any, input_schema26693_26752 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "app-state", "app-state", 130568249, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker26694_26753 = schema.core.checker.call(null, input_schema26693_26752), 
-output_checker26695_26754 = schema.core.checker.call(null, output_schema26692_26751);
+var ufv___53254 = schema.utils.use_fn_validation, output_schema53242_53255 = schema.core.Any, input_schema53243_53256 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "app-state", "app-state", 130568249, null)), schema.core.one.call(null, schema.core.Any, new cljs.core.Symbol(null, "owner", "owner", 1247919588, null))], null), input_checker53244_53257 = schema.core.checker.call(null, input_schema53243_53256), 
+output_checker53245_53258 = schema.core.checker.call(null, output_schema53242_53255);
 redeyes.core.redeyes_app = function(a, b, c, d, e) {
   return function f(h, k) {
     var l = a.get_cell();
@@ -35804,127 +35879,52 @@ redeyes.core.redeyes_app = function(a, b, c, d, e) {
     }
     m = function() {
       for (;;) {
-        return "undefined" === typeof redeyes.core.t26724 && (redeyes.core.t26724 = function(a, b, c, d, e, f, h, k, l, m, n, S) {
-          this.G__26696 = a;
-          this.owner = b;
-          this.validate__8050__auto__ = c;
-          this.redeyes_app = d;
-          this.output_schema26692 = e;
-          this.output_checker26695 = f;
-          this.input_schema26693 = h;
-          this.app_state = k;
-          this.input_checker26694 = l;
+        return "undefined" === typeof redeyes.core.t53251 && (redeyes.core.t53251 = function(a, b, c, d, e, f, h, k, l, m, n, S) {
+          this.input_schema53243 = a;
+          this.G__53247 = b;
+          this.G__53246 = c;
+          this.output_checker53245 = d;
+          this.owner = e;
+          this.validate__8048__auto__ = f;
+          this.redeyes_app = h;
+          this.output_schema53242 = k;
+          this.app_state = l;
           this.ufv__ = m;
-          this.G__26697 = n;
-          this.meta26725 = S;
+          this.input_checker53244 = n;
+          this.meta53252 = S;
           this.cljs$lang$protocol_mask$partition1$ = 0;
           this.cljs$lang$protocol_mask$partition0$ = 393216;
-        }, redeyes.core.t26724.prototype.om$core$IDisplayName$ = !0, redeyes.core.t26724.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
+        }, redeyes.core.t53251.prototype.om$core$IDisplayName$ = !0, redeyes.core.t53251.prototype.om$core$IDisplayName$display_name$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
             return "redeyes-app";
           };
-        }(l, a, b, c, d, e), redeyes.core.t26724.prototype.om$core$IRender$ = !0, redeyes.core.t26724.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t53251.prototype.om$core$IRender$ = !0, redeyes.core.t53251.prototype.om$core$IRender$render$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
-            return om_tools.dom.element.call(null, React.DOM.div, React.DOM.h1(null, "Apps to wake up"), new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [React.DOM.hr(null), om.core.build.call(null, redeyes.core.new_sleepy_app_form, cljs.core.PersistentArrayMap.EMPTY), cljs.core.apply.call(null, React.DOM.div, {className:"sleepy-app-list"}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [om.core.build.call(null, 
-            redeyes.core.sleepy_app_list, (new cljs.core.Keyword(null, "apps", "apps", 844744865)).cljs$core$IFn$_invoke$arity$1(this.app_state))], null))), redeyes.helpers.button_group.call(null, om.core.build.call(null, redeyes.core.wake_up_now_button, this.app_state), om.core.build.call(null, redeyes.core.clear_deactivated_button, this.app_state))], null));
+            return om_tools.dom.element.call(null, React.DOM.div, React.DOM.h1(null, "Apps to wake up"), new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [React.DOM.hr(null), om.core.build.call(null, redeyes.core.new_sleepy_app_form, (new cljs.core.Keyword(null, "apps", "apps", 844744865)).cljs$core$IFn$_invoke$arity$1(this.app_state)), cljs.core.apply.call(null, React.DOM.div, {className:"sleepy-app-list"}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 
+            1, 5, cljs.core.PersistentVector.EMPTY_NODE, [om.core.build.call(null, redeyes.core.sleepy_app_list, (new cljs.core.Keyword(null, "apps", "apps", 844744865)).cljs$core$IFn$_invoke$arity$1(this.app_state))], null))), redeyes.util.button_group.call(null, om.core.build.call(null, redeyes.core.wake_up_now_button, (new cljs.core.Keyword(null, "apps", "apps", 844744865)).cljs$core$IFn$_invoke$arity$1(this.app_state)), om.core.build.call(null, redeyes.core.clear_deactivated_button, (new cljs.core.Keyword(null, 
+            "apps", "apps", 844744865)).cljs$core$IFn$_invoke$arity$1(this.app_state)))], null));
           };
-        }(l, a, b, c, d, e), redeyes.core.t26724.prototype.om$core$IWillMount$ = !0, redeyes.core.t26724.prototype.om$core$IWillMount$will_mount$arity$1 = function(a, b, c, d, e, f) {
-          return function(h) {
-            var k = this;
-            h = (new cljs.core.Keyword(null, "bus", "bus", -1090873603)).cljs$core$IFn$_invoke$arity$1(om.core.get_shared.call(null, k.owner));
-            redeyes.api.fetch_data.call(null, k.app_state);
-            var l = cljs.core.async.chan.call(null, 1);
-            cljs.core.async.impl.dispatch.run.call(null, function(a, b, c, d, e, f, h, l, m) {
-              return function() {
-                var n = function() {
-                  return function(a, b, c, d, e, f, h, k, l, m) {
-                    return function() {
-                      var b = null, c = function() {
-                        var a = [null, null, null, null, null, null, null, null];
-                        a[0] = b;
-                        a[1] = 1;
-                        return a;
-                      }, d = function(b) {
-                        for (;;) {
-                          var c;
-                          a: {
-                            try {
-                              for (;;) {
-                                var d = a.call(null, b);
-                                if (!cljs.core.keyword_identical_QMARK_.call(null, d, new cljs.core.Keyword(null, "recur", "recur", -437573268))) {
-                                  c = d;
-                                  break a;
-                                }
-                              }
-                            } catch (e) {
-                              if (e instanceof Object) {
-                                b[5] = e;
-                                cljs.core.async.impl.ioc_helpers.process_exception.call(null, b);
-                                c = new cljs.core.Keyword(null, "recur", "recur", -437573268);
-                                break a;
-                              } else {
-                                throw e;
-                              }
-                            }
-                            c = void 0;
-                          }
-                          if (!cljs.core.keyword_identical_QMARK_.call(null, c, new cljs.core.Keyword(null, "recur", "recur", -437573268))) {
-                            return c;
-                          }
-                        }
-                      }, b = function(a) {
-                        switch(arguments.length) {
-                          case 0:
-                            return c.call(this);
-                          case 1:
-                            return d.call(this, a);
-                        }
-                        throw Error("Invalid arity: " + arguments.length);
-                      };
-                      b.cljs$core$IFn$_invoke$arity$0 = c;
-                      b.cljs$core$IFn$_invoke$arity$1 = d;
-                      return b;
-                    }();
-                  }(function(a, b, c, d, e, f, h, l, m) {
-                    return function(a) {
-                      var c = a[1];
-                      if (4 === c) {
-                        var d = a[2], c = cljs.core.nth.call(null, d, 0, null), d = cljs.core.nth.call(null, d, 1, null), c = redeyes.core.dispatch.call(null, c, d, k.app_state);
-                        a[7] = c;
-                        a[2] = null;
-                        a[1] = 2;
-                        return new cljs.core.Keyword(null, "recur", "recur", -437573268);
-                      }
-                      return 3 === c ? (c = a[2], cljs.core.async.impl.ioc_helpers.return_chan.call(null, a, c)) : 2 === c ? cljs.core.async.impl.ioc_helpers.take_BANG_.call(null, a, 4, b) : 1 === c ? (a[2] = null, a[1] = 2, new cljs.core.Keyword(null, "recur", "recur", -437573268)) : null;
-                    };
-                  }(a, b, c, d, e, f, h, l, m), a, b, c, d, e, f, h, l, m);
-                }(), p = function() {
-                  var b = n.call(null);
-                  b[cljs.core.async.impl.ioc_helpers.USER_START_IDX] = a;
-                  return b;
-                }();
-                return cljs.core.async.impl.ioc_helpers.run_state_machine_wrapped.call(null, p);
-              };
-            }(l, h, this, a, b, c, d, e, f));
-            return l;
-          };
-        }(l, a, b, c, d, e), redeyes.core.t26724.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t53251.prototype.om$core$IWillMount$ = !0, redeyes.core.t53251.prototype.om$core$IWillMount$will_mount$arity$1 = function(a, b, c, d, e, f) {
           return function(a) {
-            return this.meta26725;
+            return redeyes.core.fetch_data.call(null);
           };
-        }(l, a, b, c, d, e), redeyes.core.t26724.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t53251.prototype.cljs$core$IMeta$_meta$arity$1 = function(a, b, c, d, e, f) {
+          return function(a) {
+            return this.meta53252;
+          };
+        }(l, a, b, c, d, e), redeyes.core.t53251.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(a, b, c, d, e, f) {
           return function(a, b) {
-            return new redeyes.core.t26724(this.G__26696, this.owner, this.validate__8050__auto__, this.redeyes_app, this.output_schema26692, this.output_checker26695, this.input_schema26693, this.app_state, this.input_checker26694, this.ufv__, this.G__26697, b);
+            return new redeyes.core.t53251(this.input_schema53243, this.G__53247, this.G__53246, this.output_checker53245, this.owner, this.validate__8048__auto__, this.redeyes_app, this.output_schema53242, this.app_state, this.ufv__, this.input_checker53244, b);
           };
-        }(l, a, b, c, d, e), redeyes.core.t26724.cljs$lang$type = !0, redeyes.core.t26724.cljs$lang$ctorStr = "redeyes.core/t26724", redeyes.core.t26724.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.t53251.cljs$lang$type = !0, redeyes.core.t53251.cljs$lang$ctorStr = "redeyes.core/t53251", redeyes.core.t53251.cljs$lang$ctorPrWriter = function(a, b, c, d, e, f) {
           return function(a, b, c) {
-            return cljs.core._write.call(null, b, "redeyes.core/t26724");
+            return cljs.core._write.call(null, b, "redeyes.core/t53251");
           };
-        }(l, a, b, c, d, e), redeyes.core.__GT_t26724 = function(a, b, c, d, e, f) {
+        }(l, a, b, c, d, e), redeyes.core.__GT_t53251 = function(a, b, c, d, e, f) {
           return function(a, b, c, d, e, f, h, k, l, m, n, p) {
-            return new redeyes.core.t26724(a, b, c, d, e, f, h, k, l, m, n, p);
+            return new redeyes.core.t53251(a, b, c, d, e, f, h, k, l, m, n, p);
           };
-        }(l, a, b, c, d, e)), new redeyes.core.t26724(h, k, l, f, b, e, c, h, d, a, k, null);
+        }(l, a, b, c, d, e)), new redeyes.core.t53251(c, k, h, e, k, l, f, b, h, a, d, null);
       }
     }();
     if (cljs.core.truth_(l) && (n = e.call(null, m), cljs.core.truth_(n))) {
@@ -35933,8 +35933,8 @@ redeyes.core.redeyes_app = function(a, b, c, d, e) {
     }
     return m;
   };
-}(ufv___26750, output_schema26692_26751, input_schema26693_26752, input_checker26694_26753, output_checker26695_26754);
-schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, redeyes.core.redeyes_app), schema.core.make_fn_schema.call(null, output_schema26692_26751, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema26693_26752], null)));
+}(ufv___53254, output_schema53242_53255, input_schema53243_53256, input_checker53244_53257, output_checker53245_53258);
+schema.utils.declare_class_schema_BANG_.call(null, schema.utils.fn_schema_bearer.call(null, redeyes.core.redeyes_app), schema.core.make_fn_schema.call(null, output_schema53242_53255, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema53243_53256], null)));
 redeyes.core.__GT_redeyes_app = function() {
   var a = null, b = function(a) {
     return om.core.build.call(null, redeyes.core.redeyes_app, a);
@@ -35953,13 +35953,11 @@ redeyes.core.__GT_redeyes_app = function() {
   a.cljs$core$IFn$_invoke$arity$2 = c;
   return a;
 }();
-redeyes.core.app_state = cljs.core.atom.call(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "apps", "apps", 844744865), cljs.core.PersistentVector.EMPTY], null));
-redeyes.undo.add_undo.call(null, redeyes.core.app_state);
 redeyes.core.run = function() {
   var a = cljs.core.async.chan.call(null);
   return om.core.root.call(null, redeyes.core.redeyes_app, redeyes.core.app_state, new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "shared", "shared", -384145993), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "bus", "bus", -1090873603), a], null), new cljs.core.Keyword(null, "tx-listen", "tx-listen", 119130367), function(a) {
     return function(a, b) {
-      return redeyes.helpers.log.call(null, a);
+      return redeyes.util.log.call(null, a);
     };
   }(a), new cljs.core.Keyword(null, "target", "target", 253001721), document.getElementById("app")], null));
 };

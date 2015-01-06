@@ -7,7 +7,7 @@
 (defn fetch-data [data]
   (ajax base-url
       {:dataType "json"
-       :success (fn [new-data] (om/update! data [:apps] (js->clj new-data)))}))
+       :success (fn [new-data] (swap! data assoc :apps (js->clj new-data)))}))
 
 (defn persist-active-status [app]
   (ajax (str base-url "/" (get app "id") "/activate")
