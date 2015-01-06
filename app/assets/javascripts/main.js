@@ -1,0 +1,1 @@
+../../clojurescripts/build/main.js

@@ -1,2 +1,2 @@
 //= require jquery
-//= require ../clojurescripts/build/main.js
+//= require main.js
